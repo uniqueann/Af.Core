@@ -24,6 +24,18 @@ namespace Af.Core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen(c=> 
+            {
+                c.SwaggerDoc("V1", new Microsoft.OpenApi.Models.OpenApiInfo {
+                    Version = "V1",
+                    Title = "Af.Core 接口文档--NetCore 3.1",
+                    Description = "Af.Core Http API V1",
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact { Name = "Af.Core", Email="uniqueann@163.com" },
+                    License = new Microsoft.OpenApi.Models.OpenApiLicense { Name = "Af.Core", Url = new Uri("https://www.xxx.com") }
+
+                });
+                c.OrderActionsBy(o => o.RelativePath);
+            });
             services.AddControllers();
         }
 
@@ -34,6 +46,13 @@ namespace Af.Core
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c=> {
+                c.SwaggerEndpoint("/swagger/V1/swagger.json","Af.Core V1");
+                //路径配置 设置为空，表示直接在根域名访问该文件
+                c.RoutePrefix = "";
+            });
 
             app.UseRouting();
 
