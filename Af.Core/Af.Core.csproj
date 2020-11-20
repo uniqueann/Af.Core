@@ -4,8 +4,23 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+    <DocumentationFile>..\Af.Core\Af.Core.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Af.Core.Common\Af.Core.Common.csproj" />
+    <ProjectReference Include="..\Af.Core.IServices\Af.Core.IServices.csproj" />
+    <ProjectReference Include="..\Af.Core.Model\Af.Core.Model.csproj" />
+    <ProjectReference Include="..\Af.Core.Services\Af.Core.Services.csproj" />
   </ItemGroup>
 
 

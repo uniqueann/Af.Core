@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Af.Core.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Af.Core.Model.SwaggerModel">
+            <summary>
+            Swagger测试类
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.SwaggerModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.SwaggerModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.SwaggerModel.Desc">
+            <summary>
+            描述
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Af.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Af.Core.Controllers.AuthController.GetJwtToken(System.String,System.String)">
+            <summary>
+            登录接口：随便输入字符，获取token，然后添加 Authoritarian
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Af.Core.Controllers.OrderController">
+            <summary>
+            订单
+            </summary>
+        </member>
+        <member name="T:Af.Core.Controllers.WeatherForecastController">
+            <summary>
+            天气
+            </summary>
+        </member>
+        <member name="M:Af.Core.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.WeatherForecastController.Put(Af.Core.Model.SwaggerModel)">
+            <summary>
+            Put方法
+            </summary>
+            <param name="reqModel"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

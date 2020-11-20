@@ -4,14 +4,14 @@
     "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj": {}
   },
   "projects": {
-    "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj": {
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj",
-        "projectName": "Af.Core",
-        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj",
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj",
+        "projectName": "Af.Core.Common",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj",
         "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
-        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\obj\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,9 +41,392 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IReponsitory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IReponsitory.csproj",
+        "projectName": "Af.Core.IReponsitory",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IReponsitory.csproj",
+        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj",
+        "projectName": "Af.Core.IServices",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj",
+        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj",
+        "projectName": "Af.Core.Model",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj",
+        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Reponsitory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Reponsitory.csproj",
+        "projectName": "Af.Core.Reponsitory",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Reponsitory.csproj",
+        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IReponsitory.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IReponsitory.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj",
+        "projectName": "Af.Core.Services",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj",
+        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IReponsitory.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IReponsitory.csproj"
+              },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj"
+              },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Reponsitory.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Reponsitory.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj",
+        "projectName": "Af.Core",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj",
+        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj"
+              },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj"
+              },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj"
+              },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [

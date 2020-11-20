@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Af.Core.Services/1.0.0": {
+        "dependencies": {
+          "Af.Core.IReponsitory": "1.0.0",
+          "Af.Core.IServices": "1.0.0",
+          "Af.Core.Reponsitory": "1.0.0"
+        },
+        "runtime": {
+          "Af.Core.Services.dll": {}
+        }
+      },
+      "Af.Core.IReponsitory/1.0.0": {
+        "runtime": {
+          "Af.Core.IReponsitory.dll": {}
+        }
+      },
+      "Af.Core.IServices/1.0.0": {
+        "runtime": {
+          "Af.Core.IServices.dll": {}
+        }
+      },
+      "Af.Core.Reponsitory/1.0.0": {
+        "dependencies": {
+          "Af.Core.IReponsitory": "1.0.0"
+        },
+        "runtime": {
+          "Af.Core.Reponsitory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Af.Core.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Af.Core.IReponsitory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Af.Core.IServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Af.Core.Reponsitory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Af.Core.Reponsitory/1.0.0": {
+        "dependencies": {
+          "Af.Core.IReponsitory": "1.0.0"
+        },
+        "runtime": {
+          "Af.Core.Reponsitory.dll": {}
+        }
+      },
+      "Af.Core.IReponsitory/1.0.0": {
+        "runtime": {
+          "Af.Core.IReponsitory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Af.Core.Reponsitory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Af.Core.IReponsitory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

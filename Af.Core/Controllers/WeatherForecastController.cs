@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Af.Core.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace Af.Core.Controllers
 {
+    /// <summary>
+    /// 天气
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -23,6 +27,10 @@ namespace Af.Core.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Get方法
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -34,6 +42,17 @@ namespace Af.Core.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        /// <summary>
+        /// Put方法
+        /// </summary>
+        /// <param name="reqModel"></param>
+        /// <returns></returns>
+        [HttpPut] 
+        public OkObjectResult Put(SwaggerModel reqModel)
+        {
+            return Ok(new { code = 200, msg = "success" });
         }
     }
 }

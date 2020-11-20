@@ -1,0 +1,9 @@
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\bin\Debug\netcoreapp3.1\Af.Core.IServices.deps.json
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\bin\Debug\netcoreapp3.1\Af.Core.IServices.dll
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\bin\Debug\netcoreapp3.1\Af.Core.IServices.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\obj\Debug\netcoreapp3.1\Af.Core.IServices.AssemblyInfoInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\obj\Debug\netcoreapp3.1\Af.Core.IServices.AssemblyInfo.cs
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\obj\Debug\netcoreapp3.1\Af.Core.IServices.csproj.CoreCompileInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\obj\Debug\netcoreapp3.1\Af.Core.IServices.dll
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\obj\Debug\netcoreapp3.1\Af.Core.IServices.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.IServices\obj\Debug\netcoreapp3.1\Af.Core.IServices.csprojAssemblyReference.cache

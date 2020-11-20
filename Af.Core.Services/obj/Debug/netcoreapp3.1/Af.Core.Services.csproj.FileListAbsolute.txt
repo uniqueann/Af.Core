@@ -1,0 +1,16 @@
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Services.deps.json
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Services.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Services.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.csprojAssemblyReference.cache
+F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.AssemblyInfoInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.AssemblyInfo.cs
+F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.csproj.CoreCompileInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.IServices.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Reponsitory.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.IServices.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Reponsitory.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.csproj.CopyComplete

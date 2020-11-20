@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +12,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace Af.Core
 {
@@ -24,6 +30,7 @@ namespace Af.Core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var basePath = Environment.CurrentDirectory;
             services.AddSwaggerGen(c=> 
             {
                 c.SwaggerDoc("V1", new Microsoft.OpenApi.Models.OpenApiInfo {
@@ -35,6 +42,66 @@ namespace Af.Core
 
                 });
                 c.OrderActionsBy(o => o.RelativePath);
+                // 注释 xml 
+                var xmlPath = Path.Combine(basePath, "af.core.xml");
+                c.IncludeXmlComments(xmlPath, true);
+                var xmlModelPath = Path.Combine(basePath,"af.core.model.xml");
+                c.IncludeXmlComments(xmlModelPath);
+
+                c.OperationFilter<AddResponseHeadersFilter>();
+                c.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
+
+                c.OperationFilter<SecurityRequirementsOperationFilter>();
+
+                c.AddSecurityDefinition("oauth2",new Microsoft.OpenApi.Models.OpenApiSecurityScheme { 
+                    Description = "JWT授权(数据将在请求头中进行传输) 直接在下框中输入Bearer {token}（注意两者之间是一个空格）\"",
+                    Name= "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
+            });
+
+            //1.基于角色的api授权
+            //1.1 授权 无需配置服务，只需要在api层的controller上边增加特性即可。只能是角色的
+            //1.2 认证 然后在下边的configure里，配置中间件即可：app.UseMiddleware<JwtTokenAuth>(); 
+            //      此方法无法验证过期时间，如果需要验证过期时间，则需要下边的第三种方法--官方认证
+
+            //2.基于策略的授权
+            //2.1 授权 无需配置服务，api层controller上增加特性即可，可以写多个roles
+            //      [Authorize(Policy="Admin")]
+            services.AddAuthorization(options=> 
+            {
+                options.AddPolicy("Client",policy=>policy.RequireRole("Client").Build());
+                options.AddPolicy("Admin",policy=>policy.RequireRole("Admin").Build());
+                options.AddPolicy("SuperAdmin", policy => policy.RequireRole("Client","Admin").Build()); ;
+            });
+            //2.2 认证 然后在下边的configure里，配置中间件即可
+
+            //读取配置文件
+            var audienceConfig = Configuration.GetSection("Audience");
+            var symmetricKeyAsBase64 = audienceConfig["Secret"];
+            var keyByteArray = Encoding.ASCII.GetBytes(symmetricKeyAsBase64);
+            var signingKey = new SymmetricSecurityKey(keyByteArray);
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(o =>
+            {
+                o.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey =signingKey,
+                    ValidateIssuer = true,
+                    ValidIssuer = audienceConfig["Issuer"],//发行人
+                    ValidateAudience = true,
+                    ValidAudience = audienceConfig["Audience"],//订阅人
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero,
+                    RequireExpirationTime = true
+                };
             });
             services.AddControllers();
         }
@@ -55,8 +122,13 @@ namespace Af.Core
             });
 
             app.UseRouting();
-
+            //先开启认证
+            app.UseAuthentication();
+            //然后是授权中间件
             app.UseAuthorization();
+            //开启异常中间件 要放到最后
+            
+            
 
             app.UseEndpoints(endpoints =>
             {

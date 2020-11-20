@@ -1,0 +1,9 @@
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.deps.json
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.dll
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.AssemblyInfoInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.AssemblyInfo.cs
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.csproj.CoreCompileInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.dll
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.csprojAssemblyReference.cache
