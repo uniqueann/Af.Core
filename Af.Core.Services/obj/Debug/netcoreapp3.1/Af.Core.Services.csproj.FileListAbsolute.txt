@@ -14,3 +14,6 @@ F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.IReponsi
 F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.IServices.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Reponsitory.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Services\obj\Debug\netcoreapp3.1\Af.Core.Services.csproj.CopyComplete
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Model.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Model.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Services\bin\Debug\netcoreapp3.1\Af.Core.Model.xml

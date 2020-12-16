@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Af.Core.IReponsitory/1.0.0": {
+        "dependencies": {
+          "Af.Core.Model": "1.0.0"
+        },
         "runtime": {
           "Af.Core.IReponsitory.dll": {}
+        }
+      },
+      "Af.Core.Model/1.0.0": {
+        "runtime": {
+          "Af.Core.Model.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Af.Core.IReponsitory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Af.Core.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,9 +4,12 @@ F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.Repon
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.csprojAssemblyReference.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.AssemblyInfoInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.AssemblyInfo.cs
-F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.csproj.CoreCompileInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.csproj.CopyComplete
+F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.Model.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.Model.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.Model.xml
+F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Reponsitory.csproj.CoreCompileInputs.cache

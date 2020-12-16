@@ -7,3 +7,7 @@ F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IRep
 F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.dll
 F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.csprojAssemblyReference.cache
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\bin\Debug\netcoreapp3.1\Af.Core.Model.dll
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\bin\Debug\netcoreapp3.1\Af.Core.Model.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\bin\Debug\netcoreapp3.1\Af.Core.Model.xml
+F:\NetCoreDemo\Af.Core\Af.Core.IReponsitory\obj\Debug\netcoreapp3.1\Af.Core.IReponsitory.csproj.CopyComplete

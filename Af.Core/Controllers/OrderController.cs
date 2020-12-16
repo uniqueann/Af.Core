@@ -30,6 +30,7 @@ namespace Af.Core.Controllers
         //}
 
         [HttpGet]
+        [Authorize(Policy ="Admin")]
         public int Get(int i, int j)
         {
             IBlogArticleServices artService = new BlogArticleServices();

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Af.Core.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Af.Core.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Af.Core.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Af.Core.Model/1.0.0": {
+      "type": "project",
+      "path": "../Af.Core.Model/Af.Core.Model.csproj",
+      "msbuildProject": "../Af.Core.Model/Af.Core.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Af.Core.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\uniqu\\.nuget\\packages\\": {},
@@ -36,7 +55,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj": {
+              "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
