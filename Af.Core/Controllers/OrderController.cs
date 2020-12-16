@@ -30,11 +30,10 @@ namespace Af.Core.Controllers
         //}
 
         [HttpGet]
-        [Authorize(Policy ="Admin")]
-        public int Get(int i, int j)
+        //[Authorize(Policy ="Admin")]
+        public int Get(int id)
         {
-            IBlogArticleServices artService = new BlogArticleServices();
-            return artService.Sum(i,j);
+            return 0;
         }
     }
 }

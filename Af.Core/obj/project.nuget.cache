@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f8SkSeQfl/ZCV+P9x7eXozo/pMsyxLVoLF1EX3ugICdN9jSVj30tJz6As/OF7IYoihcOMAXY9gEop1NlsrSc4A==",
+  "dgSpecHash": "m9xcbfzQz90UkPBa19m9nOqF9kEka68m80fSuzw0NI58tEpBty0t2xwRqF+uRs8bGUqFwYJQPLuAlIPWi3Q/DQ==",
   "success": true,
   "projectFilePath": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\5.0.0\\microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.extensions.configuration.json\\5.0.0\\microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.1.0\\microsoft.extensions.dependencyinjection.2.1.0.nupkg.sha512",

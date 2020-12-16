@@ -4,7 +4,6 @@ F:\NetCoreDemo\Af.Core\Af.Core.Model\bin\Debug\netcoreapp3.1\Af.Core.Model.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Model\bin\Debug\netcoreapp3.1\Af.Core.Model.xml
 F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.AssemblyInfoInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.AssemblyInfo.cs
-F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.csproj.CoreCompileInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.pdb
-F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.csprojAssemblyReference.cache
+F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.csproj.CoreCompileInputs.cache

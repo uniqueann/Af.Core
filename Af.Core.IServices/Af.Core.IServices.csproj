@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Af.Core.Model\Af.Core.Model.csproj" />
+  </ItemGroup>
+
 </Project>

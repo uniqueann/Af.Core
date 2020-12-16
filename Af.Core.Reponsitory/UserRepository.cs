@@ -1,18 +1,18 @@
-﻿using Af.Core.IReponsitory;
+﻿using Af.Core.Common.DB;
+using Af.Core.IRepository;
 using Af.Core.Model.Models;
 using SqlSugar;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 
-namespace Af.Core.Reponsitory
+namespace Af.Core.Repository
 {
-    public class BlogArticleReponsitory : IBlogArticleReponsitory
+    public class UserRepository : IUserRepository
     {
         private DbContext context;
         private SqlSugarClient db;
-        private SimpleClient<BlogArticle> entityDb;
+        private readonly SimpleClient<User> entityDb;
 
         internal SqlSugarClient Db
         {
@@ -26,35 +26,30 @@ namespace Af.Core.Reponsitory
             set { context = value; }
         }
 
-        public BlogArticleReponsitory()
+        public UserRepository()
         {
             DbContext.Init(BaseDBConfig.ConnectionString);
             context = DbContext.GetDbContext();
             db = context.Db;
-            entityDb = context.GetEntityDB<BlogArticle>(Db);
+            entityDb = context.GetEntityDB<User>(Db);
         }
 
-        public int Add(BlogArticle model)
+        public int Add(User model)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete(BlogArticle model)
+        public bool Delete(User model)
         {
             throw new NotImplementedException();
         }
 
-        public List<BlogArticle> Query(Expression<Func<BlogArticle, bool>> whereExpression)
+        public List<User> Query(Expression<Func<User, bool>> whereExpression)
         {
-            throw new NotImplementedException();
+            return db.Queryable<User>().Where(whereExpression).ToList();
         }
 
-        public int Sum(int i, int j)
-        {
-            return i + j;
-        }
-
-        public bool Update(BlogArticle model)
+        public bool Update(User model)
         {
             throw new NotImplementedException();
         }

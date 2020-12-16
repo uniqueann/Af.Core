@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Af.Core.Reponsitory
+namespace Af.Core.Repository
 {
     public class DbContext
     {

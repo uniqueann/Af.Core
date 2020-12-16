@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Af.Core.IReponsitory\Af.Core.IReponsitory.csproj" />
+    <ProjectReference Include="..\Af.Core.IReponsitory\Af.Core.IRepository.csproj" />
     <ProjectReference Include="..\Af.Core.IServices\Af.Core.IServices.csproj" />
-    <ProjectReference Include="..\Af.Core.Reponsitory\Af.Core.Reponsitory.csproj" />
+    <ProjectReference Include="..\Af.Core.Reponsitory\Af.Core.Repository.csproj" />
   </ItemGroup>
 
 </Project>

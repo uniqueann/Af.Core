@@ -52,14 +52,10 @@ F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Prim
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Common.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Common.pdb
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IServices.dll
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Reponsitory.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Services.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IServices.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Services.pdb
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IReponsitory.pdb
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Reponsitory.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
@@ -101,3 +97,8 @@ F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\runtimes\win8-arm\native\
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IRepository.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IRepository.pdb
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.pdb
