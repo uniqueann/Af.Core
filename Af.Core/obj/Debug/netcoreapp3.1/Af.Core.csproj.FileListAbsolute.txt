@@ -50,9 +50,7 @@ F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Common.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Common.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IServices.dll
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Services.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IServices.pdb
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Services.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
@@ -96,9 +94,7 @@ F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstand
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IRepository.dll
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IRepository.pdb
-F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Autofac.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Castle.Core.dll

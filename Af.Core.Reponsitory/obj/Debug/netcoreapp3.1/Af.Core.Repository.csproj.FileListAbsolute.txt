@@ -15,3 +15,12 @@ F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Repos
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\obj\Debug\netcoreapp3.1\Af.Core.Repository.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.Common.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Reponsitory\bin\Debug\netcoreapp3.1\Af.Core.Common.pdb
+F:\NetCoreDemo\Af.Core\Afo.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.deps.json
+F:\NetCoreDemo\Af.Core\Afo.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.dll
+F:\NetCoreDemo\Af.Core\Afo.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.pdb
+F:\NetCoreDemo\Af.Core\Afo.Core\bin\Debug\netcoreapp3.1\netcoreapp3.1\Af.Core.Repository.deps.json
+F:\NetCoreDemo\Af.Core\Afo.Core\bin\Debug\netcoreapp3.1\netcoreapp3.1\Af.Core.Repository.dll
+F:\NetCoreDemo\Af.Core\Afo.Core\bin\Debug\netcoreapp3.1\netcoreapp3.1\Af.Core.Repository.pdb
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.deps.json
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.pdb

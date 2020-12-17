@@ -264,139 +264,6 @@
         }
       }
     },
-    "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Repository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Repository.csproj",
-        "projectName": "Af.Core.Repository",
-        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Repository.csproj",
-        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
-        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj": {
-                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj"
-              },
-              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj": {
-                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "sqlSugarCore": {
-              "target": "Package",
-              "version": "[5.0.1.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj",
-        "projectName": "Af.Core.Services",
-        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj",
-        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
-        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj": {
-                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj"
-              },
-              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj": {
-                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj"
-              },
-              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Repository.csproj": {
-                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Repository.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -426,14 +293,11 @@
               "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj": {
                 "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj"
               },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj"
+              },
               "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj": {
                 "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj"
-              },
-              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj": {
-                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Model\\Af.Core.Model.csproj"
-              },
-              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj": {
-                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Services\\Af.Core.Services.csproj"
               }
             }
           }
@@ -466,6 +330,10 @@
             "Swashbuckle.AspNetCore.Filters": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "sqlSugarCore": {
+              "target": "Package",
+              "version": "[5.0.1.3, )"
             }
           },
           "imports": [

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Af.Core.IServices;
+﻿using Af.Core.IServices;
 using Af.Core.Model.Models;
-using Af.Core.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Af.Core.Controllers
 {
@@ -22,7 +17,7 @@ namespace Af.Core.Controllers
             _userServices = userServices;
         }
 
-        [HttpGet("{id}", Name ="Get")]
+        [HttpGet("{id}", Name = "Get")]
         public async Task<User> GetAsync(int id)
         {
             return await _userServices.QueryByID(id);

@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Af.Core\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Af.Core.IReponsitory\Af.Core.IRepository.csproj" />
     <ProjectReference Include="..\Af.Core.IServices\Af.Core.IServices.csproj" />

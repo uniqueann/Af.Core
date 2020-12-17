@@ -12,28 +12,5 @@
             <param name="pass"></param>
             <returns></returns>
         </member>
-        <member name="T:Af.Core.Controllers.OrderController">
-            <summary>
-            订单
-            </summary>
-        </member>
-        <member name="T:Af.Core.Controllers.WeatherForecastController">
-            <summary>
-            天气
-            </summary>
-        </member>
-        <member name="M:Af.Core.Controllers.WeatherForecastController.Get">
-            <summary>
-            Get方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Af.Core.Controllers.WeatherForecastController.Put(Af.Core.Model.SwaggerModel)">
-            <summary>
-            Put方法
-            </summary>
-            <param name="reqModel"></param>
-            <returns></returns>
-        </member>
     </members>
 </doc>

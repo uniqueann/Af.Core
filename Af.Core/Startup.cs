@@ -6,7 +6,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Af.Core.IServices;
-using Af.Core.Services;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -34,7 +33,7 @@ namespace Af.Core
         {
             var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
             // 直接注册某个类和接口
-            builder.RegisterType<UserServices>().As<IUserServices>();
+            //builder.RegisterType<UserServices>().As<IUserServices>();
             // 注册要通过反射注册的组件
             var servicesDllFile = Path.Combine(basePath,"Af.Core.Services.dll");
             var assemblysServices = Assembly.LoadFrom(servicesDllFile);
