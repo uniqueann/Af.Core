@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Af.Core.AOP;
 using Af.Core.IServices;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
@@ -34,6 +35,7 @@ namespace Af.Core
             var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
             // 直接注册某个类和接口
             //builder.RegisterType<UserServices>().As<IUserServices>();
+            builder.RegisterType<LogAOP>();
             // 注册要通过反射注册的组件
             var servicesDllFile = Path.Combine(basePath,"Af.Core.Services.dll");
             var assemblysServices = Assembly.LoadFrom(servicesDllFile);
@@ -41,7 +43,8 @@ namespace Af.Core
             builder.RegisterAssemblyTypes(assemblysServices)
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope()
-                .EnableInterfaceInterceptors();
+                .EnableInterfaceInterceptors()
+                .InterceptedBy(typeof(LogAOP)); // 此处可以放一个AOP拦截器集合
         }
 
         public IConfiguration Configuration { get; }

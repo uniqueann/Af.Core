@@ -1,0 +1,5 @@
+--------------------------------
+2020/12/17 17:24:12|
+方法：QueryByID
+参数：2
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Services.BASE.BaseServices`1+<QueryByID>d__1[Af.Core.Model.Models.User]]

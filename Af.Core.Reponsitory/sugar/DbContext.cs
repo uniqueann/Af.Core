@@ -13,7 +13,7 @@ namespace Af.Core.Repository
 
         /// <summary>
         /// 连接字符串 
-        /// Blog.Core
+        /// afo
         /// </summary>
         public static string ConnectionString
         {
@@ -22,7 +22,7 @@ namespace Af.Core.Repository
         }
         /// <summary>
         /// 数据库类型 
-        /// Blog.Core 
+        /// afo 
         /// </summary>
         public static DbType DbType
         {
@@ -31,7 +31,7 @@ namespace Af.Core.Repository
         }
         /// <summary>
         /// 数据连接对象 
-        /// Blog.Core 
+        /// afo 
         /// </summary>
         public SqlSugarClient Db
         {
@@ -41,7 +41,7 @@ namespace Af.Core.Repository
 
         /// <summary>
         /// 数据库上下文实例（自动关闭连接）
-        /// Blog.Core 
+        /// afo 
         /// </summary>
         public static DbContext Context
         {
@@ -55,7 +55,7 @@ namespace Af.Core.Repository
 
         /// <summary>
         /// 功能描述:构造函数
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         private DbContext()
         {
@@ -81,7 +81,7 @@ namespace Af.Core.Repository
 
         /// <summary>
         /// 功能描述:构造函数
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="blnIsAutoCloseConnection">是否自动关闭连接</param>
         private DbContext(bool blnIsAutoCloseConnection)
@@ -109,7 +109,7 @@ namespace Af.Core.Repository
         #region 实例方法
         /// <summary>
         /// 功能描述:获取数据库处理对象
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <returns>返回值</returns>
         public SimpleClient<T> GetEntityDB<T>() where T : class, new()
@@ -118,7 +118,7 @@ namespace Af.Core.Repository
         }
         /// <summary>
         /// 功能描述:获取数据库处理对象
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="db">db</param>
         /// <returns>返回值</returns>
@@ -130,7 +130,7 @@ namespace Af.Core.Repository
         #region 根据数据库表生产实体类
         /// <summary>
         /// 功能描述:根据数据库表生产实体类
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>       
         /// <param name="strPath">实体类存放路径</param>
         public void CreateClassFileByDBTalbe(string strPath)
@@ -139,7 +139,7 @@ namespace Af.Core.Repository
         }
         /// <summary>
         /// 功能描述:根据数据库表生产实体类
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strPath">实体类存放路径</param>
         /// <param name="strNameSpace">命名空间</param>
@@ -150,7 +150,7 @@ namespace Af.Core.Repository
 
         /// <summary>
         /// 功能描述:根据数据库表生产实体类
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strPath">实体类存放路径</param>
         /// <param name="strNameSpace">命名空间</param>
@@ -165,7 +165,7 @@ namespace Af.Core.Repository
 
         /// <summary>
         /// 功能描述:根据数据库表生产实体类
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strPath">实体类存放路径</param>
         /// <param name="strNameSpace">命名空间</param>
@@ -264,7 +264,7 @@ namespace {Namespace}
         #region 根据实体类生成数据库表
         /// <summary>
         /// 功能描述:根据实体类生成数据库表
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="blnBackupTable">是否备份表</param>
         /// <param name="lstEntitys">指定的实体</param>
@@ -285,7 +285,7 @@ namespace {Namespace}
 
         /// <summary>
         /// 功能描述:根据实体类生成数据库表
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="blnBackupTable">是否备份表</param>
         /// <param name="lstEntitys">指定的实体</param>
@@ -308,7 +308,7 @@ namespace {Namespace}
 
         /// <summary>
         /// 功能描述:获得一个DbContext
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="blnIsAutoCloseConnection">是否自动关闭连接（如果为false，则使用接受时需要手动关闭Db）</param>
         /// <returns>返回值</returns>
@@ -319,7 +319,7 @@ namespace {Namespace}
 
         /// <summary>
         /// 功能描述:设置初始化参数
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strConnectionString">连接字符串</param>
         /// <param name="enmDbType">数据库类型</param>
@@ -331,7 +331,7 @@ namespace {Namespace}
 
         /// <summary>
         /// 功能描述:创建一个链接配置
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="blnIsAutoCloseConnection">是否自动关闭连接</param>
         /// <param name="blnIsShardSameThread">是否夸类事务</param>
@@ -354,7 +354,7 @@ namespace {Namespace}
 
         /// <summary>
         /// 功能描述:获取一个自定义的DB
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="config">config</param>
         /// <returns>返回值</returns>
@@ -364,7 +364,7 @@ namespace {Namespace}
         }
         /// <summary>
         /// 功能描述:获取一个自定义的数据库处理对象
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="sugarClient">sugarClient</param>
         /// <returns>返回值</returns>
@@ -374,7 +374,7 @@ namespace {Namespace}
         }
         /// <summary>
         /// 功能描述:获取一个自定义的数据库处理对象
-        /// 作　　者:Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="config">config</param>
         /// <returns>返回值</returns>
