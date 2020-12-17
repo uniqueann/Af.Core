@@ -54,7 +54,6 @@ namespace Af.Core.Repository.BASE
 
         public async Task<TEntity> QueryById(object objId)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().InSingle(objId));
             return await _db.Queryable<TEntity>().In(objId).SingleAsync();
         }
         /// <summary>
@@ -66,7 +65,6 @@ namespace Af.Core.Repository.BASE
         /// <returns>数据实体</returns>
         public async Task<TEntity> QueryById(object objId, bool blnUseCache = false)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().WithCacheIF(blnUseCache).InSingle(objId));
             return await _db.Queryable<TEntity>().WithCacheIF(blnUseCache).In(objId).SingleAsync();
         }
 
@@ -78,7 +76,6 @@ namespace Af.Core.Repository.BASE
         /// <returns>数据实体列表</returns>
         public async Task<List<TEntity>> QueryByIDs(object[] lstIds)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().In(lstIds).ToList());
             return await _db.Queryable<TEntity>().In(lstIds).ToListAsync();
         }
 
@@ -89,10 +86,6 @@ namespace Af.Core.Repository.BASE
         /// <returns></returns>
         public async Task<int> Add(TEntity entity)
         {
-            //var i = await Task.Run(() => _db.Insertable(entity).ExecuteReturnBigIdentity());
-            ////返回的i是long类型,这里你可以根据你的业务需要进行处理
-            //return (int)i;
-
             var insert = _db.Insertable(entity);
             return await insert.ExecuteReturnIdentityAsync();
         }
@@ -140,47 +133,22 @@ namespace Af.Core.Repository.BASE
         /// <returns></returns>
         public async Task<bool> Update(TEntity entity)
         {
-            ////这种方式会以主键为条件
-            //var i = await Task.Run(() => _db.Updateable(entity).ExecuteCommand());
-            //return i > 0;
             //这种方式会以主键为条件
             return await _db.Updateable(entity).ExecuteCommandHasChangeAsync();
         }
 
         public async Task<bool> Update(TEntity entity, string strWhere)
         {
-            //return await Task.Run(() => _db.Updateable(entity).Where(strWhere).ExecuteCommand() > 0);
             return await _db.Updateable(entity).Where(strWhere).ExecuteCommandHasChangeAsync();
         }
 
         public async Task<bool> Update(string strSql, SugarParameter[] parameters = null)
         {
-            //return await Task.Run(() => _db.Ado.ExecuteCommand(strSql, parameters) > 0);
             return await _db.Ado.ExecuteCommandAsync(strSql, parameters) > 0;
         }
 
-        public async Task<bool> Update(
-          TEntity entity,
-          List<string> lstColumns = null,
-          List<string> lstIgnoreColumns = null,
-          string strWhere = ""
-            )
+        public async Task<bool> Update(TEntity entity, List<string> lstColumns = null, List<string> lstIgnoreColumns = null, string strWhere = "")
         {
-            //IUpdateable<TEntity> up = await Task.Run(() => _db.Updateable(entity));
-            //if (lstIgnoreColumns != null && lstIgnoreColumns.Count > 0)
-            //{
-            //    up = await Task.Run(() => up.IgnoreColumns(it => lstIgnoreColumns.Contains(it)));
-            //}
-            //if (lstColumns != null && lstColumns.Count > 0)
-            //{
-            //    up = await Task.Run(() => up.UpdateColumns(it => lstColumns.Contains(it)));
-            //}
-            //if (!string.IsNullOrEmpty(strWhere))
-            //{
-            //    up = await Task.Run(() => up.Where(strWhere));
-            //}
-            //return await Task.Run(() => up.ExecuteCommand()) > 0;
-
             IUpdateable<TEntity> up = _db.Updateable(entity);
             if (lstIgnoreColumns != null && lstIgnoreColumns.Count > 0)
             {
@@ -204,8 +172,6 @@ namespace Af.Core.Repository.BASE
         /// <returns></returns>
         public async Task<bool> Delete(TEntity entity)
         {
-            //var i = await Task.Run(() => _db.Deleteable(entity).ExecuteCommand());
-            //return i > 0;
             return await _db.Deleteable(entity).ExecuteCommandHasChangeAsync();
         }
 
@@ -216,8 +182,6 @@ namespace Af.Core.Repository.BASE
         /// <returns></returns>
         public async Task<bool> DeleteById(object id)
         {
-            //var i = await Task.Run(() => _db.Deleteable<TEntity>(id).ExecuteCommand());
-            //return i > 0;
             return await _db.Deleteable<TEntity>(id).ExecuteCommandHasChangeAsync();
         }
 
@@ -228,8 +192,6 @@ namespace Af.Core.Repository.BASE
         /// <returns></returns>
         public async Task<bool> DeleteByIds(object[] ids)
         {
-            //var i = await Task.Run(() => _db.Deleteable<TEntity>().In(ids).ExecuteCommand());
-            //return i > 0;
             return await _db.Deleteable<TEntity>().In(ids).ExecuteCommandHasChangeAsync();
         }
 
@@ -242,7 +204,6 @@ namespace Af.Core.Repository.BASE
         /// <returns>数据列表</returns>
         public async Task<List<TEntity>> Query()
         {
-            //return await Task.Run(() => _entityDb.GetList());
             return await _db.Queryable<TEntity>().ToListAsync();
         }
 
@@ -254,7 +215,6 @@ namespace Af.Core.Repository.BASE
         /// <returns>数据列表</returns>
         public async Task<List<TEntity>> Query(string strWhere)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToList());
             return await _db.Queryable<TEntity>().WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToListAsync();
         }
 
@@ -266,7 +226,6 @@ namespace Af.Core.Repository.BASE
         /// <returns>数据列表</returns>
         public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression)
         {
-            //return await Task.Run(() => _entityDb.GetList(whereExpression));
             return await _db.Queryable<TEntity>().WhereIF(whereExpression != null, whereExpression).ToListAsync();
         }
 
@@ -279,7 +238,6 @@ namespace Af.Core.Repository.BASE
         /// <returns>数据列表</returns>
         public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression, string strOrderByFileds)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToList());
             return await _db.Queryable<TEntity>().WhereIF(whereExpression != null, whereExpression).OrderByIF(strOrderByFileds != null, strOrderByFileds).ToListAsync();
         }
         /// <summary>
@@ -291,7 +249,6 @@ namespace Af.Core.Repository.BASE
         /// <returns></returns>
         public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression, Expression<Func<TEntity, object>> orderByExpression, bool isAsc = true)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().OrderByIF(orderByExpression != null, orderByExpression, isAsc ? OrderByType.Asc : OrderByType.Desc).WhereIF(whereExpression != null, whereExpression).ToList());
             return await _db.Queryable<TEntity>().OrderByIF(orderByExpression != null, orderByExpression, isAsc ? OrderByType.Asc : OrderByType.Desc).WhereIF(whereExpression != null, whereExpression).ToListAsync();
         }
 
@@ -304,7 +261,6 @@ namespace Af.Core.Repository.BASE
         /// <returns>数据列表</returns>
         public async Task<List<TEntity>> Query(string strWhere, string strOrderByFileds)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToList());
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToListAsync();
         }
 
@@ -317,12 +273,8 @@ namespace Af.Core.Repository.BASE
         /// <param name="intTop">前N条</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
-            Expression<Func<TEntity, bool>> whereExpression,
-            int intTop,
-            string strOrderByFileds)
+        public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression,int intTop,string strOrderByFileds)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).Take(intTop).ToList());
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).Take(intTop).ToListAsync();
         }
 
@@ -334,12 +286,8 @@ namespace Af.Core.Repository.BASE
         /// <param name="intTop">前N条</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
-            string strWhere,
-            int intTop,
-            string strOrderByFileds)
+        public async Task<List<TEntity>> Query(string strWhere,int intTop,string strOrderByFileds)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).Take(intTop).ToList());
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).Take(intTop).ToListAsync();
         }
 
@@ -355,13 +303,8 @@ namespace Af.Core.Repository.BASE
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
-            Expression<Func<TEntity, bool>> whereExpression,
-            int intPageIndex,
-            int intPageSize,
-            string strOrderByFileds)
+        public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression,int intPageIndex,int intPageSize,string strOrderByFileds)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize));
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageListAsync(intPageIndex, intPageSize);
         }
 
@@ -375,14 +318,8 @@ namespace Af.Core.Repository.BASE
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
-          string strWhere,
-          int intPageIndex,
-          int intPageSize,
-
-          string strOrderByFileds)
+        public async Task<List<TEntity>> Query(string strWhere, int intPageIndex, int intPageSize, string strOrderByFileds)
         {
-            //return await Task.Run(() => _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize));
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageListAsync(intPageIndex, intPageSize);
         }
 
