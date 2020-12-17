@@ -14,11 +14,18 @@ namespace Af.Core.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        [HttpGet("{id}", Name ="Get")]
-        public List<User> Get(int id)
+
+        private readonly IUserServices _userServices;
+
+        public UserController(IUserServices userServices)
         {
-            IUserServices services = new UserServices();
-            return services.Query(a => a.UserId == id);
+            _userServices = userServices;
+        }
+
+        [HttpGet("{id}", Name ="Get")]
+        public async Task<User> GetAsync(int id)
+        {
+            return await _userServices.QueryByID(id);
         }
     }
 }

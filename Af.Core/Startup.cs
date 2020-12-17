@@ -2,8 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Af.Core.IServices;
+using Af.Core.Services;
+using Autofac;
+using Autofac.Extras.DynamicProxy;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -23,6 +28,21 @@ namespace Af.Core
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+        }
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
+            // 直接注册某个类和接口
+            builder.RegisterType<UserServices>().As<IUserServices>();
+            // 注册要通过反射注册的组件
+            var servicesDllFile = Path.Combine(basePath,"Af.Core.Services.dll");
+            var assemblysServices = Assembly.LoadFrom(servicesDllFile);
+
+            builder.RegisterAssemblyTypes(assemblysServices)
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope()
+                .EnableInterfaceInterceptors();
         }
 
         public IConfiguration Configuration { get; }

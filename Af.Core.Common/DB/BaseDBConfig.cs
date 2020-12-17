@@ -51,7 +51,7 @@ namespace Af.Core.Common.DB
             }
             else
             {
-                return "server=.;uid=sa;pwd=sa;database=WMBlogDB";
+                return "Server=120.77.233.164;Database=CrawlerHelper;User ID=tms_dev;Password=tms_dev;";
             }
 
         }

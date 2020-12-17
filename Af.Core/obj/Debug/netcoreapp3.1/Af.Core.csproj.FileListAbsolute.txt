@@ -38,9 +38,6 @@ F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.P
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.csproj.CoreCompileInputs.cache
-F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.MvcApplicationPartsAssemblyInfo.cs
-F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.MvcApplicationPartsAssemblyInfo.cache
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
@@ -102,3 +99,11 @@ F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IRepository.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.IRepository.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.pdb
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Autofac.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Castle.Core.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.csproj.CoreCompileInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.MvcApplicationPartsAssemblyInfo.cs
+F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.MvcApplicationPartsAssemblyInfo.cache
