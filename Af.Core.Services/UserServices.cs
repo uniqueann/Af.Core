@@ -1,4 +1,5 @@
 ﻿using Af.Core.IRepository;
+using Af.Core.IRepository.BASE;
 using Af.Core.IServices;
 using Af.Core.IServices.BASE;
 using Af.Core.Model.Models;
@@ -12,6 +13,8 @@ namespace Af.Core.Services
 {
     public class UserServices : BaseServices<User>, IUserServices
     {
-        
+        public UserServices(IBaseRepository<User> balDal) : base(balDal)
+        {
+        }
     }
 }

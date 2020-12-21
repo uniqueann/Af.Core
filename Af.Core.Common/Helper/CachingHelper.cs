@@ -25,7 +25,7 @@ namespace Af.Core.Common.Helper
 
         public void Set(string cacheKey, object cacheValue)
         {
-            _cache.Set(cacheKey, cacheValue, TimeSpan.FromSeconds(7200));
+            _cache.Set(cacheKey, cacheValue, TimeSpan.FromSeconds(720));
         }
     }
 }

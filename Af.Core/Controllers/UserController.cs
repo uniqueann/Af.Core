@@ -29,17 +29,18 @@ namespace Af.Core.Controllers
             return await _userServices.QueryByID(id);
         }
 
+        /// <summary>
+        /// 分页查询用户列表 可根据名称模糊查询
+        /// </summary>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="userName"></param>
+        /// <returns></returns>
         [HttpGet("page_index/{pageIndex}/page_size/{pageSize}")]
-        public async Task<PageModel<User>> Get(int pageIndex,int pageSize)
+        public async Task<PageModel<User>> Get(int pageIndex,int pageSize,string userName)
         {
-            return await _userServices.QueryPage(a => a.IsEnable, 1, 20);
+            return await _userServices.QueryPage(a => a.IsEnable && a.UserName.Contains(userName), pageIndex, pageSize,"CreateTime desc");
         }
-
-        //[HttpGet]
-        //public async Task<PageModel<User>> GetList()
-        //{
-        //    return await _userServices.QueryPage(a=>a.IsEnable,1,20);
-        //}
 
         [HttpPut]
         public async Task<bool> Put(User user)

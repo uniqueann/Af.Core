@@ -40,5 +40,14 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:Af.Core.Controllers.UserController.Get(System.Int32,System.Int32,System.String)">
+            <summary>
+            分页查询用户列表 可根据名称模糊查询
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

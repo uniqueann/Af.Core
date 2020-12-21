@@ -43,7 +43,10 @@ namespace Af.Core
             var servicesDllFile = Path.Combine(basePath, "Af.Core.Services.dll");
             var assemblysServices = Assembly.LoadFrom(servicesDllFile);
 
-            builder.RegisterAssemblyTypes(assemblysServices)
+            var respositoryDllFile = Path.Combine(basePath, "Af.Core.Repository.dll");
+            var assemblysRepository = Assembly.LoadFrom(respositoryDllFile);
+
+            builder.RegisterAssemblyTypes(assemblysServices,assemblysRepository)
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope()
                 .EnableInterfaceInterceptors()
