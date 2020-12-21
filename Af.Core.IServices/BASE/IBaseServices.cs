@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Af.Core.Model.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -38,7 +39,8 @@ namespace Af.Core.IServices.BASE
             Expression<Func<TEntity, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds);
         Task<List<TEntity>> Query(string strWhere, int intPageIndex, int intPageSize, string strOrderByFileds);
 
-
-        Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null);
+        Task<PageModel<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression,
+        int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null);
+        //Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null);
     }
 }

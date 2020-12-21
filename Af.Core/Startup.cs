@@ -1,25 +1,22 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Af.Core.AOP;
-using Af.Core.IServices;
+using Af.Core.Common.Helper;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using System.Text;
 
 namespace Af.Core
 {
@@ -33,18 +30,24 @@ namespace Af.Core
         public void ConfigureContainer(ContainerBuilder builder)
         {
             var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
+            var typeList = new List<Type> { 
+                typeof(LogAOP),typeof(CacheAOP)
+            };
+
             // 直接注册某个类和接口
             //builder.RegisterType<UserServices>().As<IUserServices>();
             builder.RegisterType<LogAOP>();
+            builder.RegisterType<CacheAOP>();
+
             // 注册要通过反射注册的组件
-            var servicesDllFile = Path.Combine(basePath,"Af.Core.Services.dll");
+            var servicesDllFile = Path.Combine(basePath, "Af.Core.Services.dll");
             var assemblysServices = Assembly.LoadFrom(servicesDllFile);
 
             builder.RegisterAssemblyTypes(assemblysServices)
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope()
                 .EnableInterfaceInterceptors()
-                .InterceptedBy(typeof(LogAOP)); // 此处可以放一个AOP拦截器集合
+                .InterceptedBy(typeList.ToArray()); 
         }
 
         public IConfiguration Configuration { get; }
@@ -53,13 +56,14 @@ namespace Af.Core
         public void ConfigureServices(IServiceCollection services)
         {
             var basePath = Environment.CurrentDirectory;
-            services.AddSwaggerGen(c=> 
+            services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("V1", new Microsoft.OpenApi.Models.OpenApiInfo {
+                c.SwaggerDoc("V1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
                     Version = "V1",
                     Title = "Af.Core 接口文档--NetCore 3.1",
                     Description = "Af.Core Http API V1",
-                    Contact = new Microsoft.OpenApi.Models.OpenApiContact { Name = "Af.Core", Email="uniqueann@163.com" },
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact { Name = "Af.Core", Email = "uniqueann@163.com" },
                     License = new Microsoft.OpenApi.Models.OpenApiLicense { Name = "Af.Core", Url = new Uri("https://www.xxx.com") }
 
                 });
@@ -67,7 +71,7 @@ namespace Af.Core
                 // 注释 xml 
                 var xmlPath = Path.Combine(basePath, "af.core.xml");
                 c.IncludeXmlComments(xmlPath, true);
-                var xmlModelPath = Path.Combine(basePath,"af.core.model.xml");
+                var xmlModelPath = Path.Combine(basePath, "af.core.model.xml");
                 c.IncludeXmlComments(xmlModelPath);
 
                 c.OperationFilter<AddResponseHeadersFilter>();
@@ -75,12 +79,20 @@ namespace Af.Core
 
                 c.OperationFilter<SecurityRequirementsOperationFilter>();
 
-                c.AddSecurityDefinition("oauth2",new Microsoft.OpenApi.Models.OpenApiSecurityScheme { 
+                c.AddSecurityDefinition("oauth2", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+                {
                     Description = "JWT授权(数据将在请求头中进行传输) 直接在下框中输入Bearer {token}（注意两者之间是一个空格）\"",
-                    Name= "Authorization",
+                    Name = "Authorization",
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey
                 });
+            });
+
+            // 注入缓存
+            services.AddScoped<ICaching, MemoryCaching>();
+            services.AddSingleton<IMemoryCache>(factory => {
+                var cache = new MemoryCache(new MemoryCacheOptions());
+                return cache;
             });
 
             //1.基于角色的api授权
@@ -91,11 +103,11 @@ namespace Af.Core
             //2.基于策略的授权
             //2.1 授权 无需配置服务，api层controller上增加特性即可，可以写多个roles
             //      [Authorize(Policy="Admin")]
-            services.AddAuthorization(options=> 
+            services.AddAuthorization(options =>
             {
-                options.AddPolicy("Client",policy=>policy.RequireRole("Client").Build());
-                options.AddPolicy("Admin",policy=>policy.RequireRole("Admin").Build());
-                options.AddPolicy("SuperAdmin", policy => policy.RequireRole("Client","Admin").Build()); ;
+                options.AddPolicy("Client", policy => policy.RequireRole("Client").Build());
+                options.AddPolicy("Admin", policy => policy.RequireRole("Admin").Build());
+                options.AddPolicy("SuperAdmin", policy => policy.RequireRole("Client", "Admin").Build()); ;
             });
             //2.2 认证 然后在下边的configure里，配置中间件即可
 
@@ -115,7 +127,7 @@ namespace Af.Core
                 o.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey =signingKey,
+                    IssuerSigningKey = signingKey,
                     ValidateIssuer = true,
                     ValidIssuer = audienceConfig["Issuer"],//发行人
                     ValidateAudience = true,
@@ -125,6 +137,7 @@ namespace Af.Core
                     RequireExpirationTime = true
                 };
             });
+
             services.AddControllers();
         }
 
@@ -137,8 +150,9 @@ namespace Af.Core
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c=> {
-                c.SwaggerEndpoint("/swagger/V1/swagger.json","Af.Core V1");
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/V1/swagger.json", "Af.Core V1");
                 //路径配置 设置为空，表示直接在根域名访问该文件
                 c.RoutePrefix = "";
             });
@@ -149,8 +163,8 @@ namespace Af.Core
             //然后是授权中间件
             app.UseAuthorization();
             //开启异常中间件 要放到最后
-            
-            
+
+
 
             app.UseEndpoints(endpoints =>
             {

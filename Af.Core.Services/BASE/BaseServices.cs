@@ -248,9 +248,9 @@ namespace Af.Core.Services.BASE
             return await baseDal.QueryPage(whereExpression,intPageIndex,intPageSize,strOrderByFileds);
         }
 
-        Task<List<TEntity>> IBaseServices<TEntity>.QueryPage(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds)
-        {
-            throw new NotImplementedException();
-        }
+        //Task<List<TEntity>> IBaseServices<TEntity>.QueryPage(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

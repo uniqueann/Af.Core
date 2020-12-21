@@ -12,6 +12,12 @@ namespace Af.Core.Common.Helper
     public class MemoryCaching : ICaching
     {
         private readonly IMemoryCache _cache;
+
+        public MemoryCaching(IMemoryCache cache)
+        {
+            _cache = cache;
+        }
+
         public object Get(string cacheKey)
         {
             return _cache.Get(cacheKey);
