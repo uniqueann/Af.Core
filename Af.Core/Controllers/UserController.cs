@@ -1,4 +1,5 @@
-﻿using Af.Core.IServices;
+﻿using Af.Core.Common.Helper;
+using Af.Core.IServices;
 using Af.Core.Model.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -39,9 +40,14 @@ namespace Af.Core.Controllers
         [HttpGet("page_index/{pageIndex}/page_size/{pageSize}")]
         public async Task<PageModel<User>> Get(int pageIndex,int pageSize,string userName)
         {
-            return await _userServices.QueryPage(a => a.IsEnable && a.UserName.Contains(userName), pageIndex, pageSize,"CreateTime desc");
+            return await _userServices.QueryPage(a => a.IsEnable && a.UserName.Contains(userName.ObjToString()), pageIndex, pageSize,"CreateTime desc");
         }
 
+        /// <summary>
+        /// 根据主键修改用户信息
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<bool> Put(User user)
         {

@@ -18,13 +18,6 @@
             <param name="arg"></param>
             <returns></returns>
         </member>
-        <member name="M:Af.Core.AOP.AOPbase.MD5Encrypt16(System.String)">
-            <summary>
-            16位MD5加密
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
         <member name="M:Af.Core.Controllers.AuthController.GetJwtToken(System.String,System.String)">
             <summary>
             登录接口：随便输入字符，获取token，然后添加 Authoritarian
@@ -47,6 +40,13 @@
             <param name="pageIndex"></param>
             <param name="pageSize"></param>
             <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.UserController.Put(Af.Core.Model.Models.User)">
+            <summary>
+            根据主键修改用户信息
+            </summary>
+            <param name="user"></param>
             <returns></returns>
         </member>
     </members>

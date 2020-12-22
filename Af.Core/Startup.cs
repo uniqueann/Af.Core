@@ -30,14 +30,23 @@ namespace Af.Core
         public void ConfigureContainer(ContainerBuilder builder)
         {
             var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
-            var typeList = new List<Type> { 
-                typeof(LogAOP),typeof(CacheAOP)
-            };
+            var typeList = new List<Type>();
+
+            if (Appsettings.app(new string[] { "AppSettings","MemoryCachingAOP","Enabled" }).ObjToBool())
+            {
+                builder.RegisterType<CacheAOP>();
+                typeList.Add(typeof(CacheAOP));
+            }
+            if (Appsettings.app(new string[] { "AppSettings", "LogAOP", "Enabled" }).ObjToBool())
+            {
+                builder.RegisterType<LogAOP>();
+                typeList.Add(typeof(LogAOP));
+            }
 
             // 直接注册某个类和接口
             //builder.RegisterType<UserServices>().As<IUserServices>();
-            builder.RegisterType<LogAOP>();
-            builder.RegisterType<CacheAOP>();
+            
+            
 
             // 注册要通过反射注册的组件
             var servicesDllFile = Path.Combine(basePath, "Af.Core.Services.dll");
