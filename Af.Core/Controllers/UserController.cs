@@ -1,4 +1,5 @@
-﻿using Af.Core.Common.Helper;
+﻿using Af.Core.Common;
+using Af.Core.Common.Helper;
 using Af.Core.IServices;
 using Af.Core.Model.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -37,10 +38,11 @@ namespace Af.Core.Controllers
         /// <param name="pageSize"></param>
         /// <param name="userName"></param>
         /// <returns></returns>
+        [Caching(AbsoluteExpiration = 10)]
         [HttpGet("page_index/{pageIndex}/page_size/{pageSize}")]
-        public async Task<PageModel<User>> Get(int pageIndex,int pageSize,string userName)
+        public async Task<PageModel<User>> Get(int pageIndex, int pageSize, string userName)
         {
-            return await _userServices.QueryPage(a => a.IsEnable && a.UserName.Contains(userName.ObjToString()), pageIndex, pageSize,"CreateTime desc");
+            return await _userServices.QueryPage(a => a.IsEnable && a.UserName.Contains(userName.ObjToString()), pageIndex, pageSize, "CreateTime desc");
         }
 
         /// <summary>

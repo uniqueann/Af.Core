@@ -1,0 +1,40 @@
+--------------------------------
+2020/12/23 9:20:37|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__16[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 9:20:37|
+方法：QueryByID
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Services.BASE.BaseServices`1+<QueryByID>d__2[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 9:21:10|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass3_0).userName.ObjToString())), 1, 3, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Repository.BASE.BaseRepository`1+<QueryPage>d__40[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 9:21:10|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass3_0).userName.ObjToString())), 1, 3, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 14:19:56|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass3_0).userName.ObjToString())), 1, 2, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Repository.BASE.BaseRepository`1+<QueryPage>d__40[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 14:19:56|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass3_0).userName.ObjToString())), 1, 2, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 14:20:02|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass3_0).userName.ObjToString())), 1, 2, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Repository.BASE.BaseRepository`1+<QueryPage>d__40[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 14:20:02|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass3_0).userName.ObjToString())), 1, 2, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.User]]

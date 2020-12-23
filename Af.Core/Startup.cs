@@ -32,21 +32,23 @@ namespace Af.Core
             var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
             var typeList = new List<Type>();
 
+            if (Appsettings.app(new string[] { "AppSettings", "RedisCachingAOP", "Enabled" }).ObjToBool())
+            {
+                typeList.Add(typeof(RedisCacheAOP));
+            }
             if (Appsettings.app(new string[] { "AppSettings","MemoryCachingAOP","Enabled" }).ObjToBool())
             {
-                builder.RegisterType<CacheAOP>();
                 typeList.Add(typeof(CacheAOP));
             }
             if (Appsettings.app(new string[] { "AppSettings", "LogAOP", "Enabled" }).ObjToBool())
             {
-                builder.RegisterType<LogAOP>();
                 typeList.Add(typeof(LogAOP));
             }
 
             // 直接注册某个类和接口
             //builder.RegisterType<UserServices>().As<IUserServices>();
-            
-            
+            builder.RegisterType<CacheAOP>();
+            builder.RegisterType<LogAOP>();
 
             // 注册要通过反射注册的组件
             var servicesDllFile = Path.Combine(basePath, "Af.Core.Services.dll");

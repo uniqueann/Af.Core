@@ -1,5 +1,7 @@
-﻿using Af.Core.Common.Helper;
+﻿using Af.Core.Common;
+using Af.Core.Common.Helper;
 using Castle.DynamicProxy;
+using System.Linq;
 
 namespace Af.Core.AOP
 {
@@ -14,18 +16,29 @@ namespace Af.Core.AOP
 
         public override void Intercept(IInvocation invocation)
         {
-            var cacheKey = CustomCacheKey(invocation);
-            var cacheValue = _cache.Get(cacheKey);
-            if (cacheValue != null)
+            var method = invocation.MethodInvocationTarget ?? invocation.Method;
+            // 当前方法特性
+            var cachingAttribute = method.GetCustomAttributes(true).FirstOrDefault(a=>a.GetType()==typeof(CachingAttribute)) as CachingAttribute;
+            // 指定特性的才可以缓存
+            if (cachingAttribute != null)
             {
-                invocation.ReturnValue = cacheValue;
-                return;
+                var cacheKey = CustomCacheKey(invocation);
+                var cacheValue = _cache.Get(cacheKey);
+                if (cacheValue != null)
+                {
+                    invocation.ReturnValue = cacheValue;
+                    return;
+                }
+                invocation.Proceed();
+                if (!string.IsNullOrWhiteSpace(cacheKey))
+                {
+                    _cache.Set(cacheKey, invocation.ReturnValue);
+                }
             }
-            invocation.Proceed();
-            if (!string.IsNullOrWhiteSpace(cacheKey))
+            else
             {
-                _cache.Set(cacheKey, invocation.ReturnValue);
-            }
+                invocation.Proceed();
+            }           
         }
     }
 }
