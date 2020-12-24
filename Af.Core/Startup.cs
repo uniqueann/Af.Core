@@ -1,7 +1,9 @@
 using Af.Core.AOP;
+using Af.Core.AutoMapper;
 using Af.Core.Common.Helper;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +51,7 @@ namespace Af.Core
             //builder.RegisterType<UserServices>().As<IUserServices>();
             builder.RegisterType<CacheAOP>();
             builder.RegisterType<LogAOP>();
+
 
             // 注册要通过反射注册的组件
             var servicesDllFile = Path.Combine(basePath, "Af.Core.Services.dll");
@@ -109,6 +112,9 @@ namespace Af.Core
                 return cache;
             });
 
+            services.AddAutoMapper(typeof(AutoMapperConfig));
+            AutoMapperConfig.RegisterMappings();
+
             //1.基于角色的api授权
             //1.1 授权 无需配置服务，只需要在api层的controller上边增加特性即可。只能是角色的
             //1.2 认证 然后在下边的configure里，配置中间件即可：app.UseMiddleware<JwtTokenAuth>(); 
@@ -152,6 +158,14 @@ namespace Af.Core
                 };
             });
 
+            services.AddCors(c=> {
+                c.AddPolicy("LimitRequest",policy=> {
+                    policy.WithOrigins("http://localhost")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
+
             services.AddControllers();
         }
 
@@ -172,6 +186,7 @@ namespace Af.Core
             });
 
             app.UseRouting();
+            app.UseCors();
             //先开启认证
             app.UseAuthentication();
             //然后是授权中间件

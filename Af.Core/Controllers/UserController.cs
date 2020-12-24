@@ -2,6 +2,7 @@
 using Af.Core.Common.Helper;
 using Af.Core.IServices;
 using Af.Core.Model.Models;
+using Af.Core.Model.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -26,9 +27,10 @@ namespace Af.Core.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}", Name = "Get")]
-        public async Task<User> Get(int id)
+        public async Task<UserViewModel> Get(int id)
         {
-            return await _userServices.QueryByID(id);
+            return await _userServices.GetUser(id);
+            //return await _userServices.QueryByID(id);
         }
 
         /// <summary>

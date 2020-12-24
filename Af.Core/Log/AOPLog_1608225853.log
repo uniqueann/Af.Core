@@ -38,3 +38,23 @@
 方法：QueryPage
 参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass3_0).userName.ObjToString())), 1, 2, CreateTime desc
 结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 17:19:55|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__16[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/23 17:19:55|
+方法：QueryByID
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Services.BASE.BaseServices`1+<QueryByID>d__2[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/24 11:27:14|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__16[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/24 11:27:14|
+方法：GetUser
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.ViewModels.UserViewModel,Af.Core.Services.UserServices+<GetUser>d__3]
