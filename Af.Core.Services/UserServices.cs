@@ -1,4 +1,5 @@
-﻿using Af.Core.IRepository;
+﻿using Af.Core.Common.Helper;
+using Af.Core.IRepository;
 using Af.Core.IRepository.BASE;
 using Af.Core.IServices;
 using Af.Core.IServices.BASE;
@@ -28,6 +29,13 @@ namespace Af.Core.Services
         {
             var model = await _userDal.QueryById(id);
             UserViewModel vModel = _mapper.Map<UserViewModel>(model);
+            return vModel;
+        }
+
+        public async Task<PageModel<UserViewModel>> GetUserList(int pageIndex, int pageSize, string userName)
+        {
+            var userList = await _userDal.QueryPage(a => a.IsEnable && a.UserName.Contains(userName.ObjToString()), pageIndex, pageSize, "CreateTime desc");
+            PageModel<UserViewModel> vModel = _mapper.Map<PageModel<UserViewModel>>(userList);
             return vModel;
         }
     }

@@ -13,6 +13,7 @@ namespace Af.Core.AutoMapper
         public CustomProfile()
         {
             CreateMap<User, UserViewModel>();
+            CreateMap<PageModel<User>, PageModel<UserViewModel>>();
         }
     }
 }

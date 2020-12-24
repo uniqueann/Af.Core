@@ -8,5 +8,6 @@ namespace Af.Core.IServices
     public interface IUserServices : IBaseServices<User>
     {
         Task<UserViewModel> GetUser(int id);
+        Task<PageModel<UserViewModel>> GetUserList(int pageIndex, int pageSize, string userName);
     }
 }

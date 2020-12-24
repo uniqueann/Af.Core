@@ -42,9 +42,9 @@ namespace Af.Core.Controllers
         /// <returns></returns>
         [Caching(AbsoluteExpiration = 10)]
         [HttpGet("page_index/{pageIndex}/page_size/{pageSize}")]
-        public async Task<PageModel<User>> Get(int pageIndex, int pageSize, string userName)
+        public async Task<PageModel<UserViewModel>> Get(int pageIndex, int pageSize, string userName)
         {
-            return await _userServices.QueryPage(a => a.IsEnable && a.UserName.Contains(userName.ObjToString()), pageIndex, pageSize, "CreateTime desc");
+            return await _userServices.GetUserList(pageIndex, pageSize, userName);
         }
 
         /// <summary>
