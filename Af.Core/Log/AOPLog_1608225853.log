@@ -78,3 +78,33 @@
 方法：GetUserList
 参数：1, 2, 
 结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.ViewModels.UserViewModel],Af.Core.Services.UserServices+<GetUserList>d__4]
+--------------------------------
+2020/12/28 18:01:18|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Services.UserServices+<>c__DisplayClass4_0).userName.ObjToString())), 1, 5, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Repository.BASE.BaseRepository`1+<QueryPage>d__40[Af.Core.Model.Models.User]]
+--------------------------------
+2020/12/28 18:01:18|
+方法：GetUserList
+参数：1, 5, 
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.ViewModels.UserViewModel],Af.Core.Services.UserServices+<GetUserList>d__4]
+--------------------------------
+2021/1/28 16:52:09|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__16[Af.Core.Model.Models.User]]
+--------------------------------
+2021/1/28 16:52:09|
+方法：GetUser
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.ViewModels.UserViewModel,Af.Core.Services.UserServices+<GetUser>d__3]
+--------------------------------
+2021/1/28 16:52:23|
+方法：QueryPage
+参数：a => (a.IsEnable AndAlso a.UserName.Contains(value(Af.Core.Services.UserServices+<>c__DisplayClass4_0).userName.ObjToString())), 1, 10, CreateTime desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.User],Af.Core.Repository.BASE.BaseRepository`1+<QueryPage>d__40[Af.Core.Model.Models.User]]
+--------------------------------
+2021/1/28 16:52:23|
+方法：GetUserList
+参数：1, 10, 
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.ViewModels.UserViewModel],Af.Core.Services.UserServices+<GetUserList>d__4]

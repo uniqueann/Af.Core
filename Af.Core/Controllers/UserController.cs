@@ -29,6 +29,7 @@ namespace Af.Core.Controllers
         [HttpGet("{id}", Name = "Get")]
         public async Task<UserViewModel> Get(int id)
         {
+            
             return await _userServices.GetUser(id);
             //return await _userServices.QueryByID(id);
         }

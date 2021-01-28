@@ -26,6 +26,12 @@
             <param name="pass"></param>
             <returns></returns>
         </member>
+        <member name="M:Af.Core.Controllers.RoleController.GetRoles">
+            <summary>
+            角色列表
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Af.Core.Controllers.UserController.Get(System.Int32)">
             <summary>
             根据主键查询一个用户的信息

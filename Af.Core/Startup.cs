@@ -194,10 +194,10 @@ namespace Af.Core
             //开启异常中间件 要放到最后
 
 
-
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                //endpoints.MapControllers();
+                endpoints.MapControllerRoute("default", "{controller=Role}/{action=Index}/{id?}");
             });
         }
     }
