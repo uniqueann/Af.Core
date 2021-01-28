@@ -133,9 +133,9 @@ namespace Af.Core.Repository
         /// 作　　者:afo
         /// </summary>       
         /// <param name="strPath">实体类存放路径</param>
-        public void CreateClassFileByDBTalbe(string strPath)
+        public void CreateClassFileByDBTable(string strPath)
         {
-            CreateClassFileByDBTalbe(strPath, "Km.PosZC");
+            CreateClassFileByDBTable(strPath, "Km.PosZC");
         }
         /// <summary>
         /// 功能描述:根据数据库表生产实体类
@@ -143,9 +143,9 @@ namespace Af.Core.Repository
         /// </summary>
         /// <param name="strPath">实体类存放路径</param>
         /// <param name="strNameSpace">命名空间</param>
-        public void CreateClassFileByDBTalbe(string strPath, string strNameSpace)
+        public void CreateClassFileByDBTable(string strPath, string strNameSpace)
         {
-            CreateClassFileByDBTalbe(strPath, strNameSpace, null);
+            CreateClassFileByDBTable(strPath, strNameSpace, null);
         }
 
         /// <summary>
@@ -155,12 +155,12 @@ namespace Af.Core.Repository
         /// <param name="strPath">实体类存放路径</param>
         /// <param name="strNameSpace">命名空间</param>
         /// <param name="lstTableNames">生产指定的表</param>
-        public void CreateClassFileByDBTalbe(
+        public void CreateClassFileByDBTable(
             string strPath,
             string strNameSpace,
             string[] lstTableNames)
         {
-            CreateClassFileByDBTalbe(strPath, strNameSpace, lstTableNames, string.Empty);
+            CreateClassFileByDBTable(strPath, strNameSpace, lstTableNames, string.Empty);
         }
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace Af.Core.Repository
         /// <param name="strNameSpace">命名空间</param>
         /// <param name="lstTableNames">生产指定的表</param>
         /// <param name="strInterface">实现接口</param>
-        public void CreateClassFileByDBTalbe(
+        public void CreateClassFileByDBTable(
           string strPath,
           string strNameSpace,
           string[] lstTableNames,

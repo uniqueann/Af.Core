@@ -82,7 +82,7 @@ namespace Af.Core.Repository.BASE
         /// <summary>
         /// 写入实体数据
         /// </summary>
-        /// <param name="entity">博文实体类</param>
+        /// <param name="entity">实体类</param>
         /// <returns></returns>
         public async Task<int> Add(TEntity entity)
         {
