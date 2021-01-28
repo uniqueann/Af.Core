@@ -19,7 +19,7 @@ namespace Af.Core.Services.BASE
             _balDal = balDal;
         }
 
-        public async Task<TEntity> QueryByID(object objId)
+        public async Task<TEntity> QueryById(object objId)
         {
             return await _balDal.QueryById(objId);
         }
@@ -30,7 +30,7 @@ namespace Af.Core.Services.BASE
         /// <param name="objId">id（必须指定主键特性 [SugarColumn(IsPrimaryKey=true)]），如果是联合主键，请使用Where条件</param>
         /// <param name="blnUseCache">是否使用缓存</param>
         /// <returns>数据实体</returns>
-        public async Task<TEntity> QueryByID(object objId, bool blnUseCache = false)
+        public async Task<TEntity> QueryById(object objId, bool blnUseCache = false)
         {
             return await _balDal.QueryById(objId, blnUseCache);
         }
@@ -41,9 +41,9 @@ namespace Af.Core.Services.BASE
         /// </summary>
         /// <param name="lstIds">id列表（必须指定主键特性 [SugarColumn(IsPrimaryKey=true)]），如果是联合主键，请使用Where条件</param>
         /// <returns>数据实体列表</returns>
-        public async Task<List<TEntity>> QueryByIDs(object[] lstIds)
+        public async Task<List<TEntity>> QueryByIds(object[] lstIds)
         {
-            return await _balDal.QueryByIDs(lstIds);
+            return await _balDal.QueryByIds(lstIds);
         }
 
         /// <summary>
@@ -115,7 +115,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:查询所有数据
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <returns>数据列表</returns>
         public async Task<List<TEntity>> Query()
@@ -125,7 +125,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:查询数据列表
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strWhere">条件</param>
         /// <returns>数据列表</returns>
@@ -136,7 +136,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:查询数据列表
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="whereExpression">whereExpression</param>
         /// <returns>数据列表</returns>
@@ -163,7 +163,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:查询一个列表
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strWhere">条件</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
@@ -175,7 +175,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:查询前N条数据
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="whereExpression">条件表达式</param>
         /// <param name="intTop">前N条</param>
@@ -188,7 +188,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:查询前N条数据
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strWhere">条件</param>
         /// <param name="intTop">前N条</param>
@@ -204,7 +204,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:分页查询
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="whereExpression">条件表达式</param>
         /// <param name="intPageIndex">页码（下标0）</param>
@@ -227,7 +227,7 @@ namespace Af.Core.Services.BASE
 
         /// <summary>
         /// 功能描述:分页查询
-        /// 作　　者:AZLinli.Blog.Core
+        /// 作　　者:afo
         /// </summary>
         /// <param name="strWhere">条件</param>
         /// <param name="intPageIndex">页码（下标0）</param>

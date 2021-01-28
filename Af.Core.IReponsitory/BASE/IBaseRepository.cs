@@ -14,7 +14,7 @@ namespace Af.Core.IRepository.BASE
         void RollbackTran();
         Task<TEntity> QueryById(object objId);
         Task<TEntity> QueryById(object objId, bool blnUseCache = false);
-        Task<List<TEntity>> QueryByIDs(object[] lstIds);
+        Task<List<TEntity>> QueryByIds(object[] lstIds);
 
         Task<int> Add(TEntity model);
 

@@ -8,9 +8,9 @@ namespace Af.Core.IServices.BASE
 {
     public interface IBaseServices<TEntity> where TEntity : class
     {
-        Task<TEntity> QueryByID(object objId);
-        Task<TEntity> QueryByID(object objId, bool blnUseCache = false);
-        Task<List<TEntity>> QueryByIDs(object[] lstIds);
+        Task<TEntity> QueryById(object objId);
+        Task<TEntity> QueryById(object objId, bool blnUseCache = false);
+        Task<List<TEntity>> QueryByIds(object[] lstIds);
 
         Task<int> Add(TEntity model);
 
