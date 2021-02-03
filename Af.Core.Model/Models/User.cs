@@ -3,7 +3,7 @@ using System;
 
 namespace Af.Core.Model.Models
 {
-    [SugarTable("Users")]
+    [SugarTable("Users","CrawlerHelper")]
     public class User
     {
         [SugarColumn(IsNullable = false, IsPrimaryKey = true, IsIdentity = true)]

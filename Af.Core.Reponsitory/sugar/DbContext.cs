@@ -73,7 +73,7 @@ namespace Af.Core.Repository
                 },
                 MoreSettings = new ConnMoreSettings()
                 {
-                    //IsWithNoLockQuery = true,
+                    IsWithNoLockQuery = true,
                     IsAutoRemoveDataCache = true
                 }
             });
@@ -100,7 +100,7 @@ namespace Af.Core.Repository
                 },
                 MoreSettings = new ConnMoreSettings()
                 {
-                    //IsWithNoLockQuery = true,
+                    IsWithNoLockQuery = true,
                     IsAutoRemoveDataCache = true
                 }
             });

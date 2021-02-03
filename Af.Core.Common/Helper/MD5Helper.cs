@@ -60,7 +60,7 @@ namespace Af.Core.Common.Helper
             // 加密后是一个字节类型的数组，这里要注意编码UTF8/Unicode等的选择　
             MD5 md5 = MD5.Create();
             byte[] s = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
-            return Convert.ToBase64String(s);
+            return System.Convert.ToBase64String(s);
         }
 
     }

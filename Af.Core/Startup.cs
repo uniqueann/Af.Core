@@ -1,6 +1,8 @@
 using Af.Core.AOP;
 using Af.Core.AutoMapper;
+using Af.Core.Common.Convert;
 using Af.Core.Common.Helper;
+using Af.Core.Extensions;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
 using AutoMapper;
@@ -51,6 +53,7 @@ namespace Af.Core
             //builder.RegisterType<UserServices>().As<IUserServices>();
             builder.RegisterType<CacheAOP>();
             builder.RegisterType<LogAOP>();
+
 
 
             // 注册要通过反射注册的组件
@@ -114,6 +117,8 @@ namespace Af.Core
 
             services.AddAutoMapper(typeof(AutoMapperConfig));
             AutoMapperConfig.RegisterMappings();
+
+            services.AddSqlsugarSetup();
 
             //1.基于角色的api授权
             //1.1 授权 无需配置服务，只需要在api层的controller上边增加特性即可。只能是角色的

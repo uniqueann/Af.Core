@@ -140,3 +140,6 @@ F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Mic
 F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.csproj.CoreCompileInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.MvcApplicationPartsAssemblyInfo.cs
 F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.MvcApplicationPartsAssemblyInfo.cache
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\MiniProfiler.Shared.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Extensions.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Extensions.pdb

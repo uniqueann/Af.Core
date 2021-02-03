@@ -9,5 +9,6 @@ namespace Af.Core.IServices
     {
         Task<UserViewModel> GetUser(int id);
         Task<PageModel<UserViewModel>> GetUserList(int pageIndex, int pageSize, string userName);
+        
     }
 }

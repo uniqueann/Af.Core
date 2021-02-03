@@ -32,6 +32,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Af.Core.Controllers.RoleController.GetEmployee(System.Int32)">
+            <summary>
+            根据主键查询员工
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:Af.Core.Controllers.UserController.Get(System.Int32)">
             <summary>
             根据主键查询一个用户的信息

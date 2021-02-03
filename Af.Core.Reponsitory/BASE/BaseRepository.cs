@@ -1,19 +1,46 @@
-﻿using Af.Core.IRepository.BASE;
+﻿using Af.Core.Common.DB;
+using Af.Core.Common.Helper;
+using Af.Core.IRepository.BASE;
+using Af.Core.IRepository.UnitOfWork;
+using Af.Core.Model.Models;
 using SqlSugar;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using Af.Core.Common.DB;
-using System.Threading.Tasks;
+using System.Linq;
 using System.Linq.Expressions;
-using Af.Core.Model.Models;
+using System.Threading.Tasks;
 
 namespace Af.Core.Repository.BASE
 {
-    public class BaseRepository<TEntity>:IBaseRepository<TEntity> where TEntity: class ,new()
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
     {
+        private readonly IUnitOfWork _unitOfWork;
         private DbContext _context;
-        private SqlSugarClient _db;
+        private readonly SqlSugarClient _dbBase;
+        private ISqlSugarClient _db
+        {
+            get
+            {
+                /* 开启多库支持
+                 * 1. appsettings.json 开启MultiDBEnabled为true
+                 * 2. 设置一个主连接的数据库id 节点MainDB
+                 */
+                var multiDb = Appsettings.app(new string[] { "MultiDBEnabled" }).ObjToBool();
+                if (multiDb)
+                {
+                    if (typeof(TEntity).GetTypeInfo().GetCustomAttributes(typeof(SugarTable), true).FirstOrDefault((x => x.GetType() == typeof(SugarTable))) is SugarTable sugarTable && !string.IsNullOrEmpty(sugarTable.TableDescription))
+                    {
+                        _dbBase.ChangeDatabase(sugarTable.TableDescription.ToLower());
+                    }
+                    else
+                    {
+                        _dbBase.ChangeDatabase(MainDb.CurrentConnId.ToLower());
+                    }
+                }
+                return _dbBase;
+            }
+        }
+
         private SimpleClient<TEntity> _entityDb;
 
         public DbContext Context
@@ -21,35 +48,32 @@ namespace Af.Core.Repository.BASE
             get { return _context; }
             set { _context = value; }
         }
-        internal SqlSugarClient Db
+        //internal SqlSugarClient Db
+        //{
+        //    get { return _dbBase; }
+        //    private set { _dbBase = value; }
+        //}
+        internal ISqlSugarClient Db
         {
             get { return _db; }
-            private set { _db = value; }
         }
         internal SimpleClient<TEntity> EntityDb
         {
             get { return _entityDb; }
             private set { _entityDb = value; }
         }
-        public BaseRepository()
-        {
-            DbContext.Init(BaseDBConfig.ConnectionString, (DbType)BaseDBConfig.DbType);
-            _context = DbContext.GetDbContext();
-            _db = _context.Db;
-            _entityDb = _context.GetEntityDB<TEntity>(_db);
-        }
+        //public BaseRepository()
+        //{
+        //    DbContext.Init(BaseDBConfig.ConnectionString, (DbType)BaseDBConfig.DbType);
+        //    _context = DbContext.GetDbContext();
+        //    _dbBase = _context.Db;
+        //    _entityDb = _context.GetEntityDB<TEntity>(_dbBase);
+        //}
 
-        public void BeginTran()
+        public BaseRepository(IUnitOfWork unitOfWork)
         {
-            _db.Ado.BeginTran();
-        }
-        public void CommitTran()
-        {
-            _db.Ado.CommitTran();
-        }
-        public void RollbackTran()
-        {
-            _db.Ado.RollbackTran();
+            _unitOfWork = unitOfWork;
+            _dbBase = unitOfWork.GetDbClient();
         }
 
         public async Task<TEntity> QueryById(object objId)
@@ -129,7 +153,7 @@ namespace Af.Core.Repository.BASE
         /// <summary>
         /// 更新实体数据
         /// </summary>
-        /// <param name="entity">博文实体类</param>
+        /// <param name="entity">实体类</param>
         /// <returns></returns>
         public async Task<bool> Update(TEntity entity)
         {
@@ -273,7 +297,7 @@ namespace Af.Core.Repository.BASE
         /// <param name="intTop">前N条</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression,int intTop,string strOrderByFileds)
+        public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression, int intTop, string strOrderByFileds)
         {
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).Take(intTop).ToListAsync();
         }
@@ -286,7 +310,7 @@ namespace Af.Core.Repository.BASE
         /// <param name="intTop">前N条</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(string strWhere,int intTop,string strOrderByFileds)
+        public async Task<List<TEntity>> Query(string strWhere, int intTop, string strOrderByFileds)
         {
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).Take(intTop).ToListAsync();
         }
@@ -303,7 +327,7 @@ namespace Af.Core.Repository.BASE
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression,int intPageIndex,int intPageSize,string strOrderByFileds)
+        public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds)
         {
             return await _db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageListAsync(intPageIndex, intPageSize);
         }

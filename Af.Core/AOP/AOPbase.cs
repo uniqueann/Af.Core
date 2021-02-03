@@ -1,4 +1,5 @@
-﻿using Af.Core.Common.Helper;
+﻿using Af.Core.Common.Convert;
+using Af.Core.Common.Helper;
 using Castle.DynamicProxy;
 using Newtonsoft.Json;
 using System;

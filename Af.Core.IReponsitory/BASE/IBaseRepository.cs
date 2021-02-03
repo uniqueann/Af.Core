@@ -9,9 +9,7 @@ namespace Af.Core.IRepository.BASE
 {
     public interface IBaseRepository<TEntity> where TEntity: class
     {
-        void BeginTran();
-        void CommitTran();
-        void RollbackTran();
+        
         Task<TEntity> QueryById(object objId);
         Task<TEntity> QueryById(object objId, bool blnUseCache = false);
         Task<List<TEntity>> QueryByIds(object[] lstIds);

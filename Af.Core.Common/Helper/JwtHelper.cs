@@ -81,7 +81,7 @@ namespace Af.Core.Common.Helper
             }
             var tm = new TokenModelJWT
             {
-                Uid = Convert.ToInt32(jwtToken.Id),
+                Uid = System.Convert.ToInt32(jwtToken.Id),
                 Role = role != null ? role.ToString() : "",
             };
             return tm;

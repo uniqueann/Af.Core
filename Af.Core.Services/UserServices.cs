@@ -1,4 +1,5 @@
-﻿using Af.Core.Common.Helper;
+﻿using Af.Core.Common.Convert;
+using Af.Core.Common.Helper;
 using Af.Core.IRepository;
 using Af.Core.IRepository.BASE;
 using Af.Core.IServices;
@@ -24,6 +25,7 @@ namespace Af.Core.Services
             _userDal = userDal;
             _mapper = mapper;
         }
+
 
         public async Task<UserViewModel> GetUser(int id)
         {

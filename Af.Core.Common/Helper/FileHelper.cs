@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Af.Core.Common.Convert;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

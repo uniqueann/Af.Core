@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Af.Core.Common.Helper
+namespace Af.Core.Common.Convert
 {
     /// <summary>
     /// 
@@ -137,7 +137,7 @@ namespace Af.Core.Common.Helper
             DateTime reval = DateTime.MinValue;
             if (thisValue != null && thisValue != DBNull.Value && DateTime.TryParse(thisValue.ToString(), out reval))
             {
-                reval = Convert.ToDateTime(thisValue);
+                reval = System.Convert.ToDateTime(thisValue);
             }
             return reval;
         }
@@ -180,7 +180,7 @@ namespace Af.Core.Common.Helper
         public static string DateToTimeStamp(this DateTime thisValue)
         {
             TimeSpan ts = thisValue - new DateTime(1970, 1, 1, 0, 0, 0, 0);
-            return Convert.ToInt64(ts.TotalSeconds).ToString();
+            return System.Convert.ToInt64(ts.TotalSeconds).ToString();
         }
     }
 }

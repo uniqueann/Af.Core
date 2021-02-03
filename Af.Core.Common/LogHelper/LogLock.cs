@@ -1,4 +1,5 @@
-﻿using Af.Core.Common.Helper;
+﻿using Af.Core.Common.Convert;
+using Af.Core.Common.Helper;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
