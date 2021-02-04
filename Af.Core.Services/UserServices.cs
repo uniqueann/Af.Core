@@ -18,25 +18,25 @@ namespace Af.Core.Services
 {
     public class UserServices : BaseServices<User>, IUserServices
     {
-        IUserRepository _userDal;
+        IBaseRepository<User> _dal;
         IMapper _mapper;
-        public UserServices(IBaseRepository<User> balDal,IUserRepository userDal,IMapper mapper) : base(balDal)
+        public UserServices(IBaseRepository<User> dal,IMapper mapper)
         {
-            _userDal = userDal;
+            _dal = dal;
             _mapper = mapper;
         }
 
 
         public async Task<UserViewModel> GetUser(int id)
         {
-            var model = await _userDal.QueryById(id);
+            var model = await _dal.QueryById(id);
             UserViewModel vModel = _mapper.Map<UserViewModel>(model);
             return vModel;
         }
 
         public async Task<PageModel<UserViewModel>> GetUserList(int pageIndex, int pageSize, string userName)
         {
-            var userList = await _userDal.QueryPage(a => a.IsEnable && a.UserName.Contains(userName.ObjToString()), pageIndex, pageSize, "CreateTime desc");
+            var userList = await _dal.QueryPage(a => a.IsEnable && a.UserName.Contains(userName.ObjToString()), pageIndex, pageSize, "CreateTime desc");
             PageModel<UserViewModel> vModel = _mapper.Map<PageModel<UserViewModel>>(userList);
             return vModel;
         }

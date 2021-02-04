@@ -4,6 +4,65 @@
         <name>Af.Core.Model</name>
     </assembly>
     <members>
+        <member name="P:Af.Core.Model.Models.MessageModel`1.status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.MessageModel`1.success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.MessageModel`1.msg">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.MessageModel`1.response">
+            <summary>
+            返回数据集合
+            </summary>
+        </member>
+        <member name="M:Af.Core.Model.Models.MessageModel`1.Success(System.String)">
+            <summary>
+            返回成功
+            </summary>
+            <param name="msg">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Model.Models.MessageModel`1.Success(System.String,`0)">
+            <summary>
+            返回成功
+            </summary>
+            <param name="msg">消息</param>
+            <param name="response">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Model.Models.MessageModel`1.Fail(System.String)">
+            <summary>
+            返回失败
+            </summary>
+            <param name="msg">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Model.Models.MessageModel`1.Fail(System.String,`0)">
+            <summary>
+            返回失败
+            </summary>
+            <param name="msg">消息</param>
+            <param name="response">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Model.Models.MessageModel`1.Message(System.Boolean,System.String,`0)">
+            <summary>
+            返回消息
+            </summary>
+            <param name="success">失败/成功</param>
+            <param name="msg">消息</param>
+            <param name="response">数据</param>
+            <returns></returns>
+        </member>
         <member name="P:Af.Core.Model.Models.Module.IsDeleted">
              <summary>
             获取或设置是否禁用，逻辑上的删除，非物理删除
