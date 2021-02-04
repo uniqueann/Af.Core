@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Af.Core.Common.Convert
+namespace Af.Core.Common.Converter
 {
     /// <summary>
     /// 
