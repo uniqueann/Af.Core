@@ -18,9 +18,17 @@
             <param name="arg"></param>
             <returns></returns>
         </member>
-        <member name="M:Af.Core.Controllers.AuthController.GetJwtToken(System.String,System.String)">
+        <member name="M:Af.Core.Controllers.AuthController.GetJwtTokenStr(System.String,System.String)">
             <summary>
             登录接口：随便输入字符，获取token，然后添加 Authoritarian
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.AuthController.GetJwtToken(System.String,System.String)">
+            <summary>
+            
             </summary>
             <param name="name"></param>
             <param name="pass"></param>
