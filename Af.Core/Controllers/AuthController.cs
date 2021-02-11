@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Af.Core.Common;
 using Af.Core.Common.Helper;
 using Af.Core.Extensions.Authorizations.Policys;
 using Af.Core.IServices;
@@ -14,13 +17,28 @@ using Microsoft.AspNetCore.Mvc;
 namespace Af.Core.Controllers
 {
     [Produces("application/json")]
-    [Route("api/auth")]
+    [Route("api/auth/[action]")]
     [ApiController]
     [AllowAnonymous]
     public class AuthController : ControllerBase
     {
+        readonly ISysUserInfoServices _sysUserInfoServices;
+        readonly IUserRoleServices _userRoleServices;
         readonly IRoleServices _roleServices;
         readonly PermissionRequirement _permissionRequirement;
+        readonly IRoleModulePermissionServices _roleModulePermissionServices;
+
+        public AuthController(ISysUserInfoServices sysUserInfoServices, IUserRoleServices userRoleServices,
+                              IRoleServices roleServices, PermissionRequirement permissionRequirement,
+                              IRoleModulePermissionServices roleModulePermissionServices)
+        {
+            _sysUserInfoServices = sysUserInfoServices;
+            _userRoleServices = userRoleServices;
+            _roleServices = roleServices;
+            _permissionRequirement = permissionRequirement;
+            _roleModulePermissionServices = roleModulePermissionServices;
+        }
+
 
 
 
@@ -64,13 +82,13 @@ namespace Af.Core.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 登录接口 验证用户名+密码
         /// </summary>
         /// <param name="name"></param>
         /// <param name="pass"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<MessageModel<TokenInfoViewModel>> GetJwtToken(string name="",string pass="")
+        public async Task<MessageModel<TokenInfoViewModel>> GetJwtToken(string name = "", string pass = "")
         {
             var jwtStr = string.Empty;
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(pass))
@@ -83,7 +101,28 @@ namespace Af.Core.Controllers
             }
 
             pass = MD5Helper.MD5Encrypt32(pass);
-            
+
+            var user = await _sysUserInfoServices.Query(a=>a.LoginName==name && a.LoginPwd == pass);
+            if (user.Count>0)
+            {
+                var userRoles = await _sysUserInfoServices.GetUserRoleNameStr(name, pass);
+                // 若基于用户授权策略，此处要添加用户；
+                // 若基于角色授权策略，此处要添加角色；
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, name),
+                    new Claim(JwtRegisteredClaimNames.Jti,user.FirstOrDefault().Id.ToString()),
+                    new Claim(ClaimTypes.Expiration, DateTime.Now.AddSeconds(_permissionRequirement.Expiration.TotalSeconds).ToString())
+                };
+                claims.AddRange(userRoles.Split(',').Select(s=>new Claim(ClaimTypes.Role,s)));
+
+                // jwt | ids4
+                if (!Permissions.IsUseIds4)
+                {
+                    //var data = await _roleServices
+                }
+            }
+
 
             return new MessageModel<TokenInfoViewModel>
             {
@@ -91,5 +130,6 @@ namespace Af.Core.Controllers
                 msg = "认证失败"
             };
         }
+
     }
 }

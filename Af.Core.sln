@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.IRepository", "Af.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.IServices", "Af.Core.IServices\Af.Core.IServices.csproj", "{077FFDC0-302F-4C48-BF3E-6EE4008C9565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Af.Core.Extensions", "Af.Core.Extensions\Af.Core.Extensions.csproj", "{966CBD81-6A5A-496F-BD0B-E650BBB0432C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.Extensions", "Af.Core.Extensions\Af.Core.Extensions.csproj", "{966CBD81-6A5A-496F-BD0B-E650BBB0432C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

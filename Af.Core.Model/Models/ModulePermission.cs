@@ -3,6 +3,7 @@ using System;
 
 namespace Af.Core.Model.Models
 {
+    [SugarTable("AF_ModulePermission", "CrawlerHelper")]
     public class ModulePermission
     {
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]

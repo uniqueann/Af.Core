@@ -3,6 +3,7 @@ using System;
 
 namespace Af.Core.Model.Models
 {
+    [SugarTable("AF_Role", "CrawlerHelper")]
     public class Role
     {
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]

@@ -473,6 +473,71 @@
             Id
             </summary>
         </member>
+        <member name="P:Af.Core.Model.Models.SysUserInfo.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.SysUserInfo.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.SysUserInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.SysUserInfo.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.SysUserInfo.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.SysUserInfo.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.UserRole.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.UserRole.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.UserRole.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.UserRole.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.UserRole.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.UserRole.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:Af.Core.Model.Models.UserRole.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
         <member name="T:Af.Core.Model.SwaggerModel">
             <summary>
             Swagger测试类

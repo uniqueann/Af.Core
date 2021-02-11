@@ -3,6 +3,7 @@ using System;
 
 namespace Af.Core.Model.Models
 {
+    [SugarTable("AF_OperateLog", "CrawlerHelper")]
     public class OperateLog
     {
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]

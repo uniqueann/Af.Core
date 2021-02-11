@@ -28,7 +28,7 @@
         </member>
         <member name="M:Af.Core.Controllers.AuthController.GetJwtToken(System.String,System.String)">
             <summary>
-            
+            登录接口 验证用户名+密码
             </summary>
             <param name="name"></param>
             <param name="pass"></param>

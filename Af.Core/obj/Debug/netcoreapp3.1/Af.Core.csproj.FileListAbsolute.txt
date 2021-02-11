@@ -143,3 +143,4 @@ F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.MvcApplicationPar
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\MiniProfiler.Shared.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Extensions.dll
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Extensions.pdb
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\log4net.dll

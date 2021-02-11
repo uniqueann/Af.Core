@@ -6,6 +6,7 @@ namespace Af.Core.Model.Models
     /// <summary>
     /// 路由菜单表
     /// </summary>
+    [SugarTable("AF_Permission", "CrawlerHelper")]
     public class Permission
     {
         public Permission()

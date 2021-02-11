@@ -27,9 +27,21 @@ namespace Af.Core.Model.Models
         public DateTime LastUpdTime { get; set; }
     }
 
-    [SugarTable("SysUserInfo","CrawlerHelper")]
+    [SugarTable("AF_SysUserInfo","CrawlerHelper")]
     public class SysUserInfo
     {
+        public SysUserInfo() { }
+
+        public SysUserInfo(string loginName, string loginPwd)
+        {
+            LoginName = loginName;
+            LoginPwd = loginPwd;
+            Status = 0;
+            Remark = string.Empty;
+            CreateTime = DateTime.Now;
+            ModifyTime = DateTime.Now;
+        }
+
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]
         public int Id { get; set; }
         [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]

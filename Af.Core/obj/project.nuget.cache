@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NI24dSPJz3zzTjAfP2WjsVGlroL+4fMNspnQ+Sx7XfOC1JF1RyybR5qFAL4/0xxcuLYd4wX9uo1VlVjuftrUmw==",
+  "dgSpecHash": "byzQXo4NGRYCzYIOc4F+Qg7uGlcrAQmsqTBdTEGUHhsL94Tr2JxPr5tNT2JqmxtPhxF+O6Chi8LNAiEfEmHZkg==",
   "success": true,
   "projectFilePath": "F:\\NetCoreDemo\\Af.Core\\Af.Core\\Af.Core.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\uniqu\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\uniqu\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.10\\microsoft.aspnetcore.authentication.jwtbearer.3.1.10.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

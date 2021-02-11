@@ -1,7 +1,9 @@
 using Af.Core.AOP;
 using Af.Core.AutoMapper;
+using Af.Core.Common;
 using Af.Core.Common.Converter;
 using Af.Core.Common.Helper;
+using Af.Core.Common.LogHelper;
 using Af.Core.Extensions;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
@@ -18,6 +20,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -26,9 +29,10 @@ namespace Af.Core
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            Env = env;
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
@@ -71,44 +75,20 @@ namespace Af.Core
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment Env { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var basePath = Environment.CurrentDirectory;
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("V1", new Microsoft.OpenApi.Models.OpenApiInfo
-                {
-                    Version = "V1",
-                    Title = "Af.Core 接口文档--NetCore 3.1",
-                    Description = "Af.Core Http API V1",
-                    Contact = new Microsoft.OpenApi.Models.OpenApiContact { Name = "Af.Core", Email = "uniqueann@163.com" },
-                    License = new Microsoft.OpenApi.Models.OpenApiLicense { Name = "Af.Core", Url = new Uri("https://www.xxx.com") }
-
-                });
-                c.OrderActionsBy(o => o.RelativePath);
-                // 注释 xml 
-                var xmlPath = Path.Combine(basePath, "af.core.xml");
-                c.IncludeXmlComments(xmlPath, true);
-                var xmlModelPath = Path.Combine(basePath, "af.core.model.xml");
-                c.IncludeXmlComments(xmlModelPath);
-
-                c.OperationFilter<AddResponseHeadersFilter>();
-                c.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
-
-                c.OperationFilter<SecurityRequirementsOperationFilter>();
-
-                c.AddSecurityDefinition("oauth2", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-                {
-                    Description = "JWT授权(数据将在请求头中进行传输) 直接在下框中输入Bearer {token}（注意两者之间是一个空格）\"",
-                    Name = "Authorization",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.ApiKey
-                });
-            });
 
             // 注入缓存
+            services.AddSingleton(new Appsettings(Configuration));
+            services.AddSingleton(new LogLock(Env.ContentRootPath));
+
+            Permissions.IsUseIds4 = Appsettings.app(new string[] { "Startup", "IdentityServer4", "Enabled" }).ObjToBool();
+            //确保从认证中心返回的ClaimType不被更改，不适用Map映射
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
             services.AddScoped<ICaching, MemoryCaching>();
             services.AddSingleton<IMemoryCache>(factory => {
                 var cache = new MemoryCache(new MemoryCacheOptions());
@@ -119,6 +99,7 @@ namespace Af.Core
             AutoMapperConfig.RegisterMappings();
 
             services.AddSqlsugarSetup();
+            services.AddSwaggerSetup();
 
             //1.基于角色的api授权
             //1.1 授权 无需配置服务，只需要在api层的controller上边增加特性即可。只能是角色的
