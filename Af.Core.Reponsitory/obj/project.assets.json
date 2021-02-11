@@ -2653,10 +2653,7 @@
         },
         "runtime": {
           "bin/placeholder/Af.Core.Common.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "Af.Core.IRepository/1.0.0": {
         "type": "project",
@@ -8619,40 +8616,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\uniqu\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/mac/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Repository.csproj",
+      "projectUniqueName": "/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Reponsitory/Af.Core.Repository.csproj",
       "projectName": "Af.Core.Repository",
-      "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\Af.Core.Repository.csproj",
-      "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
-      "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Reponsitory\\obj\\",
+      "projectPath": "/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Reponsitory/Af.Core.Repository.csproj",
+      "packagesPath": "/Users/mac/.nuget/packages/",
+      "outputPath": "/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Reponsitory/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mac/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj": {
-              "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj"
+            "/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Common/Af.Core.Common.csproj": {
+              "projectPath": "/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Common/Af.Core.Common.csproj"
             },
-            "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj": {
-              "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IReponsitory\\Af.Core.IRepository.csproj"
+            "/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.IReponsitory/Af.Core.IRepository.csproj": {
+              "projectPath": "/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.IReponsitory/Af.Core.IRepository.csproj"
             }
           }
         }
@@ -8665,6 +8661,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "sqlSugarCore": {
             "target": "Package",
@@ -8682,14 +8679,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }

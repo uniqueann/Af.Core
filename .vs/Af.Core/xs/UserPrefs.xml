@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{76B8FEB2-54C1-407B-BA32-5F0CEE6024AE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Af.Core/Controllers/AuthController.cs">
+    <Files>
+      <File FileName="Af.Core/Controllers/AuthController.cs" Line="185" Column="79" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Af.Core" expanded="True" selected="True">
+            <Node name="Af.Core" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="Af.Core.Common" expanded="True">
+              <Node name="Helper" expanded="True" />
+            </Node>
+            <Node name="Af.Core.Extensions" expanded="True">
+              <Node name="Authorizations" expanded="True">
+                <Node name="Helper" expanded="True" />
+                <Node name="Policys" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Af.Core PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

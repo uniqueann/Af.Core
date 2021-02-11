@@ -34,6 +34,13 @@
             <param name="pass"></param>
             <returns></returns>
         </member>
+        <member name="M:Af.Core.Controllers.AuthController.RefreshToken(System.String)">
+            <summary>
+            刷新token
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
         <member name="M:Af.Core.Controllers.RoleController.GetRoles">
             <summary>
             角色列表
