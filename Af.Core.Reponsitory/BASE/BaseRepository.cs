@@ -16,7 +16,7 @@ namespace Af.Core.Repository.BASE
     {
         private readonly IUnitOfWork _unitOfWork;
         private DbContext _context;
-        private readonly SqlSugarClient _dbBase;
+        private SqlSugarClient _dbBase;
         private ISqlSugarClient _db
         {
             get

@@ -1,8 +1,5 @@
 ﻿using Af.Core.IServices.BASE;
 using Af.Core.Model.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Af.Core.IServices

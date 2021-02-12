@@ -23,6 +23,7 @@ namespace Af.Core.Services
         public UserServices(IBaseRepository<User> dal,IMapper mapper)
         {
             _dal = dal;
+            base.BaseDal = dal;
             _mapper = mapper;
         }
 

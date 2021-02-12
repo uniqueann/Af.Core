@@ -29,7 +29,6 @@ F:/NetCoreDemo/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extens
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/bin/Debug/netcoreapp3.1/Af.Core.IServices.pdb
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/bin/Debug/netcoreapp3.1/Af.Core.Model.pdb
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/bin/Debug/netcoreapp3.1/Af.Core.Model.xml
-/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.csprojAssemblyReference.cache
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.AssemblyInfoInputs.cache
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.AssemblyInfo.cs
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.csproj.CoreCompileInputs.cache

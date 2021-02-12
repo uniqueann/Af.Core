@@ -373,3 +373,138 @@
 方法：GetUser
 参数：1
 结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.ViewModels.UserViewModel,Af.Core.Services.UserServices+<GetUser>d__3]
+--------------------------------
+02/12/2021 13:12:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 13:12:58|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.User]]
+--------------------------------
+02/12/2021 13:12:58|
+方法：GetUser
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.ViewModels.UserViewModel,Af.Core.Services.UserServices+<GetUser>d__3]
+--------------------------------
+02/12/2021 15:16:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 15:16:12|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.User,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.User]]
+--------------------------------
+02/12/2021 15:16:12|
+方法：GetUser
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.ViewModels.UserViewModel,Af.Core.Services.UserServices+<GetUser>d__3]
+--------------------------------
+02/12/2021 15:26:47|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 15:26:47|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 15:26:47|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:05:44|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:05:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:05:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:33:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:33:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:33:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:38:28|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:38:28|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:38:28|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:38:29|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:38:29|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:39:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:39:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:39:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:39:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:39:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+02/12/2021 16:39:02|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/12/2021 16:39:02|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]

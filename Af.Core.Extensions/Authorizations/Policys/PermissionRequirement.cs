@@ -13,12 +13,11 @@ namespace Af.Core.Extensions.Authorizations.Policys
     /// </summary>
     public class PermissionRequirement : IAuthorizationRequirement
     {
-        public PermissionRequirement(List<PermissionItem> permissions, string deniedAction, string claimType, string loginPath, string issuer, string audience, TimeSpan expiration, SigningCredentials signingCredentials)
+        public PermissionRequirement(List<PermissionItem> permissions, string deniedAction, string claimType, string issuer, string audience, TimeSpan expiration, SigningCredentials signingCredentials)
         {
             Permissions = permissions;
             DeniedAction = deniedAction;
             ClaimType = claimType;
-            LoginPath = loginPath;
             Issuer = issuer;
             Audience = audience;
             Expiration = expiration;

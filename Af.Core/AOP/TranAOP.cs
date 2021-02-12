@@ -13,6 +13,11 @@ namespace Af.Core.AOP
     {
         private readonly IUnitOfWork _unitOfWork;
 
+        public TranAOP(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
         public void Intercept(IInvocation invocation)
         {
             var method = invocation.MethodInvocationTarget ?? invocation.Method;
