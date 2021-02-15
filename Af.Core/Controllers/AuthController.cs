@@ -106,7 +106,6 @@ namespace Af.Core.Controllers
             }
 
             pass = MD5Helper.MD5Encrypt32(pass);
-
             var user = await _sysUserInfoServices.Query(a=>a.LoginName==name && a.LoginPwd == pass);
             if (user.Count>0)
             {

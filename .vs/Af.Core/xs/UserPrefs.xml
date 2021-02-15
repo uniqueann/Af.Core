@@ -1,66 +1,34 @@
 ﻿<Properties StartupConfiguration="{76B8FEB2-54C1-407B-BA32-5F0CEE6024AE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Af.Core.Extensions/ServiceExtensions/AuthorizationSetup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Af.Core.Model/Models/MessageModel.cs">
     <Files>
-      <File FileName="Af.Core/Controllers/AuthController.cs" Line="31" Column="32" />
-      <File FileName="Af.Core/AOP/TranAOP.cs" />
-      <File FileName="Af.Core.Services/SysUserServices.cs" Line="25" Column="32" />
-      <File FileName="Af.Core.IReponsitory/BASE/IBaseRepository.cs" Line="1" Column="1" />
-      <File FileName="Af.Core.Reponsitory/BASE/BaseRepository.cs" Line="19" Column="16" />
-      <File FileName="Af.Core/Program.cs" Line="1" Column="1" />
-      <File FileName="Af.Core/Startup.cs" Line="103" Column="46" />
-      <File FileName="../../../../../../usr/local/share/dotnet/sdk/5.0.103/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" />
-      <File FileName="Af.Core/appsettings.json" />
-      <File FileName="Af.Core.Reponsitory/RoleModulePermissionRepository.cs" Line="13" Column="120" />
-      <File FileName="Af.Core.Reponsitory/UnitOfWork/UnitOfWork.cs" Line="8" Column="31" />
-      <File FileName="Af.Core.IServices/ISysUserInfoServices.cs" Line="9" Column="30" />
-      <File FileName="Af.Core/Controllers/UserController.cs" Line="17" Column="33" />
-      <File FileName="Af.Core.Services/UserServices.cs" Line="24" Column="1" />
-      <File FileName="Af.Core.Model/Models/User.cs" Line="31" Column="18" />
-      <File FileName="Af.Core.IServices/IUserServices.cs" Line="8" Column="22" />
-      <File FileName="Af.Core.Reponsitory/Af.Core.Repository.csproj" Line="8" Column="51" />
-      <File FileName="Af.Core.Services/BASE/BaseServices.cs" Line="20" Column="51" />
-      <File FileName="Af.Core.IReponsitory/ISysUserInfoRepository.cs" Line="11" Column="1" />
-      <File FileName="Af.Core.IReponsitory/IRoleModulePermissionRepository.cs" Line="1" Column="1" />
-      <File FileName="Af.Core.IReponsitory/IUserRepository.cs" Line="2" Column="1" />
-      <File FileName="Af.Core.Reponsitory/UserRepository.cs" Line="9" Column="72" />
-      <File FileName="Af.Core.Reponsitory/SysUserInfoRepository.cs" Line="14" Column="10" />
-      <File FileName="Af.Core.IReponsitory/IRoleRepository.cs" Line="6" Column="59" />
-      <File FileName="Af.Core.IReponsitory/IUserRoleRepository.cs" Line="6" Column="67" />
-      <File FileName="Af.Core.Reponsitory/RoleRepository.cs" Line="11" Column="70" />
-      <File FileName="Af.Core.Reponsitory/UserRoleRepository.cs" Line="11" Column="74" />
-      <File FileName="Af.Core.Services/RoleServices.cs" Line="18" Column="32" />
-      <File FileName="Af.Core.IServices/IUserRoleServices.cs" Line="1" Column="1" />
-      <File FileName="Af.Core.Services/UserRoleServices.cs" Line="16" Column="32" />
-      <File FileName="Af.Core.Services/RoleModulePermissionServices.cs" Line="1" Column="1" />
-      <File FileName="Af.Core.IServices/IRoleServices.cs" Line="1" Column="1" />
-      <File FileName="Af.Core.IServices/IPermissionServices.cs" Line="1" Column="1" />
-      <File FileName="Af.Core.IReponsitory/IModuleRepository.cs" Line="11" Column="1" />
-      <File FileName="Af.Core.IReponsitory/IPermissionRepository.cs" Line="11" Column="1" />
-      <File FileName="Af.Core.IReponsitory/IModulePermissionRepository.cs" Line="7" Column="60" />
-      <File FileName="Af.Core.Reponsitory/ModuleRepository.cs" Line="11" Column="72" />
-      <File FileName="Af.Core.Reponsitory/PermissionRepository.cs" Line="14" Column="6" />
-      <File FileName="Af.Core.Reponsitory/ModulePermissionRepository.cs" Line="11" Column="84" />
-      <File FileName="Af.Core.IServices/IModulePermissionServices.cs" Line="1" Column="1" />
-      <File FileName="Af.Core.Services/ModuleServices.cs" Line="16" Column="32" />
-      <File FileName="Af.Core.Services/PermissionServices.cs" Line="16" Column="32" />
-      <File FileName="Af.Core.Services/ModulePermissionServices.cs" Line="16" Column="33" />
-      <File FileName="Af.Core.Extensions/Authorizations/Policys/PermissionRequirement.cs" Line="24" Column="13" />
-      <File FileName="Af.Core.Extensions/ServiceExtensions/AuthorizationSetup.cs" Line="13" Column="29" />
-      <File FileName="Af.Core.Extensions/ServiceExtensions/SqlsugarSetup.cs" Line="1" Column="1" />
+      <File FileName="Af.Core/Startup.cs" Line="54" Column="14" />
+      <File FileName="Af.Core.Extensions/ServiceExtensions/AutofacModuleRegister.cs" Line="25" Column="14" />
+      <File FileName="Af.Core/Controllers/AuthController.cs" Line="155" Column="1" />
+      <File FileName="Af.Core/AOP/CacheAOP.cs" Line="42" Column="1" />
+      <File FileName="Af.Core/AOP/LogAOP.cs" Line="22" Column="1" />
+      <File FileName="Af.Core.Services/BASE/BaseServices.cs" Line="139" Column="42" />
+      <File FileName="Af.Core.Model/Models/MessageModel.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Af.Core" expanded="True">
             <Node name="Af.Core" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="AOP" expanded="True" />
+              <Node name="AutoMapper" expanded="True" />
               <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="Af.Core.Extensions" expanded="True">
-              <Node name="Authorizations" expanded="True" />
-              <Node name="ServiceExtensions" expanded="True">
-                <Node name="AuthorizationSetup.cs" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="ServiceExtensions" expanded="True" />
+            </Node>
+            <Node name="Af.Core.Model" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="MessageModel.cs" selected="True" />
               </Node>
+            </Node>
+            <Node name="Af.Core.Services" expanded="True">
+              <Node name="BASE" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -71,8 +39,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core/Controllers/AuthController.cs" relfile="Af.Core/Controllers/AuthController.cs" line="99" column="1" />
-      <Breakpoint file="/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core/Controllers/AuthController.cs" relfile="Af.Core/Controllers/AuthController.cs" line="97" column="1" />
+      <Breakpoint file="/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core/Controllers/AuthController.cs" relfile="Af.Core/Controllers/AuthController.cs" line="113" column="1" />
+      <Breakpoint file="/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core/Controllers/AuthController.cs" relfile="Af.Core/Controllers/AuthController.cs" line="110" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

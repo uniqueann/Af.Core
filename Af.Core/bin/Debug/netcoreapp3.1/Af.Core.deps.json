@@ -2676,6 +2676,8 @@
           "Af.Core.Common": "1.0.0",
           "Af.Core.IRepository": "1.0.0",
           "Af.Core.IServices": "1.0.0",
+          "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "Autofac.Extras.DynamicProxy": "6.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.10",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "MiniProfiler.Shared": "4.2.22",

@@ -35,3 +35,4 @@ F:/NetCoreDemo/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extens
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.csproj.CopyComplete
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.dll
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.pdb
+/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Extensions/obj/Debug/netcoreapp3.1/Af.Core.Extensions.csprojAssemblyReference.cache
