@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.Model", "Af.Core.Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.Common", "Af.Core.Common\Af.Core.Common.csproj", "{99AF9CC4-C6FA-4BE1-B3AF-CE25B2A02A13}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.Repository", "Af.Core.Reponsitory\Af.Core.Repository.csproj", "{0F30FAC8-4967-4BEC-B000-4D28D9A63569}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.Repository", "Af.Core.Repository\Af.Core.Repository.csproj", "{0F30FAC8-4967-4BEC-B000-4D28D9A63569}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.Services", "Af.Core.Services\Af.Core.Services.csproj", "{E176DCB8-9E72-438C-8D11-4617F987F5A9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.IRepository", "Af.Core.IReponsitory\Af.Core.IRepository.csproj", "{1B84DDCA-D447-46DD-842C-7D9C362E2E07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.IRepository", "Af.Core.IRepository\Af.Core.IRepository.csproj", "{1B84DDCA-D447-46DD-842C-7D9C362E2E07}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.IServices", "Af.Core.IServices\Af.Core.IServices.csproj", "{077FFDC0-302F-4C48-BF3E-6EE4008C9565}"
 EndProject
