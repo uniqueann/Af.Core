@@ -41,6 +41,13 @@
             <param name="token"></param>
             <returns></returns>
         </member>
+        <member name="M:Af.Core.Controllers.PermissionController.GetNavigationBar(System.Int32)">
+            <summary>
+            获取导航树数据
+            </summary>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
         <member name="M:Af.Core.Controllers.RoleController.GetRoles">
             <summary>
             角色列表
@@ -54,27 +61,11 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:Af.Core.Controllers.UserController.Get(System.Int32)">
+        <member name="M:Af.Core.Controllers.UserController.GetInfoByToken(System.String)">
             <summary>
-            根据主键查询一个用户的信息
+            根据token获取用户信息
             </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Af.Core.Controllers.UserController.Get(System.Int32,System.Int32,System.String)">
-            <summary>
-            分页查询用户列表 可根据名称模糊查询
-            </summary>
-            <param name="pageIndex"></param>
-            <param name="pageSize"></param>
-            <param name="userName"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Af.Core.Controllers.UserController.Put(Af.Core.Model.Models.User)">
-            <summary>
-            根据主键修改用户信息
-            </summary>
-            <param name="user"></param>
+            <param name="token"></param>
             <returns></returns>
         </member>
     </members>

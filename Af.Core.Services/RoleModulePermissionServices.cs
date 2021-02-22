@@ -24,6 +24,7 @@ namespace Af.Core.Services
             _dal = dal;
             _roleRepository = roleRepository;
             _moduleRespository = moduleRespository;
+            base.BaseDal = dal;
         }
 
         [Caching(AbsoluteExpiration = 10)]

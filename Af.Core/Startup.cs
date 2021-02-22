@@ -98,6 +98,7 @@ namespace Af.Core
             AutoMapperConfig.RegisterMappings();
 
             services.AddSqlsugarSetup();
+            services.AddCorsSetup();
             services.AddSwaggerSetup();
             services.AddAuthorizationSetup();
 
@@ -137,7 +138,7 @@ namespace Af.Core
             });
 
             app.UseRouting();
-            app.UseCors();
+            app.UseCors(Appsettings.app(new string[] { "Startup", "Cors", "PolicyName" }));
 
             app.UseAuthentication();
 

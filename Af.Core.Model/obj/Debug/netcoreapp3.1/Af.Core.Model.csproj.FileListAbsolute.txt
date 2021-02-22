@@ -1,13 +1,3 @@
-F:/NetCoreDemo/Af.Core/Af.Core.Model/bin/Debug/netcoreapp3.1/Af.Core.Model.deps.json
-F:/NetCoreDemo/Af.Core/Af.Core.Model/bin/Debug/netcoreapp3.1/Af.Core.Model.dll
-F:/NetCoreDemo/Af.Core/Af.Core.Model/bin/Debug/netcoreapp3.1/Af.Core.Model.pdb
-F:/NetCoreDemo/Af.Core/Af.Core.Model/bin/Debug/netcoreapp3.1/Af.Core.Model.xml
-F:/NetCoreDemo/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.AssemblyInfoInputs.cache
-F:/NetCoreDemo/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.AssemblyInfo.cs
-F:/NetCoreDemo/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.dll
-F:/NetCoreDemo/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.pdb
-F:/NetCoreDemo/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.csproj.CoreCompileInputs.cache
-F:/NetCoreDemo/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.csprojAssemblyReference.cache
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Model/bin/Debug/netcoreapp3.1/Af.Core.Model.deps.json
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Model/bin/Debug/netcoreapp3.1/Af.Core.Model.dll
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Model/bin/Debug/netcoreapp3.1/Af.Core.Model.pdb
@@ -18,3 +8,12 @@ F:/NetCoreDemo/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.cspro
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.csproj.CoreCompileInputs.cache
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.dll
 /Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core.Model/obj/Debug/netcoreapp3.1/Af.Core.Model.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Model\bin\Debug\netcoreapp3.1\Af.Core.Model.deps.json
+F:\NetCoreDemo\Af.Core\Af.Core.Model\bin\Debug\netcoreapp3.1\Af.Core.Model.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Model\bin\Debug\netcoreapp3.1\Af.Core.Model.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Model\bin\Debug\netcoreapp3.1\Af.Core.Model.xml
+F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.AssemblyInfoInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.AssemblyInfo.cs
+F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.csproj.CoreCompileInputs.cache
+F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.pdb

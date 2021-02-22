@@ -1093,3 +1093,4203 @@
 方法：RoleModuleMaps
 参数：
 结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 12:20:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 12:20:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 12:20:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 12:20:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 12:20:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 12:20:36|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 12:20:36|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 12:20:36|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 12:20:36|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 12:20:36|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 12:20:37|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 12:20:37|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 12:20:37|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:06:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:06:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:06:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:06:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:06:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:06:27|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:06:27|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:06:27|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:06:27|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:06:27|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:06:27|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:06:27|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:06:27|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:30:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:30:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:30:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:30:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:30:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:30:46|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:30:46|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:30:46|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:30:46|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:30:46|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:30:46|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:30:46|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:30:46|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:32:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:32:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:32:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:32:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:32:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:32:57|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:32:57|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:32:58|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:32:58|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:32:58|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:32:58|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:32:58|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:32:58|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:37:31|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:37:31|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:37:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:37:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:37:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:37:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:37:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:37:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:37:33|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:37:33|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:37:33|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:37:33|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:37:33|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:50:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:50:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:50:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:50:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:50:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:50:50|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:50:50|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:50:50|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:50:50|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:50:50|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:50:50|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:50:51|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:50:51|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:52:24|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:52:24|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:52:24|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:52:24|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:52:24|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:52:25|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:52:25|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:52:25|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:52:25|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:52:25|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:52:25|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:52:25|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:52:25|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:54:37|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:37|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:38|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:38|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:54:38|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:54:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:50|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:54:50|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:54:50|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:54:50|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:54:50|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:54:50|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:54:50|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:54:50|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:54:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:54:51|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:54:51|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:55:45|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:55:45|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 14:55:45|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 14:55:45|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 14:55:45|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 14:55:45|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 14:55:45|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 14:55:45|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:37:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:18|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:18|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:18|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:19|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:19|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:37:19|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:37:20|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:37:20|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:37:20|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:37:20|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:37:20|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:37:20|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:37:20|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:20|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:20|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:20|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:37:20|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:37:20|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:21|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:21|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:21|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:21|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:37:57|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:38:27|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:38:27|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:38:27|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:38:27|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:38:27|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:38:27|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:38:27|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:38:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:41:46|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:41:46|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:41:46|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:41:46|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:41:46|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:41:46|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:41:46|
+方法：QueryById
+参数：1
+结果：System.Threading.Tasks.Task`1[Af.Core.Model.Models.SysUserInfo]
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:41:46|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:45:06|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:45:06|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:45:06|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:45:06|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:45:06|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:45:06|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:45:06|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:45:06|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:03|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:03|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:46:03|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:46:03|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:46:03|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:46:03|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:03|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:03|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:56|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:56|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:46:56|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:46:56|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:46:56|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:46:56|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:56|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:46:56|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:23|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:23|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:49:23|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:49:23|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:49:23|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:49:23|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:23|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:23|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:32|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:49:32|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:49:32|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:49:32|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:49:33|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:33|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:33|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:45|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:45|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:49:45|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:49:45|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:49:45|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:49:45|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:45|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:49:45|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:55:51|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:55:51|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:55:51|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:55:51|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:55:51|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:55:51|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:55:51|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:55:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:58:02|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:58:02|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:58:02|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:58:02|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:58:02|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:58:02|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:58:02|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:58:02|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:59:36|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:59:36|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 15:59:36|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 15:59:36|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 15:59:36|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 15:59:36|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 15:59:36|
+方法：QueryById
+参数：1
+结果：System.Threading.Tasks.Task`1[Af.Core.Model.Models.SysUserInfo]
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 15:59:36|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:01:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:01:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:01:33|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:01:33|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:01:33|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:01:33|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:01:33|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:01:58|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:03:42|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:03:42|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:03:42|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:03:42|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:03:42|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:03:42|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:03:42|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:03:42|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:07:14|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:07:14|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:07:14|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:07:14|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:07:14|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:07:14|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:14|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:07:15|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:07:15|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:15|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:15|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:15|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:15|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:07:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:34|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:10:34|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:10:34|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:10:34|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:10:34|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:10:34|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:10:34|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:10:34|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:10:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:34|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:10:34|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:10:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:35|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:10:35|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:10:35|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:10:51|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:11:11|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:11:11|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:11|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:11:11|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:11:24|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:11:32|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:11:32|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:11:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:12:52|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:12:52|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:14:52|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:14:59|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:14:59|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:14:59|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:15:02|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:15:02|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:21:04|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 16:21:13|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:13|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:13|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:13|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:13|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:13|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:21:13|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:21:13|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:21:13|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:21:13|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:21:13|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:21:14|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:21:14|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:14|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:21:14|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:21:21|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:21:21|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:21:26|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 16:30:07|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:07|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:07|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:08|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:08|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:09|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:30:09|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:30:09|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:30:09|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:30:09|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:30:09|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:30:09|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:30:09|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:30:09|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:09|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:09|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:09|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:30:09|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:30:10|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:10|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:10|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:10|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:10|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:30:15|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:30:15|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:33:40|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:40|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:41|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:41|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:41|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:42|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:33:42|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:33:43|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:33:43|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:33:43|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:33:43|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:33:43|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:43|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:33:43|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:43|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:33:47|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:33:47|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:44:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:49|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:50|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:51|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:44:51|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:44:51|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:44:51|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:44:51|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:44:51|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:44:51|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:44:51|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:44:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:51|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:51|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:44:51|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:44:52|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:52|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:52|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:52|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:52|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:44:55|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:44:55|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:56:24|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:25|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:25|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:28|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:56:28|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:56:28|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:56:28|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 16:56:28|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 16:56:28|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:56:29|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 16:56:29|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 16:56:29|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:29|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:29|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:29|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:56:29|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 16:56:29|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 16:56:33|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 16:56:33|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:01:12|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:13|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:14|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:31|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:31|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:32|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:01:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:01:33|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:01:33|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 17:01:34|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 17:01:34|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:01:34|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 17:01:34|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:34|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:01:34|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:01:41|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:01:41|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:02:44|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],System.Runtime.CompilerServices.IAsyncStateMachine]
+--------------------------------
+2021/2/22 17:10:26|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:30|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:10:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:10:32|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:10:32|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 17:10:32|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 17:10:32|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:10:32|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 17:10:32|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 17:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:33|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:10:33|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:33|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:34|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:10:39|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:10:39|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:10:44|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 17:10:44|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 17:10:48|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Permission]]
+--------------------------------
+2021/2/22 17:10:48|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.Permission]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 17:17:17|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 17:17:17|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:17|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:17:22|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:17:22|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:17:22|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 17:17:22|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 17:17:22|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Permission]]
+--------------------------------
+2021/2/22 17:17:22|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.Permission]]
+--------------------------------
+2021/2/22 17:18:26|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:26|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:26|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:26|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:26|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:26|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:18:26|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginName) AndAlso (a.LoginPwd == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).loginPwd))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Role]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => (a.UserId == value(Af.Core.Services.SysUserInfoServices+<>c__DisplayClass4_0).user.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.RoleModulePermissionRepository+<RoleModuleMaps>d__2]
+--------------------------------
+2021/2/22 17:18:27|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Repository.BASE.BaseRepository`1+<QueryById>d__15[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：GetDbClient
+参数：
+结果：SqlSugar.SqlSugarClient
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.UserRole]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Repository.BASE.BaseRepository`1+<Query>d__31[Af.Core.Model.Models.Permission]]
+--------------------------------
+2021/2/22 17:18:27|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass7_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__13[Af.Core.Model.Models.Permission]]

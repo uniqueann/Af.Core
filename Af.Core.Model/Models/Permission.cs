@@ -16,6 +16,9 @@ namespace Af.Core.Model.Models
 
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]
         public int Id { get; set; }
+
+        public int PId { get; set; }
+
         /// <summary>
         /// 菜单执行Action名
         /// </summary>

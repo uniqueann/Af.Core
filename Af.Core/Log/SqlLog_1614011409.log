@@ -1,0 +1,347 @@
+--------------------------------
+2021/2/22 16:30:09|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:30:09|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:30:09|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 16:30:09|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 16:30:09|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 16:30:09|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 16:30:15|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 16:33:42|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:33:43|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:33:43|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 16:33:43|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 16:33:43|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 16:33:43|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 16:33:47|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 16:44:51|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:44:51|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:44:51|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 16:44:51|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 16:44:51|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 16:44:51|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 16:44:55|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 16:56:28|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:56:28|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 16:56:28|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 16:56:28|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 16:56:29|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 16:56:29|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 16:56:33|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 17:01:32|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:01:33|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:01:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 17:01:34|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 17:01:34|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 17:01:34|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 17:01:41|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 17:10:32|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:10:32|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:10:32|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 17:10:32|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 17:10:32|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 17:10:33|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 17:10:39|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 17:10:44|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[RoleId],[ModuleId],[PermissionId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_RoleModulePermission] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([RoleId] IN ('1')) )
+--------------------------------
+2021/2/22 17:10:48|
+【SQL参数】：
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE  ([Id] IN ('1')) 
+--------------------------------
+2021/2/22 17:17:17|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:17:17|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:17:17|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 17:17:17|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 17:17:17|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 17:17:17|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 17:17:22|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 17:17:22|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[RoleId],[ModuleId],[PermissionId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_RoleModulePermission] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([RoleId] IN ('1')) )
+--------------------------------
+2021/2/22 17:17:22|
+【SQL参数】：
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE  ([Id] IN ('1')) 
+--------------------------------
+2021/2/22 17:18:26|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[LoginName],[LoginPwd],[Status],[Remark],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[RoleId],[ModuleId],[PermissionId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_RoleModulePermission] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([RoleId] IN ('1')) )
+--------------------------------
+2021/2/22 17:18:27|
+【SQL参数】：
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE  ([Id] IN ('1')) 

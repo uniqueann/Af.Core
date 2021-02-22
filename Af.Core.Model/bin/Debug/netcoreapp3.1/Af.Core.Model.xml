@@ -383,61 +383,6 @@
             获取或设置是否禁用，逻辑上的删除，非物理删除
              </summary>
         </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.LinkUrl">
-            <summary>
-            菜单链接地址
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Area">
-            <summary>
-            区域名称
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Controller">
-            <summary>
-            控制器名称
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Action">
-            <summary>
-            Action名称
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Icon">
-            <summary>
-            图标
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Code">
-            <summary>
-            菜单编号
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.OrderSort">
-            <summary>
-            排序
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Description">
-            <summary>
-            /描述
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.IsMenu">
-            <summary>
-            是否是右侧菜单
-            </summary>
-        </member>
-        <member name="P:Af.Core.Model.Models.RoleModulePermission.Enabled">
-            <summary>
-            是否激活
-            </summary>
-        </member>
         <member name="P:Af.Core.Model.Models.RoleModulePermission.CreateId">
             <summary>
             创建ID

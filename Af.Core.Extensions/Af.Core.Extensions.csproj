@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Af.Core.Common\Af.Core.Common.csproj" />
-    <ProjectReference Include="..\Af.Core.IReponsitory\Af.Core.IRepository.csproj" />
+    <ProjectReference Include="..\Af.Core.IRepository\Af.Core.IRepository.csproj" />
     <ProjectReference Include="..\Af.Core.IServices\Af.Core.IServices.csproj" />
   </ItemGroup>
 
