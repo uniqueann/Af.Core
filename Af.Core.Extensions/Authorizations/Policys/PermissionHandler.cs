@@ -1,4 +1,5 @@
-﻿using Af.Core.Common.Converter;
+﻿using Af.Core.Common;
+using Af.Core.Common.Converter;
 using Af.Core.Common.Helper;
 using Af.Core.IServices;
 using Microsoft.AspNetCore.Authentication;
@@ -40,9 +41,26 @@ namespace Af.Core.Extensions.Authorizations.Policys
             //获取系统中所有角色和菜单关系的集合
             if (!requirement.Permissions.Any())
             {
+                var data = await _roleModulePermissionServices.RoleModuleMaps();
                 var list = new List<PermissionItem>();
-                //jwt
+                //jwt 和 ids4切换
+                if (Permissions.IsUseIds4)
+                {
 
+                }
+                else
+                {
+                    list = (from item in data
+                            where item.IsDeleted == false
+                            orderby item.Id
+                            select new PermissionItem
+                            {
+                                Url = item.Module?.LinkUrl,
+                                Role = item.Role?.Name.ObjToString()
+                            }).ToList();
+
+                }
+                requirement.Permissions = list;
             }
 
             if (httpContext != null)
@@ -111,14 +129,15 @@ namespace Af.Core.Extensions.Authorizations.Policys
 
                         var isExp = false;
                         //jwt
-                        isExp = httpContext.User.Claims.SingleOrDefault(a =>
+                        if (Permissions.IsUseIds4)
                         {
-                            return a.Type == ClaimTypes.Expiration;
-                        })?.Value != null && DateHelper.StampToDateTime(httpContext.User.Claims.SingleOrDefault(a =>
+                            isExp = (httpContext.User.Claims.SingleOrDefault(s => s.Type == "exp")?.Value) != null && DateHelper.StampToDateTime(httpContext.User.Claims.SingleOrDefault(s => s.Type == "exp")?.Value) >= DateTime.Now;
+                        }
+                        else
                         {
-                            return a.Type == ClaimTypes.Expiration;
-                        })?.Value) >= DateTime.Now;
-
+                            // jwt
+                            isExp = (httpContext.User.Claims.SingleOrDefault(s => s.Type == ClaimTypes.Expiration)?.Value) != null && DateTime.Parse(httpContext.User.Claims.SingleOrDefault(s => s.Type == ClaimTypes.Expiration)?.Value) >= DateTime.Now;
+                        }
                         if (isExp)
                         {
                             context.Succeed(requirement);

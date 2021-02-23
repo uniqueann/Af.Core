@@ -1,5 +1,6 @@
 ﻿using SqlSugar;
 using System;
+using System.Collections.Generic;
 
 namespace Af.Core.Model.Models
 {
@@ -106,15 +107,19 @@ namespace Af.Core.Model.Models
         [SugarColumn(IsNullable = true)]
         public bool? IsDeleted { get; set; }
 
+        [SugarColumn(IsIgnore = true)]
+        public List<int> PidArr { get; set; } = new List<int>();
+        [SugarColumn(IsIgnore = true)]
+        public List<string> PnameArr { get; set; } = new List<string>();
+        [SugarColumn(IsIgnore = true)]
+        public List<string> PcodeArr { get; set; } = new List<string>();
+        [SugarColumn(IsIgnore = true)]
+        public string MName { get; set; }
 
-        //[SugarColumn(IsIgnore = true)]
-        //public List<string> PnameArr { get; set; } = new List<string>();
-        //[SugarColumn(IsIgnore = true)]
-        //public List<string> PCodeArr { get; set; } = new List<string>();
-        //[SugarColumn(IsIgnore = true)]
-        //public string MName { get; set; }
+        [SugarColumn(IsIgnore = true)]
+        public bool HasChildren { get; set; } = true;
 
-        //[SugarColumn(IsIgnore = true)]
-        //public bool HasChildren { get; set; } = true;
+        [SugarColumn(IsIgnore =true)]
+        public int ModuleId { get; set; }
     }
 }

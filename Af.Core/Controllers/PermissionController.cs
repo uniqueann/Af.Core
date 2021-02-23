@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Af.Core.Common;
 using Af.Core.Common.Converter;
 using Af.Core.Common.Helper;
+using Af.Core.Common.HttpContextUser;
 using Af.Core.Extensions.Authorizations.Policys;
 using Af.Core.IServices;
 using Af.Core.Model.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,6 +17,7 @@ namespace Af.Core.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Permissions.Name)]
     public class PermissionController : ControllerBase
     {
         private readonly IPermissionServices _permissionServices;
@@ -23,8 +26,9 @@ namespace Af.Core.Controllers
         private readonly IUserRoleServices _userRoleServices;
         private readonly IHttpContextAccessor _httpContext;
         private readonly PermissionRequirement _requirement;
+        private readonly IUser _user;
 
-        public PermissionController(IPermissionServices permissionServices, IModuleServices moduleServices, IRoleModulePermissionServices roleModulePermissionServices, IUserRoleServices userRoleServices, IHttpContextAccessor httpContext, PermissionRequirement requirement)
+        public PermissionController(IPermissionServices permissionServices, IModuleServices moduleServices, IRoleModulePermissionServices roleModulePermissionServices, IUserRoleServices userRoleServices, IHttpContextAccessor httpContext, PermissionRequirement requirement, IUser user)
         {
             _permissionServices = permissionServices;
             _moduleServices = moduleServices;
@@ -32,7 +36,10 @@ namespace Af.Core.Controllers
             _userRoleServices = userRoleServices;
             _httpContext = httpContext;
             _requirement = requirement;
+            _user = user;
         }
+
+
 
         /// <summary>
         /// 获取导航树数据
@@ -109,6 +116,168 @@ namespace Af.Core.Controllers
                 }
             }
 
+            return data;
+        }
+
+        /// <summary>
+        /// 获取所有菜单
+        /// </summary>
+        /// <param name="page"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<MessageModel<PageModel<Permission>>> Get(int page=1, string key="")
+        {
+            var permissions = new PageModel<Permission>();
+
+            permissions = await _permissionServices.QueryPage(a => a.IsDeleted == false && (a.Name != null && a.Name.Contains(key)), page, 50, "Id Desc");
+
+            var apis = await _moduleServices.Query(a=>a.IsDeleted==false);
+            var permissionView = permissions.PageData;
+
+            var permissionAll = await _permissionServices.Query(a=>a.IsDeleted==false);
+            foreach (var item in permissionView)
+            {
+                var pidArr = new List<int> { 
+                    item.PId
+                };
+                if (item.PId>0)
+                {
+                    pidArr.Add(0);
+                }
+                var parent = permissionAll.FirstOrDefault(a=>a.Id==item.PId);
+
+                while (parent!=null)
+                {
+                    pidArr.Add(parent.Id);
+                    parent = permissionAll.FirstOrDefault(a=>a.Id==parent.PId);
+                }
+
+                item.PidArr = pidArr.OrderBy(a=>a).Distinct().ToList();
+                foreach (var pid in item.PidArr)
+                {
+                    var per = permissionAll.FirstOrDefault(a=>a.Id==pid);
+                    item.PnameArr.Add((per != null ? per.Name : "根节点") + "/");
+                }
+                item.MName = apis.FirstOrDefault(a => a.Id == item.ModuleId)?.LinkUrl;
+            }
+
+            permissions.PageData = permissionView;
+
+            return new MessageModel<PageModel<Permission>> { 
+                msg="获取成功",
+                response = permissions,
+                success = permissions.Total>0
+            };
+        }
+
+        /// <summary>
+        /// 获取菜单树
+        /// </summary>
+        /// <param name="pid"></param>
+        /// <param name="needbtn"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<MessageModel<PermissionTree>> GetPermissionTree(int pid=0, bool needbtn = false)
+        {
+            var data = new MessageModel<PermissionTree>();
+            var permissions = await _permissionServices.Query(a=>a.IsDeleted==false);
+            var permissionTrees = (from child in permissions
+                                   where child.IsDeleted == false
+                                   orderby child.Id
+                                   select new PermissionTree
+                                   {
+                                       value = child.Id,
+                                       label = child.Name,
+                                       Pid = child.PId,
+                                       isbtn = child.IsButton,
+                                       order = child.OrderSort
+                                   }).ToList();
+
+            var rootNode = new PermissionTree
+            {
+                value = 0,
+                Pid = 0,
+                label = "根节点"
+            };
+            permissionTrees = permissionTrees.OrderBy(a=>a.order).ToList();
+
+            RecursionHelper.LoopToAppendChildren(permissionTrees, rootNode, pid, needbtn);
+
+            data.success = true;
+            data.response = rootNode;
+            data.msg = "获取成功";
+
+            return data;
+        }
+
+        /// <summary>
+        /// 新增菜单
+        /// </summary>
+        /// <param name="permission"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<MessageModel<string>> Post(Permission permission)
+        {
+            var data = new MessageModel<string>();
+            permission.CreateId = _user.ID;
+            permission.CreateBy = _user.Name;
+
+            var id = await _permissionServices.Add(permission);
+            if (id>0)
+            {
+                data.success = true;
+                data.msg = "添加成功";
+                data.response = id.ObjToString();
+            }
+
+            return data;
+        }
+
+        /// <summary>
+        /// 更新菜单
+        /// </summary>
+        /// <param name="permission"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<MessageModel<string>> Put(Permission permission)
+        {
+            var data = new MessageModel<string>();
+            if (permission!= null && permission.Id>0)
+            {
+                permission.ModifyId = _user.ID;
+                permission.ModifyBy = _user.Name;
+                data.success = await _permissionServices.Update(permission);
+                if (data.success)
+                {
+                    data.response = permission.Id.ToString();
+                    data.msg = "更新成功";
+                }
+            }
+
+            return data;
+        }
+
+        /// <summary>
+        /// 删除菜单
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        public async Task<MessageModel<string>> Delete(int id)
+        {
+            var data = new MessageModel<string>();
+            if (id>0)
+            {
+                var permission = await _permissionServices.QueryById(id);
+                permission.IsDeleted = true;
+                data.success = await _permissionServices.Update(permission);
+                if (data.success)
+                {
+                    data.msg = "删除成功";
+                    data.response = permission.Id.ToString();
+                }
+            }
             return data;
         }
     }

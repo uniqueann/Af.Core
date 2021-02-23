@@ -100,6 +100,7 @@ namespace Af.Core
             services.AddSqlsugarSetup();
             services.AddCorsSetup();
             services.AddSwaggerSetup();
+            services.AddHttpContextSetup();
             services.AddAuthorizationSetup();
 
             if (Permissions.IsUseIds4)

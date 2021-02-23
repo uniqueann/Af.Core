@@ -41,11 +41,77 @@
             <param name="token"></param>
             <returns></returns>
         </member>
+        <member name="M:Af.Core.Controllers.ModuleController.Get(System.Int32,System.String)">
+            <summary>
+            获取全部api接口
+            </summary>
+            <param name="page"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.ModuleController.Post(Af.Core.Model.Models.Module)">
+            <summary>
+            添加一条接口信息
+            </summary>
+            <param name="module"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.ModuleController.Put(Af.Core.Model.Models.Module)">
+            <summary>
+            更新接口信息
+            </summary>
+            <param name="module"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.ModuleController.Delete(System.Int32)">
+            <summary>
+            删除一条接口
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:Af.Core.Controllers.PermissionController.GetNavigationBar(System.Int32)">
             <summary>
             获取导航树数据
             </summary>
             <param name="uid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.PermissionController.Get(System.Int32,System.String)">
+            <summary>
+            获取所有菜单
+            </summary>
+            <param name="page"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.PermissionController.GetPermissionTree(System.Int32,System.Boolean)">
+            <summary>
+            获取菜单树
+            </summary>
+            <param name="pid"></param>
+            <param name="needbtn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.PermissionController.Post(Af.Core.Model.Models.Permission)">
+            <summary>
+            新增菜单
+            </summary>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.PermissionController.Put(Af.Core.Model.Models.Permission)">
+            <summary>
+            更新菜单
+            </summary>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.PermissionController.Delete(System.Int32)">
+            <summary>
+            删除菜单
+            </summary>
+            <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:Af.Core.Controllers.RoleController.GetRoles">
