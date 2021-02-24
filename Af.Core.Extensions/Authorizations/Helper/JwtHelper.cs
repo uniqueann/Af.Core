@@ -70,7 +70,7 @@ namespace Af.Core.Common.Helper
         {
             var jwtHandler = new JwtSecurityTokenHandler();
             JwtSecurityToken jwtToken = jwtHandler.ReadJwtToken(jwtStr);
-            object role = new object(); ;
+            object role = new object();
             try
             {
                 jwtToken.Payload.TryGetValue(ClaimTypes.Role, out role);

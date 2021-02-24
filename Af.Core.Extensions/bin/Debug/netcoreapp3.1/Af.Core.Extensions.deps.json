@@ -11,6 +11,7 @@
           "Af.Core.Common": "1.0.0",
           "Af.Core.IRepository": "1.0.0",
           "Af.Core.IServices": "1.0.0",
+          "Af.Core.Repository": "1.0.0",
           "Autofac.Extensions.DependencyInjection": "7.1.0",
           "Autofac.Extras.DynamicProxy": "6.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.10",
@@ -2173,6 +2174,16 @@
         "runtime": {
           "Af.Core.Model.dll": {}
         }
+      },
+      "Af.Core.Repository/1.0.0": {
+        "dependencies": {
+          "Af.Core.Common": "1.0.0",
+          "Af.Core.IRepository": "1.0.0",
+          "sqlSugarCore": "5.0.1.3"
+        },
+        "runtime": {
+          "Af.Core.Repository.dll": {}
+        }
       }
     }
   },
@@ -3535,6 +3546,11 @@
       "sha512": ""
     },
     "Af.Core.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Af.Core.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

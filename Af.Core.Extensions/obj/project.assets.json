@@ -2993,6 +2993,24 @@
         "runtime": {
           "bin/placeholder/Af.Core.Model.dll": {}
         }
+      },
+      "Af.Core.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Af.Core.Common": "1.0.0",
+          "Af.Core.IRepository": "1.0.0",
+          "sqlSugarCore": "5.0.1.3"
+        },
+        "compile": {
+          "bin/placeholder/Af.Core.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Af.Core.Repository.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -9377,6 +9395,11 @@
       "type": "project",
       "path": "../Af.Core.Model/Af.Core.Model.csproj",
       "msbuildProject": "../Af.Core.Model/Af.Core.Model.csproj"
+    },
+    "Af.Core.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Af.Core.Repository/Af.Core.Repository.csproj",
+      "msbuildProject": "../Af.Core.Repository/Af.Core.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9384,6 +9407,7 @@
       "Af.Core.Common >= 1.0.0",
       "Af.Core.IRepository >= 1.0.0",
       "Af.Core.IServices >= 1.0.0",
+      "Af.Core.Repository >= 1.0.0",
       "Autofac.Extensions.DependencyInjection >= 7.1.0",
       "Autofac.Extras.DynamicProxy >= 6.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.10",
@@ -9432,6 +9456,9 @@
             },
             "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj": {
               "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj"
+            },
+            "F:\\NetCoreDemo\\Af.Core\\Af.Core.Repository\\Af.Core.Repository.csproj": {
+              "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Repository\\Af.Core.Repository.csproj"
             }
           }
         }

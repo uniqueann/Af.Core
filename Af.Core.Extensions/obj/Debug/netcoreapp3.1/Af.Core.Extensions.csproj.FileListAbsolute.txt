@@ -36,3 +36,5 @@ F:\NetCoreDemo\Af.Core\Af.Core.Extensions\obj\Debug\netcoreapp3.1\Af.Core.Extens
 F:\NetCoreDemo\Af.Core\Af.Core.Extensions\obj\Debug\netcoreapp3.1\Af.Core.Extensions.csproj.CopyComplete
 F:\NetCoreDemo\Af.Core\Af.Core.Extensions\obj\Debug\netcoreapp3.1\Af.Core.Extensions.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Extensions\obj\Debug\netcoreapp3.1\Af.Core.Extensions.pdb
+F:\NetCoreDemo\Af.Core\Af.Core.Extensions\bin\Debug\netcoreapp3.1\Af.Core.Repository.dll
+F:\NetCoreDemo\Af.Core\Af.Core.Extensions\bin\Debug\netcoreapp3.1\Af.Core.Repository.pdb

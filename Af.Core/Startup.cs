@@ -1,4 +1,3 @@
-using Af.Core.AOP;
 using Af.Core.AutoMapper;
 using Af.Core.Common;
 using Af.Core.Common.Converter;
@@ -37,40 +36,7 @@ namespace Af.Core
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            var basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
-            var typeList = new List<Type>();
-
-            if (Appsettings.app(new string[] { "AppSettings", "RedisCachingAOP", "Enabled" }).ObjToBool())
-            {
-                typeList.Add(typeof(RedisCacheAOP));
-            }
-            if (Appsettings.app(new string[] { "AppSettings","MemoryCachingAOP","Enabled" }).ObjToBool())
-            {
-                typeList.Add(typeof(CacheAOP));
-            }
-            if (Appsettings.app(new string[] { "AppSettings", "LogAOP", "Enabled" }).ObjToBool())
-            {
-                typeList.Add(typeof(LogAOP));
-            }
-
-         
-            //builder.RegisterType<UserServices>().As<IUserServices>();
-            builder.RegisterType<CacheAOP>();
-            builder.RegisterType<LogAOP>();
-
-
-            var servicesDllFile = Path.Combine(basePath, "Af.Core.Services.dll");
-            var assemblysServices = Assembly.LoadFrom(servicesDllFile);
-
-            var respositoryDllFile = Path.Combine(basePath, "Af.Core.Repository.dll");
-            var assemblysRepository = Assembly.LoadFrom(respositoryDllFile);
-
-            builder.RegisterAssemblyTypes(assemblysServices,assemblysRepository)
-                .AsImplementedInterfaces()
-                .InstancePerLifetimeScope()
-                .EnableInterfaceInterceptors()
-                .PropertiesAutowired(PropertyWiringOptions.AllowCircularDependencies)
-                .InterceptedBy(typeList.ToArray()); 
+            builder.RegisterModule(new AutofacModuleRegister());
         }
 
         public IConfiguration Configuration { get; }

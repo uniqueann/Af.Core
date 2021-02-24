@@ -13,6 +13,7 @@ namespace Af.Core.IServices.BASE
         Task<List<TEntity>> QueryByIds(object[] lstIds);
 
         Task<int> Add(TEntity model);
+        Task<int> Add(List<TEntity> listEntity);
 
         Task<bool> DeleteById(object id);
 

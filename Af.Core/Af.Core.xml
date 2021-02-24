@@ -4,20 +4,6 @@
         <name>Af.Core</name>
     </assembly>
     <members>
-        <member name="M:Af.Core.AOP.AOPbase.CustomCacheKey(Castle.DynamicProxy.IInvocation)">
-            <summary>
-            自定义缓存key
-            </summary>
-            <param name="invocation"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Af.Core.AOP.AOPbase.GetArgumentValue(System.Object)">
-            <summary>
-            object 转 string
-            </summary>
-            <param name="arg"></param>
-            <returns></returns>
-        </member>
         <member name="M:Af.Core.Controllers.AuthController.GetJwtTokenStr(System.String,System.String)">
             <summary>
             登录接口：随便输入字符，获取token，然后添加 Authoritarian
@@ -114,15 +100,31 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:Af.Core.Controllers.RoleController.GetRoles">
+        <member name="M:Af.Core.Controllers.RoleController.Get(System.Int32,System.String)">
             <summary>
-            角色列表
+            获取角色列表
             </summary>
+            <param name="page"></param>
+            <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Af.Core.Controllers.RoleController.GetEmployee(System.Int32)">
+        <member name="M:Af.Core.Controllers.RoleController.Post(Af.Core.Model.Models.Role)">
             <summary>
-            根据主键查询员工
+            添加角色
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.RoleController.Put(Af.Core.Model.Models.Role)">
+            <summary>
+            更新角色
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.RoleController.Delete(System.Int32)">
+            <summary>
+            删除角色
             </summary>
             <param name="id"></param>
             <returns></returns>
@@ -132,6 +134,28 @@
             根据token获取用户信息
             </summary>
             <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.UserController.Get(System.Int32,System.String)">
+            <summary>
+            获取所有用户
+            </summary>
+            <param name="page"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.UserController.Post(Af.Core.Model.Models.SysUserInfo)">
+            <summary>
+            新增用户
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.UserController.Put(Af.Core.Model.Models.SysUserInfo)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="user"></param>
             <returns></returns>
         </member>
     </members>

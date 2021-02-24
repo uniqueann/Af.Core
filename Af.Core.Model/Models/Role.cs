@@ -6,6 +6,24 @@ namespace Af.Core.Model.Models
     [SugarTable("AF_Role", "CrawlerHelper")]
     public class Role
     {
+        public Role()
+        {
+            OrderSort = 1;
+            CreateTime = DateTime.Now;
+            ModifyTime = DateTime.Now;
+            IsDeleted = false;
+        }
+
+        public Role(string name)
+        {
+            Name = name;
+            Description = "";
+            OrderSort = 1;
+            Enabled = true;
+            CreateTime = DateTime.Now;
+            ModifyTime = DateTime.Now;
+        }
+
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]
         public int Id { get; set; }
         /// <summary>

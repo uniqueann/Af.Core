@@ -47,6 +47,7 @@ namespace Af.Core.Controllers
         /// <param name="uid"></param>
         /// <returns></returns>
         [HttpGet]
+        [AllowAnonymous]
         public async Task<MessageModel<NavigationBar>> GetNavigationBar(int uid)
         {
             var data = new MessageModel<NavigationBar>();
@@ -126,37 +127,37 @@ namespace Af.Core.Controllers
         /// <param name="key"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<MessageModel<PageModel<Permission>>> Get(int page=1, string key="")
+        public async Task<MessageModel<PageModel<Permission>>> Get(int page = 1, string key = "")
         {
             var permissions = new PageModel<Permission>();
 
             permissions = await _permissionServices.QueryPage(a => a.IsDeleted == false && (a.Name != null && a.Name.Contains(key)), page, 50, "Id Desc");
 
-            var apis = await _moduleServices.Query(a=>a.IsDeleted==false);
+            var apis = await _moduleServices.Query(a => a.IsDeleted == false);
             var permissionView = permissions.PageData;
 
-            var permissionAll = await _permissionServices.Query(a=>a.IsDeleted==false);
+            var permissionAll = await _permissionServices.Query(a => a.IsDeleted == false);
             foreach (var item in permissionView)
             {
-                var pidArr = new List<int> { 
+                var pidArr = new List<int> {
                     item.PId
                 };
-                if (item.PId>0)
+                if (item.PId > 0)
                 {
                     pidArr.Add(0);
                 }
-                var parent = permissionAll.FirstOrDefault(a=>a.Id==item.PId);
+                var parent = permissionAll.FirstOrDefault(a => a.Id == item.PId);
 
-                while (parent!=null)
+                while (parent != null)
                 {
                     pidArr.Add(parent.Id);
-                    parent = permissionAll.FirstOrDefault(a=>a.Id==parent.PId);
+                    parent = permissionAll.FirstOrDefault(a => a.Id == parent.PId);
                 }
 
-                item.PidArr = pidArr.OrderBy(a=>a).Distinct().ToList();
+                item.PidArr = pidArr.OrderBy(a => a).Distinct().ToList();
                 foreach (var pid in item.PidArr)
                 {
-                    var per = permissionAll.FirstOrDefault(a=>a.Id==pid);
+                    var per = permissionAll.FirstOrDefault(a => a.Id == pid);
                     item.PnameArr.Add((per != null ? per.Name : "根节点") + "/");
                 }
                 item.MName = apis.FirstOrDefault(a => a.Id == item.ModuleId)?.LinkUrl;
@@ -164,10 +165,11 @@ namespace Af.Core.Controllers
 
             permissions.PageData = permissionView;
 
-            return new MessageModel<PageModel<Permission>> { 
-                msg="获取成功",
+            return new MessageModel<PageModel<Permission>>
+            {
+                msg = "获取成功",
                 response = permissions,
-                success = permissions.Total>0
+                success = permissions.Total > 0
             };
         }
 
@@ -178,10 +180,10 @@ namespace Af.Core.Controllers
         /// <param name="needbtn"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<MessageModel<PermissionTree>> GetPermissionTree(int pid=0, bool needbtn = false)
+        public async Task<MessageModel<PermissionTree>> GetPermissionTree(int pid = 0, bool needbtn = false)
         {
             var data = new MessageModel<PermissionTree>();
-            var permissions = await _permissionServices.Query(a=>a.IsDeleted==false);
+            var permissions = await _permissionServices.Query(a => a.IsDeleted == false);
             var permissionTrees = (from child in permissions
                                    where child.IsDeleted == false
                                    orderby child.Id
@@ -200,7 +202,7 @@ namespace Af.Core.Controllers
                 Pid = 0,
                 label = "根节点"
             };
-            permissionTrees = permissionTrees.OrderBy(a=>a.order).ToList();
+            permissionTrees = permissionTrees.OrderBy(a => a.order).ToList();
 
             RecursionHelper.LoopToAppendChildren(permissionTrees, rootNode, pid, needbtn);
 

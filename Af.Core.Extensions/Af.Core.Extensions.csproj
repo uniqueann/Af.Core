@@ -19,6 +19,7 @@
     <ProjectReference Include="..\Af.Core.Common\Af.Core.Common.csproj" />
     <ProjectReference Include="..\Af.Core.IRepository\Af.Core.IRepository.csproj" />
     <ProjectReference Include="..\Af.Core.IServices\Af.Core.IServices.csproj" />
+    <ProjectReference Include="..\Af.Core.Repository\Af.Core.Repository.csproj" />
   </ItemGroup>
 
 </Project>

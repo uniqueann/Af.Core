@@ -34,9 +34,13 @@ namespace Af.Core.Model.Models
 
         public SysUserInfo(string loginName, string loginPwd)
         {
+            RealName = loginName;
             LoginName = loginName;
             LoginPwd = loginPwd;
             Status = 0;
+            Age = 18;
+            Sex = -1;
+            Address = string.Empty;
             Remark = string.Empty;
             CreateTime = DateTime.Now;
             ModifyTime = DateTime.Now;
@@ -45,6 +49,8 @@ namespace Af.Core.Model.Models
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]
         public int Id { get; set; }
         [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
+        public string RealName { get; set; }
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
         public string LoginName { get; set; }
         [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
         public string LoginPwd { get; set; }
@@ -52,6 +58,19 @@ namespace Af.Core.Model.Models
         public int Status { get; set; }
         [SugarColumn(ColumnDataType = "nvarchar", Length = 500, IsNullable = true)]
         public string Remark { get; set; }
+
+        // 性别
+        [SugarColumn(IsNullable = true)]
+        public int Sex { get; set; } = 0;
+        // 年龄
+        [SugarColumn(IsNullable = true)]
+        public int Age { get; set; }
+        // 生日
+        [SugarColumn(IsNullable = true)]
+        public DateTime Birth { get; set; } = DateTime.Now;
+        // 地址
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
+        public string Address { get; set; }
 
         /// <summary>
         /// 创建ID
@@ -84,6 +103,9 @@ namespace Af.Core.Model.Models
         [SugarColumn(IsNullable = true)]
         public DateTime? ModifyTime { get; set; } = DateTime.Now;
 
+
+        [SugarColumn(IsIgnore = true)]
+        public List<int> RoleIds { get; set; }
         [SugarColumn(IsIgnore = true)]
         public List<string> RoleNames { get; set; } 
     }
