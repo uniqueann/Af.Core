@@ -783,3 +783,668 @@
 方法：Query
 参数：a => (a.IsDeleted == Convert(False, Nullable`1))
 结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:34:43|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 05:34:43|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+02/26/2021 05:34:43|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+02/26/2021 05:34:44|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 05:34:44|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 05:34:44|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.UserController+<>c__DisplayClass7_0).userInfo.Id))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 05:34:44|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 05:34:44|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+02/26/2021 05:34:44|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:34:54|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:35:10|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:35:10|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:35:10|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:35:12|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:35:13|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:35:16|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso a.Name.Contains(value(Af.Core.Controllers.RoleController+<>c__DisplayClass3_0).key)), 1, 50, Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 05:35:17|
+方法：QueryPage
+参数：a => ((a.Status > 0) AndAlso (a.LoginName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass8_0).key) OrElse a.RealName.Contains(value(Af.Core.Controllers.UserController+<>c__DisplayClass8_0).key))), 1, 50, Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 05:35:17|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 05:35:17|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 05:37:15|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:37:15|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:37:15|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:37:34|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:37:34|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:37:36|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:37:36|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:37:37|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:37:37|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:37:38|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:37:38|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:37:53|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 05:37:53|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 05:38:58|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso a.Name.Contains(value(Af.Core.Controllers.RoleController+<>c__DisplayClass3_0).key)), 1, 50, Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 05:49:41|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso a.Name.Contains(value(Af.Core.Controllers.RoleController+<>c__DisplayClass3_0).key)), 1, 50, Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 06:17:39|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:17:39|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:17:39|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:17:41|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:17:41|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:17:43|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:20:52|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:20:52|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:20:57|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:20:57|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:20:58|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:20:58|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:21:00|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:21:00|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:21:03|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:21:03|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:21:06|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:25:22|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:25:22|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:25:22|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:25:29|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:25:29|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:25:29|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:25:34|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 06:25:34|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+02/26/2021 06:25:34|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+02/26/2021 06:25:34|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 06:25:34|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 06:25:34|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.UserController+<>c__DisplayClass7_0).userInfo.Id))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 06:25:34|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 06:25:34|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+02/26/2021 06:25:34|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:25:38|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:25:38|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:25:38|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:25:40|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:30:18|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:30:18|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:30:18|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:30:25|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:30:25|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:30:25|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:30:30|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 06:30:30|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+02/26/2021 06:30:30|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+02/26/2021 06:30:31|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 06:30:31|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 06:30:31|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.UserController+<>c__DisplayClass7_0).userInfo.Id))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 06:30:31|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 06:30:31|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+02/26/2021 06:30:31|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:30:34|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:30:34|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:30:35|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:30:35|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:33:34|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:33:34|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:33:35|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:34:15|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:34:15|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:34:15|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:42:30|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:42:30|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:42:30|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:42:31|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:09|
+方法：Add
+参数：Af.Core.Model.Models.Permission
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Int32,Af.Core.Services.BASE.BaseServices`1+<Add>d__4[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:09|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:43:09|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:16|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:43:16|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:18|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:43:18|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:25|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:42|
+方法：Update
+参数：Af.Core.Model.Models.Permission
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Boolean,Af.Core.Services.BASE.BaseServices`1+<Update>d__6[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:42|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:43:42|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:43:48|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:44:39|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:44:39|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:44:43|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:44:50|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:44:50|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.Name.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key) OrElse a.LinkUrl.Contains(value(Af.Core.Controllers.ModuleController+<>c__DisplayClass3_0).key))), 1, 50,  Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:44:50|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:44:52|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:44:52|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:44:54|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Module],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Module]]
+--------------------------------
+02/26/2021 06:44:54|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:44:58|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:45:12|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso a.Name.Contains(value(Af.Core.Controllers.RoleController+<>c__DisplayClass3_0).key)), 1, 50, Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 06:45:59|
+方法：Query
+参数：a => ((a.LoginName == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).name) AndAlso (a.LoginPwd == value(Af.Core.Controllers.AuthController+<>c__DisplayClass7_0).pass))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.SysUserInfo],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 06:45:59|
+方法：GetUserRoleNameStr
+参数：admin, E10ADC3949BA59ABBE56E057F20F883E
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.String,Af.Core.Services.SysUserInfoServices+<GetUserRoleNameStr>d__4]
+--------------------------------
+02/26/2021 06:45:59|
+方法：RoleModuleMaps
+参数：
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.RoleModulePermissionServices+<RoleModuleMaps>d__6]
+--------------------------------
+02/26/2021 06:45:59|
+方法：QueryById
+参数：1
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.SysUserInfo,Af.Core.Services.BASE.BaseServices`1+<QueryById>d__1[Af.Core.Model.Models.SysUserInfo]]
+--------------------------------
+02/26/2021 06:45:59|
+方法：Query
+参数：a => (a.IsDeleted == Convert(False, Nullable`1))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Role]]
+--------------------------------
+02/26/2021 06:45:59|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.UserController+<>c__DisplayClass7_0).userInfo.Id))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 06:45:59|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso (a.UserId == value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).uid))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.UserRole],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.UserRole]]
+--------------------------------
+02/26/2021 06:45:59|
+方法：Query
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_0).roleIds.Contains(a.RoleId))
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.RoleModulePermission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.RoleModulePermission]]
+--------------------------------
+02/26/2021 06:46:00|
+方法：Query
+参数：a => value(Af.Core.Controllers.PermissionController+<>c__DisplayClass8_1).pids.Contains(a.Id)
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[Af.Core.Model.Models.Permission],Af.Core.Services.BASE.BaseServices`1+<Query>d__14[Af.Core.Model.Models.Permission]]
+--------------------------------
+02/26/2021 06:46:03|
+方法：QueryPage
+参数：a => ((a.IsDeleted == Convert(False, Nullable`1)) AndAlso a.Name.Contains(value(Af.Core.Controllers.RoleController+<>c__DisplayClass3_0).key)), 1, 50, Id Desc
+结果：System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[Af.Core.Model.Models.PageModel`1[Af.Core.Model.Models.Role],Af.Core.Services.BASE.BaseServices`1+<QueryPage>d__22[Af.Core.Model.Models.Role]]

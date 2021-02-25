@@ -1,47 +1,44 @@
 ﻿<Properties StartupConfiguration="{76B8FEB2-54C1-407B-BA32-5F0CEE6024AE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Af.Core.Model/Models/MessageModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Af.Core.Model/Models/Permission.cs">
     <Files>
       <File FileName="Af.Core/Startup.cs" Line="54" Column="14" />
-      <File FileName="Af.Core.Extensions/ServiceExtensions/AutofacModuleRegister.cs" Line="25" Column="14" />
-      <File FileName="Af.Core/Controllers/AuthController.cs" Line="155" Column="1" />
-      <File FileName="Af.Core/AOP/CacheAOP.cs" Line="42" Column="1" />
-      <File FileName="Af.Core/AOP/LogAOP.cs" Line="22" Column="1" />
-      <File FileName="Af.Core.Services/BASE/BaseServices.cs" Line="139" Column="42" />
-      <File FileName="Af.Core.Model/Models/MessageModel.cs" Line="12" Column="1" />
+      <File FileName="Af.Core.Extensions/ServiceExtensions/AutofacModuleRegister.cs" Line="12" Column="15" />
+      <File FileName="Af.Core/Controllers/AuthController.cs" Line="109" Column="1" />
+      <File FileName="Af.Core.Services/BASE/BaseServices.cs" />
+      <File FileName="Af.Core.Model/Models/MessageModel.cs" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/5.0.103/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="18" Column="42" />
+      <File FileName="Af.Core.Repository/BASE/BaseRepository.cs" Line="370" Column="83" />
+      <File FileName="Af.Core.Common/Helper/UtilConvert.cs" Line="5" Column="35" />
+      <File FileName="Af.Core.Extensions/ServiceExtensions/SqlsugarSetup.cs" Line="50" Column="48" />
+      <File FileName="Af.Core/Af.Core.csproj" Line="1" Column="1" />
+      <File FileName="Af.Core/appsettings.json" Line="1" Column="1" />
+      <File FileName="Af.Core/Controllers/PermissionController.cs" Line="1" Column="1" />
+      <File FileName="Af.Core.Model/Models/Permission.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Af.Core" expanded="True">
             <Node name="Af.Core" expanded="True">
-              <Node name="AOP" expanded="True" />
-              <Node name="AutoMapper" expanded="True" />
               <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="Af.Core.Extensions" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="ServiceExtensions" expanded="True" />
             </Node>
             <Node name="Af.Core.Model" expanded="True">
               <Node name="Models" expanded="True">
-                <Node name="MessageModel.cs" selected="True" />
+                <Node name="Permission.cs" selected="True" />
               </Node>
-            </Node>
-            <Node name="Af.Core.Services" expanded="True">
-              <Node name="BASE" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core/Controllers/AuthController.cs" relfile="Af.Core/Controllers/AuthController.cs" line="113" column="1" />
-      <Breakpoint file="/Users/mac/Desktop/project/dotnetcore/Af.Core/Af.Core/Controllers/AuthController.cs" relfile="Af.Core/Controllers/AuthController.cs" line="110" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Af.Core PreferredExecutionTarget="/Applications/Google Chrome.app" />

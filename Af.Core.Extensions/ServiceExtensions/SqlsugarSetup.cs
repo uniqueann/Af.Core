@@ -8,6 +8,7 @@ using SqlSugar;
 using System.Threading.Tasks;
 using StackExchange.Profiling;
 using Af.Core.Common.LogHelper;
+using Af.Core.Common.Converter;
 
 namespace Af.Core.Extensions
 {
