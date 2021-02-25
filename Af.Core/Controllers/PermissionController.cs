@@ -129,9 +129,11 @@ namespace Af.Core.Controllers
         [HttpGet]
         public async Task<MessageModel<PageModel<Permission>>> Get(int page = 1, string key = "")
         {
+            if (string.IsNullOrEmpty(key) || string.IsNullOrWhiteSpace(key)) key = "";
+
             var permissions = new PageModel<Permission>();
 
-            permissions = await _permissionServices.QueryPage(a => a.IsDeleted == false && (a.Name != null && a.Name.Contains(key)), page, 50, "Id Desc");
+            permissions = await _permissionServices.QueryPage(a => a.IsDeleted == false && (a.Name.Contains(key) || a.Code.Contains(key)), page, 50, "Id Desc");
 
             var apis = await _moduleServices.Query(a => a.IsDeleted == false);
             var permissionView = permissions.PageData;
@@ -160,7 +162,7 @@ namespace Af.Core.Controllers
                     var per = permissionAll.FirstOrDefault(a => a.Id == pid);
                     item.PnameArr.Add((per != null ? per.Name : "根节点") + "/");
                 }
-                item.MName = apis.FirstOrDefault(a => a.Id == item.ModuleId)?.LinkUrl;
+                item.ModuleName = apis.FirstOrDefault(a => a.Id == item.ModuleId)?.LinkUrl;
             }
 
             permissions.PageData = permissionView;
@@ -180,6 +182,7 @@ namespace Af.Core.Controllers
         /// <param name="needbtn"></param>
         /// <returns></returns>
         [HttpGet]
+        [AllowAnonymous]
         public async Task<MessageModel<PermissionTree>> GetPermissionTree(int pid = 0, bool needbtn = false)
         {
             var data = new MessageModel<PermissionTree>();
@@ -211,6 +214,56 @@ namespace Af.Core.Controllers
             data.msg = "获取成功";
 
             return data;
+        }
+
+        /// <summary>
+        /// 获取树形table
+        /// </summary>
+        /// <param name="f"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<MessageModel<List<Permission>>> GetTreeTable(int f=0,string key = "")
+        {
+            var permissions = new List<Permission>();
+            var apiList = await _moduleServices.Query(a=>a.IsDeleted==false);
+            var permissionList = await _permissionServices.Query(a=>a.IsDeleted==false);
+
+            if (string.IsNullOrEmpty(key) || string.IsNullOrWhiteSpace(key)) key = "";
+
+            if (key!="")
+            {
+                permissions = permissionList.Where(a=>a.Name.Contains(key)).OrderBy(a=>a.OrderSort).ToList();
+            }
+            else
+            {
+                permissions = permissionList.Where(a => a.PId == f).OrderBy(a=>a.OrderSort).ToList();
+            }
+
+            foreach (var item in permissions)
+            {
+                var pidArr = new List<int> { };
+                var parent = permissionList.FirstOrDefault(a=>a.Id==item.PId);
+
+                while (parent!=null)
+                {
+                    pidArr.Add(parent.Id);
+                    parent = permissionList.FirstOrDefault(a=>a.Id==parent.PId);
+                }
+                pidArr.Reverse();
+                pidArr.Insert(0,0);
+                item.PidArr = pidArr;
+
+                item.ModuleName = apiList.FirstOrDefault(a => a.Id == item.ModuleId)?.LinkUrl;
+                item.HasChildren = permissionList.Where(a => a.PId == item.Id).Any();
+            }
+
+            return new MessageModel<List<Permission>> {
+                msg = "获取成功",
+                success = true,
+                response = permissions
+            };
         }
 
         /// <summary>

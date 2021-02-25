@@ -114,7 +114,7 @@ namespace Af.Core.Model.Models
         [SugarColumn(IsIgnore = true)]
         public List<string> PcodeArr { get; set; } = new List<string>();
         [SugarColumn(IsIgnore = true)]
-        public string MName { get; set; }
+        public string ModuleName { get; set; }
 
         [SugarColumn(IsIgnore = true)]
         public bool HasChildren { get; set; } = true;

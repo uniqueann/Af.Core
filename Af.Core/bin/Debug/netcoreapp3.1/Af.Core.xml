@@ -79,6 +79,14 @@
             <param name="needbtn"></param>
             <returns></returns>
         </member>
+        <member name="M:Af.Core.Controllers.PermissionController.GetTreeTable(System.Int32,System.String)">
+            <summary>
+            获取树形table
+            </summary>
+            <param name="f"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
         <member name="M:Af.Core.Controllers.PermissionController.Post(Af.Core.Model.Models.Permission)">
             <summary>
             新增菜单
