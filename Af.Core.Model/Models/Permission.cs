@@ -12,7 +12,7 @@ namespace Af.Core.Model.Models
     {
         public Permission()
         {
-
+            IsDeleted = false;
         }
 
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]

@@ -6,6 +6,10 @@ namespace Af.Core.Model.Models
     [SugarTable("AF_Module", "CrawlerHelper")]
     public class Module
     {
+        public Module()
+        {
+            IsDeleted = false;
+        }
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]
         public int Id { get; set; }
 
