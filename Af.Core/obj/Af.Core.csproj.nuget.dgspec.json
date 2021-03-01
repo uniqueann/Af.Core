@@ -47,11 +47,15 @@
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.1.1, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -180,11 +184,11 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.7, )"
             },
             "Swashbuckle.AspNetCore.Filters": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.1.0, )"
             },
             "log4net": {
               "target": "Package",
@@ -374,7 +378,7 @@
             },
             "sqlSugarCore": {
               "target": "Package",
-              "version": "[5.0.1.3, )"
+              "version": "[5.0.2.6, )"
             }
           },
           "imports": [
@@ -442,7 +446,7 @@
           "dependencies": {
             "sqlSugarCore": {
               "target": "Package",
-              "version": "[5.0.1.3, )"
+              "version": "[5.0.2.6, )"
             }
           },
           "imports": [
@@ -519,18 +523,6 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.10, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.0.4, )"
-            },
-            "Swashbuckle.AspNetCore.Filters": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "sqlSugarCore": {
-              "target": "Package",
-              "version": "[5.0.1.3, )"
             }
           },
           "imports": [

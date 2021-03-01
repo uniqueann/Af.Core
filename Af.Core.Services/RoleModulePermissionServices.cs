@@ -55,5 +55,10 @@ namespace Af.Core.Services
         {
             return await _dal.RoleModuleMaps();
         }
+
+        public async Task UpdateModuleId(int permissionId, int moduleId)
+        {
+            await _dal.UpdateModuleId(permissionId,moduleId);
+        }
     }
 }

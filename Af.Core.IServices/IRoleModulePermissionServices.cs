@@ -10,5 +10,6 @@ namespace Af.Core.IServices
         Task<List<RoleModulePermission>> GetRoleModule();
         Task<List<RoleModulePermission>> RoleModuleMaps();
         Task<List<RoleModulePermission>> GetRMPMaps();
+        Task UpdateModuleId(int permissionId, int moduleId);
     }
 }

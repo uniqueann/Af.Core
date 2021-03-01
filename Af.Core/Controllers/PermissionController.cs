@@ -176,6 +176,48 @@ namespace Af.Core.Controllers
         }
 
         /// <summary>
+        /// 保存角色分配的权限
+        /// </summary>
+        /// <param name="assignView"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<MessageModel<string>> Assign(AssignView assignView)
+        {
+            var data = new MessageModel<string>();
+            if (assignView.rid>0)
+            {
+                var roleModulePermissions = await _roleModulePermissionServices.Query(a=>a.RoleId==assignView.rid);
+                var remove = roleModulePermissions.Where(a=>!assignView.pids.Contains(a.PermissionId.ObjToInt())).Select(a=>(object)a.Id);
+                data.success = remove.Any() ? await _roleModulePermissionServices.DeleteByIds(remove.ToArray()) : true;
+                foreach (var item in assignView.pids)
+                {
+                    var rpmItem = roleModulePermissions.Where(a=>a.PermissionId==item);
+                    if (!rpmItem.Any())
+                    {
+                        var moduleId = (await _permissionServices.Query(a => a.Id == item)).FirstOrDefault()?.ModuleId;
+                        var rmpModel = new RoleModulePermission { 
+                            IsDeleted = false,
+                            CreateId = _user.ID,
+                            CreateBy = _user.Name,
+                            RoleId = assignView.rid,
+                            ModuleId = moduleId.ObjToInt(),
+                            PermissionId = item
+                        };
+                        data.success &= (await _roleModulePermissionServices.Add(rmpModel)) > 0;
+                    }
+                }
+
+                if (data.success)
+                {
+                    _requirement.Permissions.Clear();
+                    data.response = "";
+                    data.msg = "保存成功";
+                }
+            }
+            return data;
+        }
+
+        /// <summary>
         /// 获取菜单树
         /// </summary>
         /// <param name="pid"></param>
@@ -217,6 +259,28 @@ namespace Af.Core.Controllers
         }
 
         /// <summary>
+        /// 通过角色获取菜单主键
+        /// </summary>
+        /// <param name="rid"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<MessageModel<List<int>>> GetPermissionIdByRoleId(int rid = 0)
+        {
+            var data = new MessageModel<List<int>>();
+            var rmps = await _roleModulePermissionServices.Query(a=>a.IsDeleted==false && a.RoleId==rid);
+            var permissionTrees = (from child in rmps
+                                   orderby child.Id
+                                   select child.PermissionId.ObjToInt()).ToList();
+
+            data.response = permissionTrees.Distinct().ToList();
+            data.msg = "获取成功";
+            data.success = true;
+
+            return data;
+        }
+
+        /// <summary>
         /// 获取树形table
         /// </summary>
         /// <param name="f"></param>
@@ -229,6 +293,7 @@ namespace Af.Core.Controllers
             var permissions = new List<Permission>();
             var apiList = await _moduleServices.Query(a=>a.IsDeleted==false);
             var permissionList = await _permissionServices.Query(a=>a.IsDeleted==false);
+            var rmpList = await _roleModulePermissionServices.Query(a => a.IsDeleted == false);
 
             if (string.IsNullOrEmpty(key) || string.IsNullOrWhiteSpace(key)) key = "";
 
@@ -254,7 +319,7 @@ namespace Af.Core.Controllers
                 pidArr.Reverse();
                 pidArr.Insert(0,0);
                 item.PidArr = pidArr;
-
+                item.ModuleId = (rmpList.FirstOrDefault(a => a.PermissionId == item.Id)?.ModuleId).ObjToInt();
                 item.ModuleName = apiList.FirstOrDefault(a => a.Id == item.ModuleId)?.LinkUrl;
                 item.HasChildren = permissionList.Where(a => a.PId == item.Id).Any();
             }
@@ -303,6 +368,7 @@ namespace Af.Core.Controllers
                 permission.ModifyId = _user.ID;
                 permission.ModifyBy = _user.Name;
                 data.success = await _permissionServices.Update(permission);
+                await _roleModulePermissionServices.UpdateModuleId(permission.Id, permission.ModuleId);
                 if (data.success)
                 {
                     data.response = permission.Id.ToString();
@@ -335,5 +401,11 @@ namespace Af.Core.Controllers
             }
             return data;
         }
+    }
+
+    public class AssignView
+    {
+        public List<int> pids { get; set; }
+        public int rid { get; set; }
     }
 }

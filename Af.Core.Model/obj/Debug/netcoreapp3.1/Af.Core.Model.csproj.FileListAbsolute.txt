@@ -17,4 +17,3 @@ F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.Assem
 F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.csproj.CoreCompileInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.pdb
-F:\NetCoreDemo\Af.Core\Af.Core.Model\obj\Debug\netcoreapp3.1\Af.Core.Model.csprojAssemblyReference.cache

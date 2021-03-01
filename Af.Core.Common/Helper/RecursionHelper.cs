@@ -102,6 +102,7 @@ namespace Af.Core.Common.Helper
         public List<PermissionTree> btns { get; set; }
     }
 
+
     public class NavigationBar
     {
         public int id { get; set; }

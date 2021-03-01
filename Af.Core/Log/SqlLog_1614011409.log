@@ -12264,3 +12264,735 @@
 @MethodConst2:
 
 【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 05:34:42|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+02/26/2021 05:34:43|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+02/26/2021 05:34:43|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:34:43|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+02/26/2021 05:34:43|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+02/26/2021 05:34:44|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+02/26/2021 05:34:44|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:34:44|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+02/26/2021 05:34:44|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+02/26/2021 05:34:44|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[RoleId],[ModuleId],[PermissionId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_RoleModulePermission] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([RoleId] IN ('1')) )
+--------------------------------
+02/26/2021 05:34:44|
+【SQL参数】：
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE  ([Id] IN ('1','2','3','4','6','7','8','11','12','13','15','16','18','17','19','20','21','22','23','24','25','26','27')) 
+--------------------------------
+02/26/2021 05:34:54|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 05:34:54|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 05:35:10|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 05:35:10|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:35:10|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 05:35:10|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:35:12|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:35:13|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:35:16|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([Name] like '%'+@MethodConst1+'%') )) CountTable 
+--------------------------------
+02/26/2021 05:35:16|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY Id Desc) AS RowIndex  FROM [AF_Role] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([Name] like '%'+@MethodConst1+'%') )) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 05:35:17|
+【SQL参数】：@Status0:0
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [Status] > @Status0 ) AND (([LoginName] like '%'+@MethodConst1+'%') OR ([RealName] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 05:35:17|
+【SQL参数】：@Status0:0
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY Id Desc) AS RowIndex  FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [Status] > @Status0 ) AND (([LoginName] like '%'+@MethodConst1+'%') OR ([RealName] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 05:35:17|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:35:17|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:14|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:15|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 05:37:15|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:15|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 05:37:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:36|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:36|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:37|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:37|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:38|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:38|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:53|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:37:53|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 05:38:58|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([Name] like '%'+@MethodConst1+'%') )) CountTable 
+--------------------------------
+02/26/2021 05:38:58|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY Id Desc) AS RowIndex  FROM [AF_Role] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([Name] like '%'+@MethodConst1+'%') )) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 05:49:41|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([Name] like '%'+@MethodConst1+'%') )) CountTable 
+--------------------------------
+02/26/2021 05:49:41|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY Id Desc) AS RowIndex  FROM [AF_Role] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([Name] like '%'+@MethodConst1+'%') )) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:17:39|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:17:39|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:17:39|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:17:39|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:17:41|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:17:41|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:17:43|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:20:52|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:20:52|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:20:57|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:20:57|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:20:58|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:20:58|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:21:00|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:21:00|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:21:03|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:21:03|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:21:06|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:21|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:21|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:25:22|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:22|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:25:29|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:29|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:25:29|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:25:29|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[RoleId],[ModuleId],[PermissionId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_RoleModulePermission] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([RoleId] IN ('1')) )
+--------------------------------
+02/26/2021 06:25:34|
+【SQL参数】：
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE  ([Id] IN ('1','2','3','4','6','7','8','11','12','13','15','16','18','17','19','20','21','22','23','24','25','26','27')) 
+--------------------------------
+02/26/2021 06:25:37|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:38|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:25:38|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:25:38|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:25:40|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:18|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:18|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:30:18|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:18|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:30:25|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:25|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:30:25|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:30:25|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:30|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+02/26/2021 06:30:30|
+【SQL参数】：@LoginName0:admin
+@LoginPwd1:E10ADC3949BA59ABBE56E057F20F883E
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE (( [LoginName] = @LoginName0 ) AND ( [LoginPwd] = @LoginPwd1 ))
+--------------------------------
+02/26/2021 06:30:30|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:30|
+【SQL参数】：@UserId0:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE ( [UserId] = @UserId0 )
+--------------------------------
+02/26/2021 06:30:30|
+【SQL参数】：@IsDeleted0:False
+@IsDeleted1:False
+@IsDeleted2:False
+
+【SQL语句】:SELECT  [r].[Id] AS [Role.Id] , [r].[IsDeleted] AS [Role.IsDeleted] , [r].[Name] AS [Role.Name] , [r].[Description] AS [Role.Description] , [r].[OrderSort] AS [Role.OrderSort] , [r].[Enabled] AS [Role.Enabled] , [r].[CreateId] AS [Role.CreateId] , [r].[CreateBy] AS [Role.CreateBy] , [r].[CreateTime] AS [Role.CreateTime] , [r].[ModifyId] AS [Role.ModifyId] , [r].[ModifyBy] AS [Role.ModifyBy] , [r].[ModifyTime] AS [Role.ModifyTime] , [m].[Id] AS [Module.Id] , [m].[IsDeleted] AS [Module.IsDeleted] , [m].[Name] AS [Module.Name] , [m].[LinkUrl] AS [Module.LinkUrl] , [m].[Area] AS [Module.Area] , [m].[Controller] AS [Module.Controller] , [m].[Action] AS [Module.Action] , [m].[Icon] AS [Module.Icon] , [m].[Code] AS [Module.Code] , [m].[OrderSort] AS [Module.OrderSort] , [m].[Description] AS [Module.Description] , [m].[IsMenu] AS [Module.IsMenu] , [m].[Enabled] AS [Module.Enabled] , [m].[CreateId] AS [Module.CreateId] , [m].[CreateBy] AS [Module.CreateBy] , [m].[CreateTime] AS [Module.CreateTime] , [m].[ModifyId] AS [Module.ModifyId] , [m].[ModifyBy] AS [Module.ModifyBy] , [m].[ModifyTime] AS [Module.ModifyTime] , [rmp].[IsDeleted] AS [IsDeleted]  FROM [AF_RoleModulePermission] rmp WITH(NOLOCK)  Left JOIN [AF_Module] m WITH(NOLOCK) ON ( [rmp].[ModuleId] = [m].[Id] )  Left JOIN [AF_Role] r WITH(NOLOCK) ON ( [rmp].[RoleId] = [r].[Id] )   WHERE ((( [rmp].[IsDeleted] = @IsDeleted0 ) AND ( [m].[IsDeleted] = @IsDeleted1 )) AND ( [r].[IsDeleted] = @IsDeleted2 ))
+--------------------------------
+02/26/2021 06:30:31|
+【SQL参数】：@InPara0:1
+
+【SQL语句】:SELECT [Id],[RealName],[LoginName],[LoginPwd],[Status],[Remark],[Sex],[Age],[Birth],[Address],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_SysUserInfo] WITH(NOLOCK)   WHERE [Id] IN (@InPara0)  
+--------------------------------
+02/26/2021 06:30:31|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[Description],[OrderSort],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Role] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:31|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+02/26/2021 06:30:31|
+【SQL参数】：@IsDeleted0:False
+@UserId1:1
+
+【SQL语句】:SELECT [Id],[UserId],[RoleId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_UserRole] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND ( [UserId] = @UserId1 ))
+--------------------------------
+02/26/2021 06:30:31|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[RoleId],[ModuleId],[PermissionId],[IsDeleted],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_RoleModulePermission] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND  ([RoleId] IN ('1')) )
+--------------------------------
+02/26/2021 06:30:31|
+【SQL参数】：
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE  ([Id] IN ('1','2','3','4','6','7','8','11','12','13','15','16','18','17','19','20','21','22','23','24','25','26','27')) 
+--------------------------------
+02/26/2021 06:30:34|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:30:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:34|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:30:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:30:35|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:33:34|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:33:34|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:33:34|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:33:35|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:34:15|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:34:15|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:34:15|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:34:15|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:42:30|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】: SELECT COUNT(1) FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) CountTable 
+--------------------------------
+02/26/2021 06:42:30|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:42:30|
+【SQL参数】：@IsDeleted0:False
+@MethodConst1:
+@MethodConst2:
+
+【SQL语句】:SELECT * FROM (SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],ROW_NUMBER() OVER(ORDER BY  Id Desc) AS RowIndex  FROM [AF_Module] WITH(NOLOCK)   WHERE (( [IsDeleted] = @IsDeleted0 ) AND (([Name] like '%'+@MethodConst1+'%') OR ([LinkUrl] like '%'+@MethodConst2+'%') ))) T WHERE RowIndex BETWEEN 1 AND 50
+--------------------------------
+02/26/2021 06:42:30|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:42:31|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:43:09|
+【SQL参数】：@PId:3
+@Code:  
+@Name:权限分配
+@IsButton:True
+@IsHide:False
+@IskeepAlive:False
+@Func:handleAssign
+@OrderSort:5
+@Icon:
+@Description:
+@Enabled:True
+@CreateId:1
+@CreateBy:admin
+@CreateTime:02/26/2021 00:00:00
+@ModifyId:
+@ModifyBy:
+@ModifyTime:02/26/2021 00:00:00
+@IsDeleted:False
+
+【SQL语句】:INSERT INTO [AF_Permission]  
+           ([PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted])
+     VALUES
+           (@PId,@Code,@Name,@IsButton,@IsHide,@IskeepAlive,@Func,@OrderSort,@Icon,@Description,@Enabled,@CreateId,@CreateBy,@CreateTime,@ModifyId,@ModifyBy,@ModifyTime,@IsDeleted) ;SELECT SCOPE_IDENTITY();
+--------------------------------
+02/26/2021 06:43:09|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:43:09|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:43:16|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[IsDeleted],[Name],[LinkUrl],[Area],[Controller],[Action],[Icon],[Code],[OrderSort],[Description],[IsMenu],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime] FROM [AF_Module] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )
+--------------------------------
+02/26/2021 06:43:16|
+【SQL参数】：@IsDeleted0:False
+
+【SQL语句】:SELECT [Id],[PId],[Code],[Name],[IsButton],[IsHide],[IskeepAlive],[Func],[OrderSort],[Icon],[Description],[Enabled],[CreateId],[CreateBy],[CreateTime],[ModifyId],[ModifyBy],[ModifyTime],[IsDeleted] FROM [AF_Permission] WITH(NOLOCK)   WHERE ( [IsDeleted] = @IsDeleted0 )

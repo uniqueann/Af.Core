@@ -12,7 +12,6 @@ F:\NetCoreDemo\Af.Core\Af.Core.Common\bin\Debug\netcoreapp3.1\Af.Core.Common.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Common\bin\Debug\netcoreapp3.1\Af.Core.Common.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Common\obj\Debug\netcoreapp3.1\Af.Core.Common.AssemblyInfoInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Common\obj\Debug\netcoreapp3.1\Af.Core.Common.AssemblyInfo.cs
-F:\NetCoreDemo\Af.Core\Af.Core.Common\obj\Debug\netcoreapp3.1\Af.Core.Common.csproj.CoreCompileInputs.cache
 F:\NetCoreDemo\Af.Core\Af.Core.Common\obj\Debug\netcoreapp3.1\Af.Core.Common.dll
 F:\NetCoreDemo\Af.Core\Af.Core.Common\obj\Debug\netcoreapp3.1\Af.Core.Common.pdb
 F:\NetCoreDemo\Af.Core\Af.Core.Common\obj\Debug\netcoreapp3.1\Af.Core.Common.csprojAssemblyReference.cache

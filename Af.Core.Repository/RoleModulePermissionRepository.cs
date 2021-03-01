@@ -43,9 +43,10 @@ namespace Af.Core.Repository
                 );
         }
 
-        public Task UpdateModuleId(int permissionId, int moduleId)
+        public async Task UpdateModuleId(int permissionId, int moduleId)
         {
-            throw new NotImplementedException();
+            await Db.Updateable<RoleModulePermission>(a => a.ModuleId == moduleId).Where(a=> a.PermissionId == permissionId)
+                .ExecuteCommandAsync();
         }
     }
 }
