@@ -149,6 +149,9 @@
               },
               "F:\\NetCoreDemo\\Af.Core\\Af.Core.Repository\\Af.Core.Repository.csproj": {
                 "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Repository\\Af.Core.Repository.csproj"
+              },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.TaskQz\\Af.Core.Tasks.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.TaskQz\\Af.Core.Tasks.csproj"
               }
             }
           }
@@ -447,6 +450,77 @@
             "sqlSugarCore": {
               "target": "Package",
               "version": "[5.0.2.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\NetCoreDemo\\Af.Core\\Af.Core.TaskQz\\Af.Core.Tasks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\NetCoreDemo\\Af.Core\\Af.Core.TaskQz\\Af.Core.Tasks.csproj",
+        "projectName": "Af.Core.Tasks",
+        "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.TaskQz\\Af.Core.Tasks.csproj",
+        "packagesPath": "C:\\Users\\uniqu\\.nuget\\packages\\",
+        "outputPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.TaskQz\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\uniqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Common\\Af.Core.Common.csproj"
+              },
+              "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj": {
+                "projectPath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.IServices\\Af.Core.IServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.2.4, )"
             }
           },
           "imports": [

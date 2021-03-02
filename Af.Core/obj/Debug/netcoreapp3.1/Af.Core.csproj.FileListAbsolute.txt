@@ -291,3 +291,7 @@ F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.genruntimeconfig.cache
 F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Repository.pdb
 F:\NetCoreDemo\Af.Core\Af.Core\obj\Debug\netcoreapp3.1\Af.Core.csprojAssemblyReference.cache
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Quartz.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Tasks.dll
+F:\NetCoreDemo\Af.Core\Af.Core\bin\Debug\netcoreapp3.1\Af.Core.Tasks.pdb

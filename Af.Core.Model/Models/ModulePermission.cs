@@ -5,7 +5,14 @@ namespace Af.Core.Model.Models
 {
     [SugarTable("AF_ModulePermission", "CrawlerHelper")]
     public class ModulePermission
-    {
+    { 
+        public ModulePermission()
+        {
+            IsDeleted = false;
+            CreateTime = DateTime.Now;
+            ModifyTime = DateTime.Now;
+        }
+
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]
         public int Id { get; set; }
 

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.IServices", "Af.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Af.Core.Extensions", "Af.Core.Extensions\Af.Core.Extensions.csproj", "{966CBD81-6A5A-496F-BD0B-E650BBB0432C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Af.Core.Tasks", "Af.Core.TaskQz\Af.Core.Tasks.csproj", "{0191399E-8788-4B63-9B9B-462BF3B51F00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{966CBD81-6A5A-496F-BD0B-E650BBB0432C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{966CBD81-6A5A-496F-BD0B-E650BBB0432C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{966CBD81-6A5A-496F-BD0B-E650BBB0432C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0191399E-8788-4B63-9B9B-462BF3B51F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0191399E-8788-4B63-9B9B-462BF3B51F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0191399E-8788-4B63-9B9B-462BF3B51F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0191399E-8788-4B63-9B9B-462BF3B51F00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

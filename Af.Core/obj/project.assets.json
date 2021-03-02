@@ -1039,6 +1039,20 @@
           "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll": {}
         }
       },
+      "Quartz/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
+          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Quartz.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Quartz.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3270,6 +3284,7 @@
           "Af.Core.IRepository": "1.0.0",
           "Af.Core.IServices": "1.0.0",
           "Af.Core.Repository": "1.0.0",
+          "Af.Core.Tasks": "1.0.0",
           "Autofac.Extensions.DependencyInjection": "7.1.0",
           "Autofac.Extras.DynamicProxy": "6.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.10",
@@ -3342,6 +3357,24 @@
         },
         "runtime": {
           "bin/placeholder/Af.Core.Repository.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Af.Core.Tasks/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Af.Core.Common": "1.0.0",
+          "Af.Core.IServices": "1.0.0",
+          "Quartz": "3.2.4"
+        },
+        "compile": {
+          "bin/placeholder/Af.Core.Tasks.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Af.Core.Tasks.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -4734,6 +4767,22 @@
         "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
         "pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
         "pipelines.sockets.unofficial.nuspec"
+      ]
+    },
+    "Quartz/3.2.4": {
+      "sha512": "Oc8mOWl+Mba2dleNahbt8btwCTI686DfQEV3jmVvXljU6C65g8XyB/cfin87ezXe3QQgwVk9pTFOZikl9BAaOA==",
+      "type": "package",
+      "path": "quartz/3.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Quartz.dll",
+        "lib/net461/Quartz.xml",
+        "lib/netstandard2.0/Quartz.dll",
+        "lib/netstandard2.0/Quartz.xml",
+        "quartz-logo-small.png",
+        "quartz.3.2.4.nupkg.sha512",
+        "quartz.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -10059,6 +10108,11 @@
       "type": "project",
       "path": "../Af.Core.Repository/Af.Core.Repository.csproj",
       "msbuildProject": "../Af.Core.Repository/Af.Core.Repository.csproj"
+    },
+    "Af.Core.Tasks/1.0.0": {
+      "type": "project",
+      "path": "../Af.Core.TaskQz/Af.Core.Tasks.csproj",
+      "msbuildProject": "../Af.Core.TaskQz/Af.Core.Tasks.csproj"
     }
   },
   "projectFileDependencyGroups": {

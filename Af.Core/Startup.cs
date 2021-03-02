@@ -2,6 +2,7 @@ using Af.Core.AutoMapper;
 using Af.Core.Common;
 using Af.Core.Common.Converter;
 using Af.Core.Common.Helper;
+using Af.Core.Common.Hubs;
 using Af.Core.Common.LogHelper;
 using Af.Core.Extensions;
 using Autofac;
@@ -60,12 +61,11 @@ namespace Af.Core
                 return cache;
             });
 
-            services.AddAutoMapper(typeof(AutoMapperConfig));
-            AutoMapperConfig.RegisterMappings();
-
+            services.AddAutoMapperSetup();
             services.AddSqlsugarSetup();
             services.AddCorsSetup();
             services.AddSwaggerSetup();
+            services.AddJobSetup();
             services.AddHttpContextSetup();
             services.AddAuthorizationSetup();
 
@@ -86,12 +86,16 @@ namespace Af.Core
                 });
             });
 
+            services.AddSignalR();
+
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseReqRespLogMidd();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -111,13 +115,16 @@ namespace Af.Core
 
             app.UseAuthorization();
 
-
+            app.UseExceptionHandlerMidd();
 
             app.UseEndpoints(endpoints =>
             {
                 //endpoints.MapControllers();
                 endpoints.MapControllerRoute("default", "{controller=Role}/{action=Index}/{id?}");
+                //endpoints.MapHub<ChatHub>("/api/chatHub");
             });
+
+           
         }
     }
 }

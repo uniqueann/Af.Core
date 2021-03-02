@@ -6,6 +6,18 @@ namespace Af.Core.Model.Models
     [SugarTable("AF_OperateLog", "CrawlerHelper")]
     public class OperateLog
     {
+
+        public OperateLog()
+        {
+            IsDeleted = false;
+            Area = "";
+            Controller = "";
+            Action = "";
+            IPAddress = "";
+            Description = "";
+            LogTime = DateTime.Now;
+        }
+
         [SugarColumn(IsNullable = false, IsPrimaryKey = true)]
         public int Id { get; set; }
         /// <summary>
@@ -16,22 +28,22 @@ namespace Af.Core.Model.Models
         /// <summary>
         /// 区域名
         /// </summary>
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 2000, IsNullable = true)]
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
         public string Area { get; set; }
         /// <summary>
         /// 区域控制器名
         /// </summary>
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 2000, IsNullable = true)]
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
         public string Controller { get; set; }
         /// <summary>
         /// Action名称
         /// </summary>
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 2000, IsNullable = true)]
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
         public string Action { get; set; }
         /// <summary>
         /// IP地址
         /// </summary>
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 2000, IsNullable = true)]
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
         public string IPAddress { get; set; }
         /// <summary>
         /// 描述
@@ -46,14 +58,14 @@ namespace Af.Core.Model.Models
         /// <summary>
         /// 登录名称
         /// </summary>
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 2000, IsNullable = true)]
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 200, IsNullable = true)]
         public string LoginName { get; set; }
         /// <summary>
         /// 用户ID
         /// </summary>
         public int UserId { get; set; }
 
-        //[SugarColumn(IsIgnore = true)]
-        //public virtual sysUserInfo User { get; set; }
+        [SugarColumn(IsIgnore = true)]
+        public virtual SysUserInfo User { get; set; }
     }
 }

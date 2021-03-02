@@ -151,6 +151,75 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="T:Af.Core.Controllers.TaskQzController">
+            <summary>
+            计划任务
+            </summary>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.Get(System.Int32,System.String)">
+            <summary>
+            分页获取计划任务
+            </summary>
+            <param name="page"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.Post(Af.Core.Model.Models.TaskQz)">
+            <summary>
+            新增计划任务
+            </summary>
+            <param name="taskQz"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.Put(Af.Core.Model.Models.TaskQz)">
+            <summary>
+            修改计划任务
+            </summary>
+            <param name="taskQz"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.Delete(System.Int32)">
+            <summary>
+            删除一个任务
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.StartJob(System.Int32)">
+            <summary>
+            启动计划任务
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.StopJob(System.Int32)">
+            <summary>
+            停止计划任务
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.PauseJob(System.Int32)">
+            <summary>
+            暂停任务计划
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.ResumeJob(System.Int32)">
+            <summary>
+            恢复任务计划
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Af.Core.Controllers.TaskQzController.ReCovery(System.Int32)">
+            <summary>
+            重启任务计划
+            </summary>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
         <member name="M:Af.Core.Controllers.UserController.GetInfoByToken(System.String)">
             <summary>
             根据token获取用户信息

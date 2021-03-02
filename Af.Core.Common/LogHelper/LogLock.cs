@@ -38,7 +38,8 @@ namespace Af.Core.Common.LogHelper
                     Directory.CreateDirectory(folderPath);
                 }
                 //string logFilePath = Path.Combine(path, $@"{filename}.log");
-                var logFilePath = FileHelper.GetAvailableFileWithPrefixOrderSize(folderPath, prefix);
+                //var logFilePath = FileHelper.GetAvailableFileWithPrefixOrderSize(folderPath, prefix);
+                var logFilePath =Path.Combine(folderPath,$"{prefix}_{DateTime.Now.ToString("yyyyMMdd")}.log");
 
                 var now = DateTime.Now;
                 string logContent = String.Join("\r\n", dataParas);

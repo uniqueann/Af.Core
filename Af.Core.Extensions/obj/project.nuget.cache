@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "82lQLbMyKKZ46NSy2SjzF+1S0LIpPachLGVksq1SYhhzvhFBPdop7irwPhVxmXW597K9j5+3wYy0NMtLXf+VuQ==",
+  "dgSpecHash": "GBhRXm5iJ3UZzs6pSJn+3vjv40HrFDYkJxhH5zUrgCi1rK2fGoxEU8rN+J47+puIDvnEFHDBMu+W2f44IJpp4Q==",
   "success": true,
   "projectFilePath": "F:\\NetCoreDemo\\Af.Core\\Af.Core.Extensions\\Af.Core.Extensions.csproj",
   "expectedPackageFiles": [
@@ -79,6 +79,7 @@
     "C:\\Users\\uniqu\\.nuget\\packages\\npgsql\\3.2.7\\npgsql.3.2.7.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\oracle.manageddataaccess.core\\2.18.3\\oracle.manageddataaccess.core.2.18.3.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "C:\\Users\\uniqu\\.nuget\\packages\\quartz\\3.2.4\\quartz.3.2.4.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\uniqu\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

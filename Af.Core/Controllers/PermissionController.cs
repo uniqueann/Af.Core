@@ -7,6 +7,7 @@ using Af.Core.Common.Converter;
 using Af.Core.Common.Helper;
 using Af.Core.Common.HttpContextUser;
 using Af.Core.Extensions.Authorizations.Policys;
+using Af.Core.IRepository.UnitOfWork;
 using Af.Core.IServices;
 using Af.Core.Model.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -22,22 +23,36 @@ namespace Af.Core.Controllers
     {
         private readonly IPermissionServices _permissionServices;
         private readonly IModuleServices _moduleServices;
+        private readonly IModulePermissionServices _modulePermissionServices;
         private readonly IRoleModulePermissionServices _roleModulePermissionServices;
         private readonly IUserRoleServices _userRoleServices;
         private readonly IHttpContextAccessor _httpContext;
         private readonly PermissionRequirement _requirement;
         private readonly IUser _user;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public PermissionController(IPermissionServices permissionServices, IModuleServices moduleServices, IRoleModulePermissionServices roleModulePermissionServices, IUserRoleServices userRoleServices, IHttpContextAccessor httpContext, PermissionRequirement requirement, IUser user)
+        public PermissionController(IPermissionServices permissionServices,
+                                    IModuleServices moduleServices,
+                                    IModulePermissionServices modulePermissionServices,
+                                    IRoleModulePermissionServices roleModulePermissionServices,
+                                    IUserRoleServices userRoleServices,
+                                    IHttpContextAccessor httpContext,
+                                    PermissionRequirement requirement,
+                                    IUser user,
+                                    IUnitOfWork unitOfWork)
         {
             _permissionServices = permissionServices;
             _moduleServices = moduleServices;
+            _modulePermissionServices = modulePermissionServices;
             _roleModulePermissionServices = roleModulePermissionServices;
             _userRoleServices = userRoleServices;
             _httpContext = httpContext;
             _requirement = requirement;
             _user = user;
+            _unitOfWork = unitOfWork;
         }
+
+
 
 
 
@@ -343,13 +358,41 @@ namespace Af.Core.Controllers
             permission.CreateId = _user.ID;
             permission.CreateBy = _user.Name;
 
-            var id = await _permissionServices.Add(permission);
-            if (id>0)
+            _unitOfWork.BeginTran();
+           
+            try
             {
-                data.success = true;
-                data.msg = "添加成功";
-                data.response = id.ObjToString();
+                var id = await _permissionServices.Add(permission);
+                if (id > 0)
+                {
+                    data.success = true;
+                    data.msg = "添加成功";
+                    data.response = id.ObjToString();
+                    data.success = await _modulePermissionServices.Add(new ModulePermission { 
+                        PermissionId = id,
+                        ModuleId = permission.ModuleId,
+                        CreateId = _user.ID,
+                        CreateBy = _user.Name
+                    })>0;
+
+                }
+                else
+                {
+                    data.msg = "添加失败";
+                }
             }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (data.success)
+                    _unitOfWork.CommitTran();
+                else
+                    _unitOfWork.RollbackTran();
+            }
+            
 
             return data;
         }
@@ -368,6 +411,25 @@ namespace Af.Core.Controllers
                 permission.ModifyId = _user.ID;
                 permission.ModifyBy = _user.Name;
                 data.success = await _permissionServices.Update(permission);
+                var modulePermissionModel = (await _modulePermissionServices.Query(a => a.PermissionId == permission.Id))?.FirstOrDefault();
+                if (modulePermissionModel!= null)
+                {
+                    modulePermissionModel.ModuleId = permission.ModuleId;
+                    modulePermissionModel.ModifyId = _user.ID;
+                    modulePermissionModel.ModifyBy = _user.Name;
+                    modulePermissionModel.ModifyTime = DateTime.Now;
+                    await _modulePermissionServices.Update(modulePermissionModel);
+                }
+                else
+                {
+                    await _modulePermissionServices.Add(new ModulePermission { 
+                        ModuleId = permission.ModuleId,
+                        PermissionId = permission.Id,
+                        IsDeleted = false,
+                        CreateBy = _user.Name,
+                        CreateId = _user.ID
+                    });
+                }
                 await _roleModulePermissionServices.UpdateModuleId(permission.Id, permission.ModuleId);
                 if (data.success)
                 {
