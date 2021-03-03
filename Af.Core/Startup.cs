@@ -55,12 +55,8 @@ namespace Af.Core
             //
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-            services.AddScoped<ICaching, MemoryCaching>();
-            services.AddSingleton<IMemoryCache>(factory => {
-                var cache = new MemoryCache(new MemoryCacheOptions());
-                return cache;
-            });
-
+            services.AddRedisCacheSetup();
+            services.AddMemoryCacheSetup();
             services.AddAutoMapperSetup();
             services.AddSqlsugarSetup();
             services.AddCorsSetup();
