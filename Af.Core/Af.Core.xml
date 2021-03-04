@@ -27,7 +27,7 @@
             <param name="token"></param>
             <returns></returns>
         </member>
-        <member name="M:Af.Core.Controllers.ModuleController.Get(System.Int32,System.String)">
+        <member name="M:Af.Core.Controllers.ModuleController.Get(System.Int32,System.Int32,System.String)">
             <summary>
             获取全部api接口
             </summary>

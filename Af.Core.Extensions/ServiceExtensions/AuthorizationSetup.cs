@@ -74,9 +74,9 @@ namespace Af.Core.Extensions
             //{
             //    options.AddPolicy("Scope_BlogModule_Policy", builder =>
             //    {
-            //        //客户端Scope中包含blog.core.api.BlogModule才能访问
+            //        //af.core.api.BlogModule才能访问
             //        // 同时引用nuget包：IdentityServer4.AccessTokenValidation
-            //        builder.RequireScope("blog.core.api.BlogModule");
+            //        builder.RequireScope("af.core.api.BlogModule");
             //    });
 
             //    // 其他 Scope 策略

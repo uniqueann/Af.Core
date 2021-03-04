@@ -39,7 +39,7 @@ namespace Af.Core.Extensions.Authorizations.Policys
         /// <summary>
         /// 请求路径
         /// </summary>
-        public string LoginPath { get; set; }
+        public string LoginPath { get; set; } = "/login";
         /// <summary>
         /// 发行人
         /// </summary>

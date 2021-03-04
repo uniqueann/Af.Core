@@ -55,8 +55,8 @@ namespace Af.Core
             //
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-            services.AddRedisCacheSetup();
             services.AddMemoryCacheSetup();
+            services.AddRedisCacheSetup();            
             services.AddAutoMapperSetup();
             services.AddSqlsugarSetup();
             services.AddCorsSetup();
@@ -90,11 +90,16 @@ namespace Af.Core
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // 请求响应日志记录中间件
             app.UseReqRespLogMidd();
 
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
             }
 
             app.UseSwagger();
@@ -104,13 +109,31 @@ namespace Af.Core
                 c.RoutePrefix = "";
             });
 
-            app.UseRouting();
+            // cors跨域配置
             app.UseCors(Appsettings.app(new string[] { "Startup", "Cors", "PolicyName" }));
+            
+            //跳转https
+            //app.UseHttpsRedirection();
 
+            //使用静态文件
+            app.UseStaticFiles();
+
+            //使用cookie
+            app.UseCookiePolicy();
+
+            //错误码
+            app.UseStatusCodePages();
+            
+            //routing
+            app.UseRouting();
+            
+            //开启认证
             app.UseAuthentication();
-
+            
+            //授权中间件
             app.UseAuthorization();
-
+            
+            //异常处理中间件
             app.UseExceptionHandlerMidd();
 
             app.UseEndpoints(endpoints =>

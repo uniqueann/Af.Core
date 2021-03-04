@@ -34,7 +34,7 @@ namespace Af.Core.Extensions
 
         private async Task HandleExceptionAsync(HttpContext context, Exception e)
         {
-            if (e == null) return;
+            if (e == null) return; 
 
             _log.Error(e.GetBaseException().ToString());
 

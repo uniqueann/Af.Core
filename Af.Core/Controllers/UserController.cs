@@ -85,7 +85,6 @@ namespace Af.Core.Controllers
         public async Task<MessageModel<PageModel<SysUserInfo>>> Get(int page=1,string key = "")
         {
             if (string.IsNullOrEmpty(key) || string.IsNullOrWhiteSpace(key)) key = "";
-
             var data = await _sysUserInfoService.QueryPage(a =>a.Status>=0 && (a.LoginName.Contains(key) || a.RealName.Contains(key)), page, 50, "Id Desc");
             var roles = await _roleServices.Query(a => a.IsDeleted == false);
             var userRoles = await _userRoleServices.Query(a=>a.IsDeleted==false);

@@ -37,13 +37,12 @@ namespace Af.Core.Controllers
         /// <param name="key"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<MessageModel<PageModel<Module>>> Get(int page =1, string key = "")
+        public async Task<MessageModel<PageModel<Module>>> Get(int page =1,int pageSize=50, string key = "")
         {
             if (string.IsNullOrEmpty(key) || string.IsNullOrWhiteSpace(key)) key = "";
 
-            var intPageSize = 50;
             Expression<Func<Module, bool>> whereExpression = a => a.IsDeleted == false && (a.Name.Contains(key) || a.LinkUrl.Contains(key));
-            var data = await _moduleServices.QueryPage(whereExpression, page, intPageSize, " Id Desc");
+            var data = await _moduleServices.QueryPage(whereExpression, page, pageSize, " Id Desc");
             return new MessageModel<PageModel<Module>>
             {
                 msg = "获取成功",
