@@ -5,6 +5,7 @@ using Af.Core.Common.Helper;
 using Af.Core.Common.Hubs;
 using Af.Core.Common.LogHelper;
 using Af.Core.Extensions;
+using Af.Core.Filter;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
 using AutoMapper;
@@ -17,6 +18,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using Swashbuckle.AspNetCore.Filters;
 using System;
 using System.Collections.Generic;
@@ -74,25 +77,35 @@ namespace Af.Core
                 services.AddAuthentication_JWTSetup();
             }
 
-            services.AddCors(c=> {
-                c.AddPolicy("LimitRequest",policy=> {
-                    policy.WithOrigins("http://localhost")
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-                });
+            //services.AddCors(c=> {
+            //    c.AddPolicy("LimitRequest",policy=> {
+            //        policy.WithOrigins("http://localhost")
+            //        .AllowAnyHeader()
+            //        .AllowAnyMethod();
+            //    });
+            //});
+
+            //services.AddSignalR();
+
+            services.AddControllers(a =>
+            {
+                // 全局异常过滤
+                a.Filters.Add(typeof(GlobalExceptionFilter));
             });
 
-            services.AddSignalR();
-
-            services.AddControllers();
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseIpLimitMidd();
             // 请求响应日志记录中间件
             app.UseReqRespLogMidd();
-
+            // 用户访问记录中间件
+            app.UseRecordAccessLogMidd();
+            // ip请求记录中间件
+            app.UseIpLoginMidd();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
